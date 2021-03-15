@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://wushuo.ink</id>
+    <title>Gridea</title>
+    <updated>2021-03-15T14:02:25.799Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://wushuo.ink"/>
+    <link rel="self" href="https://wushuo.ink/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://wushuo.ink/images/avatar.png</logo>
+    <icon>https://wushuo.ink/favicon.ico</icon>
+    <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[谈谈电子产品]]></title>
+        <id>https://wushuo.ink/post/about_eProducts/</id>
+        <link href="https://wushuo.ink/post/about_eProducts/">
+        </link>
+        <updated>2021-03-11T13:55:15.000Z</updated>
+        <summary type="html"><![CDATA[<p>想来我也没什么可以分享，不如直接写一下 &quot;什么值得买&quot; 之类的文章会受众更广吧</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>想来我也没什么可以分享，不如直接写一下 &quot;什么值得买&quot; 之类的文章会受众更广吧</p>
+<!-- more -->
+<h2 id="目录">目录</h2>
+<ul>
+<li><a href="#%E4%BA%A7%E5%93%81%E6%80%BB%E8%A7%88">产品总览</a>
+<ul>
+<li><a href="#-laptop">Laptop</a></li>
+<li><a href="#-mac">Mac</a></li>
+<li><a href="#-cellphone">Cellphone</a></li>
+<li><a href="#-pad-and-tablets">Pad and Tablets</a></li>
+<li><a href="#-tv">TV</a></li>
+<li><a href="#-router">Router</a></li>
+<li><a href="#-earphone">Earphone</a></li>
+<li><a href="#-%E5%85%B3%E4%BA%8E%E8%93%9D%E7%89%99%E4%BA%A7%E5%93%81%E5%92%8C%E4%BC%98%E8%81%94">蓝牙产品和优联</a></li>
+<li><a href="#-%E9%9F%B3%E5%93%8D%E4%BA%A7%E5%93%81">音响</a></li>
+<li><a href="#-%E5%AD%98%E5%82%A8%E7%B1%BB%E8%AE%BE%E5%A4%87">存储设备</a></li>
+</ul>
+</li>
+<li><a href="#%E5%85%B7%E4%BD%93%E4%BA%A7%E5%93%81">具体产品</a></li>
+</ul>
+<h2 id="产品总览">产品总览</h2>
+<h3 id="laptop"># Laptop</h3>
+<ul>
+<li>显卡<br>
+我曾经以为独立显卡对于不打游戏来讲只是智商税, 当我真正用上核显的时候, 我明白了老黄和苏妈为什么能赚得盆满钵满<br>
+对于核显来说, 即使是高端型号, 和内存共享显存也会使显卡的能力大大减弱, 因此带着显存的独显是不可或缺的</li>
+<li>CPU<br>
+标压或是低压都无大碍, 高主频和多线程则是加分项, 性能释放在多了两个核心面前不值一提</li>
+<li>内存条<br>
+内存容量越大越好 ( 16Gb ), 频率对大部分的人生产生活都无所谓</li>
+<li>硬盘<br>
+<a href="https://www.crucial.cn/learn-with-crucial/ssd/difference-between-nvme-ssd-and-sata-ssd">NVME SSD</a> 起步, 容量合适即可 ( 一般 512Gb 即可 ), 高读写对于特定场景有利, <strong>4K 读写</strong> 比 顺序读写 更重要</li>
+<li>工业设计<br>
+轻薄最佳, 笔记本受限于体积和散热, 难以达到台式电脑的性能释放, 大部分时候是屏幕发挥主要作用, 便携和续航更应该被考虑</li>
+</ul>
+<h3 id="mac"># Mac</h3>
+<ul>
+<li>软件生态<br>
+Mac 难以在<strong>工程</strong>专业领域内广泛推广, 但出色的软件生态和屏幕显示, 注定成为艺术家的好帮手</li>
+<li>系统构建<br>
+mac OS 对硬件的要求过高, 以至于 intel 的芯片无法达到苹果的预期, 于是出现了 M1 Mac<br>
+mac OS 在实用性方面远不如 Windows 阵营, 同时 Metal API 在 Windows 面前也略显乏力, mac OS 如今依然在缩放上频频卡顿</li>
+<li>散热和电源管理<br>
+激进的散热和电源管理, 使得 Mac 在不插电的情况下依然可以全速运行, 这是在其他 Windows 笔记本上难以实现的</li>
+</ul>
+<h3 id="cellphone"># Cellphone</h3>
+<ul>
+<li>Android<br>
+安卓系统由于自己独立的内存机制导致 Swap 交换分区无法使用, 出现了内存分配紧张的局面, 杀后台等情况频频出现; 系统的流畅程度很大依赖于芯片和内存; 同时国内的魔改系统良莠不齐; 系统可玩性高, 但刷机基本被锁定; 硬件性价比极高</li>
+<li>iPhone<br>
+墓碑机制; 近些年比较稳定的 iOS 系统; 生态互联; 购买和维护昂贵; 软件限定</li>
+</ul>
+<h3 id="pad-and-tablets"># Pad and Tablets</h3>
+<ul>
+<li>Android Tablets<br>
+软件适配糟糕; 硬件性价比极高</li>
+<li>Surface<br>
+Windows 和 Microsoft 生态; 微软极佳的售后服务</li>
+<li>iPad<br>
+墓碑机制; 近些年比较稳定的 iOS 系统; 生态互联; 购买和维护昂贵; 软件限定</li>
+</ul>
+<h3 id="tv"># TV</h3>
+<ul>
+<li>智能电视<br>
+在买 4K 前先考虑片源和网速, 4K的推荐稳定网速应该在 200 Mbps 左右( 约合 25 MB/s / 涵盖内网网速 )</li>
+<li>TV盒子<br>
+不喜欢广告大可以使用 Apple TV 和 国外 Android 盒子, 盒子带 4K 成本较高</li>
+</ul>
+<h3 id="router"># Router</h3>
+<ul>
+<li>稳定性大于网速和宣传语, Wi-Fi 5 不一定比 Wi-Fi 6 信号差</li>
+</ul>
+<h3 id="earphone"># Earphone</h3>
+<ul>
+<li>蓝牙耳机<br>
+佩戴舒适在第一位<br>
+降噪意味着更多的耗电和底噪, 降噪耳机的起跑线是花厂的 Flypods 3<br>
+选择 <strong>生态合适</strong> 的蓝牙耳机比选择音质好的蓝牙耳机重要许多</li>
+<li>有线耳机<br>
+佩戴舒适在第一位<br>
+音质和外形在第二位</li>
+</ul>
+<h3 id="关于蓝牙产品和优联"># 关于蓝牙产品和优联</h3>
+<ul>
+<li>优联的稳定性比蓝牙高出许多</li>
+<li>蓝牙 3.0 后稳定性大幅提高, 蓝牙 4.0 提升在低功耗和长续航, 蓝牙 5.0 大幅度优化时延</li>
+</ul>
+<h3 id="音响产品"># 音响产品</h3>
+<ul>
+<li>保护电路是判断一个音响好坏的重要标准, 即开机关机有无爆音</li>
+</ul>
+<h3 id="存储类设备"># 存储类设备</h3>
+<ul>
+<li>U 盘得益于其较小的空间占用, 但这也往往成为丢失的主要原因</li>
+<li>移动硬盘盒作为另一种移动存储设备, 有着传输速度快/存储空间大的特点; 只推荐使用 固态硬盘 作为移动硬盘盒, 原因是因为大部分机械硬盘在突然断电的状况下可能导致损坏</li>
+</ul>
+<h2 id="具体产品">具体产品</h2>
+<p>一下所写的产品大都是亲自使用过较长的时间, 且带有强烈的主观臆断</p>
+<h3 id="dell-inspiron-7000"># Dell Inspiron 7000</h3>
+<p>人傻钱多戴, 戴尔也算是在各个方面追逐苹果的笔电企业: 在中低端笔电上引入雷电接口, 两个全满速 M.2 插槽, 可更换的内存条, 全配置满血独立显卡, 甚至带有4K屏幕可选, 不得说 Inspiron 7000 系列是平民笔电中的性价比之王</p>
+<p>但即使是满配置和高拓展性加持, 也难以抹去它中低端笔记本做工的劣势, 触控板松动 / 接缝过大 / 螺丝配合过盈以致脱落, 让它变成一台 &quot;值得折腾的廉价轻薄本&quot;</p>
+<p>不得不提的是, 戴尔在最近的产品线布局中采取了和苹果几乎相同的策略, 将前代的模具下放到新一代的中低端产品上, 搭配上不算差的标压 CPU, 不仅消费者叫好, 也省去了一比磨具重新设计或是踩坑的成本</p>
+<h3 id="iphone-5s"># iPhone 5s</h3>
+<blockquote>
+<p>You're more Powerful than You Think</p>
+</blockquote>
+<p>许多人说 iPhone 6s 才是传奇的一代, 被人忽视的芯片升级, 却恰恰使得它得以在 2021 年仍然得到 Apple 的支持</p>
+<p>但 iPhone 5s 在如今以 100 元 左右的价格即可收入, 相比于 Apple iPod Touch, iPhone 5s 显然更加有吸引力:</p>
+<ul>
+<li>更加小巧的机身</li>
+<li>更廉价的价格</li>
+</ul>
+<p>毕竟, 谁为了听音乐会选一个不尴不尬的 A10 Fusion 处理器呢</p>
+<h3 id="mlc-u-disk"># MLC U Disk</h3>
+<p>U 盘在很多时候确实只是承担着小文档传输的作用, 但是何不花费同等的价格买入更快速, 寿命更长久的 MLC U盘呢</p>
+<p>MLC U盘的顺序读取速度多在 120 MB/s 以上, 这意味着一部影片的传输或是一个镜像的传输将会比原先快上 4 倍</p>
+<p>大多是 16 G 的 MLC U盘价格大约在 50 人民币左右, 寿命几乎约等于无限, 何不试一试企业级存储的威力呢</p>
+<h3 id="logitech-g102"># Logitech G102</h3>
+<p>性价比极高的鼠标, 清楚的敲击声, 百万种色彩的背光</p>
+<p>可能会在保修期外出现鼠标微动双击的现象, 可能需要自己更换微动</p>
+<p>但 100 元 开心用一年以上的鼠标, 也并非不能接受</p>
+<h3 id="mac-mini-2011"># Mac mini 2011</h3>
+<p>我的 Mac mini 2011 采用的是 i5 2.3Ghz Duo Core CPU, 内置 HD3000 核显</p>
+<p>也正是这台 Mac, 让我完全放弃了对核显的期望, Intel 的核显在远古时期甚至不支持 Metal, 在Mac mini 上无比卡顿 ( 即使这台 Mac 拥有 16G 的内存 )</p>
+<h3 id="mac-mini-2014"># Mac mini 2014</h3>
+<p>这台 Mac mini 采用 i5 4250U, 内置 HD5000 核显, 表现要比 2011 款好许多, 但在 Big Sur 下仍然力不从心, 无奈降级至 Mojave 使用</p>
+<p>在 Final Cut Pro X 下, 配合核显加速, 一段 720P 90min H.264 的视频可以在 15 min 内被导出</p>
+<h3 id="beats-flex"># Beats Flex</h3>
+<p>内置 Apple W1 芯片, 底噪很大, 但毕竟属于自家的产品, 音量方面无太大问题, 适合苹果系用户听个响</p>
+<p>听诊器效应明显</p>
+<h3 id="apple-tv-3"># Apple TV 3</h3>
+<p>iPhone 和 iPad 的投影仪, 绿色植物中的工业设计点缀</p>
+<p>在拥有港区账号时可以使用一年内的 Apple 新设备领取 Apple TV+ 会员</p>
+<h3 id="logitech-k380"># Logitech K380</h3>
+<p>蓝牙 3.0, 长续航, 便携</p>
+<p>多设备用户福音</p>
+<h3 id="sansui-音响"># SANSUI 音响</h3>
+<p>自己连接了功放板, 多年不坏, 属于听个响的音响</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[这是和工具们的故事]]></title>
+        <id>https://wushuo.ink/post/withMyTools/</id>
+        <link href="https://wushuo.ink/post/withMyTools/">
+        </link>
+        <updated>2021-02-12T11:40:55.000Z</updated>
+        <summary type="html"><![CDATA[<p>一直着手于工具, 或是即刻着手于眼前; 即使到现在我也没有办法做出决定</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>一直着手于工具, 或是即刻着手于眼前; 即使到现在我也没有办法做出决定</p>
+<!-- more -->
+<p>工具的故事, 还得从大一那门 <strong>C 程序设计</strong> 说起</p>
+<p>我发觉老师给出的 <strong>Dev-C++</strong> 并不好用, 准确地说是并不是我想象的风格<br>
+直到后来我才了解到这个开发工具多么美好</p>
+<p>我开始自己配置 Windows MinGW 环境, 并尝试使用了微软的 <a href="https://code.visualstudio.com/">VScode</a> 和 Github 社区的 <a href="https://https://atom.io">Atom</a>, 当时什么也不懂的我就被 <code>Tab</code> 补全折服了<br>
+实际上现如今我依然认为 <code>Tab</code> 补全代码值得称赞, 而 Eclipse 和 Vim 的双键补全也不算糟糕</p>
+<p>往后, 从 Python/pypi 到 JDK, 我开始自己配置环境, 一律编辑器轻装上阵<br>
+中文推圈上也有关于程序员是否应该会配置环境之争, 我也只是认为无需争出个是与非</p>
+<p>再之后, 我用上了微软的黑科技 WSL2, 搭配其自家的 <strong>Windows Terminal</strong>, 开始上手真正意义上的编辑器 <strong>Vim</strong>, 我才开始理解到 &quot;开箱即用&quot; <strong>Dev-C++</strong> 的便利<br>
+于是乎, 一个月半生不熟的 <strong>Vim</strong> 之后, 我辗转回到了 <strong>VScode Remote</strong></p>
+<p>我总沉浸在迷惘中, 自己折腾并使用这些工具是否浪费了时间和精力, 如果这些时间用于&quot;正事&quot;上是否有更大的效益: 从键盘到工作环境, 有许多可能的尝试, 最后归于平静</p>
+<p>有许多卓越成就的人, 或是很多做着很酷工作的普通人, 不会纠结于工作环境, 用着普通的薄膜键盘, 在普通的 VA 显示屏前完成了许许多多伟大的工作</p>
+<p>我从进入高中时就被老师责骂, 自己如果不会整理自己的书桌难以有成功, 想来这也是一种&quot;工具&quot;的使用方法<br>
+我现在连失败都算不上, 也算是一语成谶<br>
+又想到 Linus 创造了 Git, 办公桌上堆积的比我还要凌乱, 也释然了高中时不爱整理的糗事</p>
+<p>今天是大年初一, 新的一年是新的开始, 我赶紧整理了电脑的文件夹, 换了一个新壁纸, 还算看得过去</p>
+<p>和工具们还得待好长一段时间</p>
+<p>辛丑年正月初一<br>
+于浙江省长兴县泗安镇二界岭<br>
+由手机热点发送</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[再见了，DW1820A]]></title>
+        <id>https://wushuo.ink/post/hackintoshFromPerfectToGiveup/</id>
+        <link href="https://wushuo.ink/post/hackintoshFromPerfectToGiveup/">
+        </link>
+        <updated>2021-01-14T02:36:34.000Z</updated>
+        <summary type="html"><![CDATA[<p>从 DW1820A 到手已经半个月了，从 Airdrop 到 Airplay，再到 Command 和 Option，一圈下来还是 Windows 10 更加适合我。别了，Hackintosh。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>从 DW1820A 到手已经半个月了，从 Airdrop 到 Airplay，再到 Command 和 Option，一圈下来还是 Windows 10 更加适合我。别了，Hackintosh。</p>
+<!-- more -->
+<p>博通 DW1820A 是戴尔为 XPS13 9350 定制的一款网卡，因为能够在 macOS 下被驱动，并且能够正常使用隔空投送，接力这些 Apple 原生服务被熟知。在黑苹果圈子里被炒到了接近 200 软妹币，要知道支持 Wi-Fi 6 和 蓝牙 5.1 的 intel AX200 才 70 元。</p>
+<p>DW1820A 在 macOS 下的体验确实<strong>几乎</strong>完美，但 hacintosh 的稳定性让我抓狂。Opencore 的引导几乎总是出现问题，失去了 T2 芯片作为安全启动引导，hackintosh 在<strong>引导阶段</strong>无法加载驱动和屏幕闪烁。</p>
+<p>至于 macOS 下的快捷键，对于熟悉了多年 Windows 操作方式的我来说，已经很难把手指移到 Command 键的位置执行操作了。加之 macOS 对第三方鼠标没有平滑滚动，无法对触控板和鼠标进行单独操控，除了使用<strong>非系统级</strong>软件，很难解决鼠标在 macOS 下的体验。</p>
+<p>系统本身的稳定性层面，蓝牙与 5Ghz 频段冲突造成系统级卡顿，颠覆了我对 macOS 无比流畅的想象。不同接口造成 macOS 在某些软件下还没有 Windows 渲染流畅。</p>
+<p>原本让我觉得 macOS 就是开发设备的一个重要原因就是 <strong>shell</strong>，类 Unix 系统自带 shell 让 ssh / git 不再是困难。但 Windows 10 的 Fluent Terminal 搭配 Linux 子系统平步青云地做到了这些，这让我失去了对 macOS 最后一点点的幻想。</p>
+<p><strong>稳定性</strong>，最终让我选择了 Windows 10 202H，流畅的动画和支持<strong>硬件加速 GPU</strong>。</p>
+<p>格式化了 D 盘，换掉了 键盘上的 Command 键，再见了 DW1820A，再见了 macOS，再见了hackintosh。</p>
+<p>下次再见才是<strong>一派新风貌</strong>。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我的家庭组网：软路由从联网到智能家居]]></title>
+        <id>https://wushuo.ink/post/aboutOpenwrt/</id>
+        <link href="https://wushuo.ink/post/aboutOpenwrt/">
+        </link>
+        <updated>2021-01-11T11:44:48.000Z</updated>
+        <summary type="html"><![CDATA[<p>OpenWrt 是适合于嵌入式设备的一个 Linux 发行版。<br>
+对于开发者来说，OpenWrt是一个框架，开发者不必麻烦地构建整个固件就能得到想要的应用程序；对于用户来说，<strong>这意味着完全定制的能力</strong>，与以往不同的方式使用设备，OPKG 包含超过3500个软件。 默认使用 LuCI 作为 website 交互界面。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>OpenWrt 是适合于嵌入式设备的一个 Linux 发行版。<br>
+对于开发者来说，OpenWrt是一个框架，开发者不必麻烦地构建整个固件就能得到想要的应用程序；对于用户来说，<strong>这意味着完全定制的能力</strong>，与以往不同的方式使用设备，OPKG 包含超过3500个软件。 默认使用 LuCI 作为 website 交互界面。</p>
+<!-- more -->
+<p>这是一篇 <strong>Step by Step</strong> 的关于 x86 架构组建 <a href="https://github.com/openwrt/openwrt">Openwrt</a> 家庭<strong>软路由</strong>的<strong>教程</strong>。你将可以了解到 Openwrt 在现代家庭网络中大放异彩：<strong>私人云盘，流媒体托管，负载均衡，流量管控，隔空播放，甚至更多值得想象的功能</strong>；并且你只需基本的电脑知识和简单的硬件就能在你的家中实现。</p>
+<p><strong>注意</strong>：</p>
+<ol>
+<li>你的家庭网络必须接入互联网运营商且能正常上网</li>
+<li>你需要一台闲置的台式电脑（当然您也可以选择以极低的价格购买 x86 软路由，约 200 元人民币）</li>
+<li>你需要一台无线硬路由（即普通的 WI-FI 路由器）/ AP</li>
+<li>确保光猫工作在桥接模式下（日常生活中联网无需拨号上网即桥接模式）</li>
+</ol>
+<h3 id="目录">目录</h3>
+<ul>
+<li><a href="#%E5%8A%9F%E8%83%BD%E5%B1%95%E7%A4%BA">有限的功能展示</a></li>
+<li><a href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">准备工作</a>
+<ul>
+<li><a href="#%E4%BB%8E%E4%BA%86%E8%A7%A3%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%BC%80%E5%A7%8B">网络拓扑</a></li>
+<li><a href="#%E8%BD%AF%E8%B7%AF%E7%94%B1%E7%9A%84%E7%A1%AC%E4%BB%B6%E5%87%86%E5%A4%87">硬件条件</a></li>
+</ul>
+</li>
+<li><a href="#%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85">系统安装</a></li>
+<li><a href="#%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2">图像界面设置</a></li>
+<li><a href="#%E6%9B%B4%E5%A4%9A%E6%9C%8D%E5%8A%A1">更多服务</a>
+<ul>
+<li><a href="#%E9%9A%94%E7%A9%BA%E6%92%AD%E6%94%BE">隔空播放</a></li>
+<li><a href="#%E5%B9%BF%E5%91%8A%E8%BF%87%E6%BB%A4">广告过滤</a></li>
+<li><a href="#dlna%E6%B5%81%E5%AA%92%E4%BD%93%E6%9C%8D%E5%8A%A1">DLNA流媒体服务</a></li>
+<li><a href="#%E8%BF%9E%E6%8E%A5%E4%BA%92%E8%81%94%E7%BD%91">连接互联网</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="功能展示">功能展示</h3>
+<h4 id="airplay2-隔空播放">Airplay2 (隔空播放)</h4>
+<figure data-type="image" tabindex="1"><img src="https://wushuo.ink/post-images/1610370521699.webp" alt="Airplay2" loading="lazy"></figure>
+<h4 id="后台监控">后台监控</h4>
+<figure data-type="image" tabindex="2"><img src="https://wushuo.ink/post-images/1610370776164.webp" alt="monitor" loading="lazy"></figure>
+<h4 id="流媒体播放-dlna-和-私人网盘">流媒体播放 (DLNA) 和 私人网盘</h4>
+<ul>
+<li>Aplayer in iPad</li>
+</ul>
+<figure data-type="image" tabindex="3"><img src="https://wushuo.ink/post-images/1610518394674.webp" alt="" loading="lazy"></figure>
+<h4 id="更快的速度和更稳定的视频播放">更快的速度和更稳定的视频播放</h4>
+<figure data-type="image" tabindex="4"><img src="https://wushuo.ink/post-images/1610378026837.webp" alt="VideoPlay" loading="lazy"></figure>
+<hr>
+<h3 id="准备工作">准备工作</h3>
+<h4 id="从了解网络拓扑开始">从了解网络拓扑开始</h4>
+<p>软路由的工作模式主要分为：<strong>主路由</strong>和<strong>旁路由</strong>，本文主要介绍<strong>软路由作为主路由</strong>的工作模式。<br>
+<strong>接线方式</strong>:</p>
+<ol>
+<li>光纤 &gt; 光猫 (调制解调器) &gt; 软路由WAN口</li>
+<li>软路由LAN口 &gt; 家用WI-FI路由 (以下两种任选一种)
+<ul>
+<li>软路由LAN口 &gt; 家用WI-FI路由WAN口 (此时家用Wi-Fi路由启用 DHCP)</li>
+<li>软路由LAN口 &gt; 家用Wi-Fi路由LAN口 (此时家用Wi-Fi路由不启用 DHCP，同时需要将家用Wi-Fi路由的网段设置在软路由LAN口网段下)</li>
+</ul>
+</li>
+</ol>
+<h4 id="软路由的硬件准备">软路由的硬件准备</h4>
+<ol>
+<li>确保充当软路由的 x86 电脑可以正常工作</li>
+<li>x86 电脑的以太网接口有两个以上 (LAN口和WAN口)，台式电脑可以通过购买 <code>PCI</code> 或者 <code>PCI-E</code> 网卡拓展为双网口</li>
+<li>可以正常使用的无线硬路由 (即家用Wi-Fi路由器)</li>
+</ol>
+<hr>
+<h3 id="系统安装">系统安装</h3>
+<h4 id="准备安装">准备安装</h4>
+<ol>
+<li>PE启动盘 (请使用U盘制作PE启动盘，<strong>注意</strong>：<strong>制作PE启动盘会格式化U盘</strong>) 用以启动 PE 安装 Openwrt</li>
+<li>Openwrt 第三方镜像 (推荐功能齐全的第三方编译镜像)</li>
+<li>写盘工具 (推荐DiskImage)</li>
+</ol>
+<h4 id="开始安装">开始安装</h4>
+<p><strong>注意：请先确保按照<a href="#%E4%BB%8E%E4%BA%86%E8%A7%A3%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%BC%80%E5%A7%8B">网络拓扑</a>中的接线连接设备</strong><br>
+如不确定哪一个是WAN口，可以进行至<a href="#%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2">图像界面</a>时，成功进入网页管理页面即为成功，否则将 WAN 口网线和 LAN 口网线调转</p>
+<p>在 PE 模式下使用写盘工具向 x86 PC 硬盘写入 Openwrt 镜像</p>
+<h4 id="设置密码">设置密码</h4>
+<p>重启电脑, 进入命令行，输入<code>passwd</code>设定 Openwrt 的密码 (同时也是 LuCI 可视化界面的密码)<br>
+<strong>注意</strong>：设定密码形如<code>123456</code>时 Linux 是不会显示 <code>******</code>，输入完成直接回车即可；再次确认输入再回车即可。</p>
+<p>设定 LAN 口的网段:<code>vim /etc/config/network</code>，找到<code>config interface 'lan'</code>，并将其中的<code>option ipaddr '192.68.1.1'</code>改为<code>option ipaddr '192.68.5.1'</code>(或者将其改为你喜欢的网段)<br>
+<strong>注意</strong>：文本编辑器<code>Vim</code>按<kbd>i</kbd> (insert) 向光标前方插入并进入编辑模式，对<code>IP</code>进行编辑后，按<kbd>Esc</kbd>推出编辑模式，最后按<kbd>:wq</kbd> (write and quit) 保存。详细信息请自行 Google<code>how to use vim</code></p>
+<hr>
+<h3 id="图形界面">图形界面</h3>
+<p>确保你的设备接入到了家用Wi-Fi路由器的网络中，在浏览器中输入<code>192.168.5.1</code>，输入先前设置的密码<br>
+<img src="https://wushuo.ink/post-images/1610376881526.webp" alt="webOfOpenwrt" loading="lazy"></p>
+<h4 id="开始联网">开始联网</h4>
+<p>在 <strong>网络</strong> - <strong>接口</strong> - <strong>WAN</strong> - 将传输协议改为 <strong>PPPoE</strong><br>
+用户名和密码为宽带拨号用户名和密码<br>
+保存后测试即可上网<br>
+<img src="https://wushuo.ink/post-images/1610378344618.webp" alt="connectPPPoE" loading="lazy"></p>
+<h3 id="更多服务">更多服务</h3>
+<p>如果第三方编译的镜像提供了更多的服务</p>
+<h4 id="隔空播放">隔空播放</h4>
+<p>可以打开 <strong>Airplay2</strong> 功能，并将音响通过USB声卡连接到 Openwrt，可以实现类似 <strong>Apple HomePad</strong> 的音乐隔空播放功能</p>
+<h4 id="广告过滤">广告过滤</h4>
+<p>打开<strong>广告过滤</strong>，即可从路由器层面过滤掉广告</p>
+<h4 id="dlna流媒体服务">DLNA流媒体服务</h4>
+<p>挂载磁盘分区后，确保有足够的空间即可打开DLNA服务</p>
+<h4 id="连接互联网">连接互联网</h4>
+<p>有了Openwrt，连接互联网再也不是问题，更快的访问速度和更高的性能，妈妈再也不用担心看4K卡住了</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[断舍离]]></title>
+        <id>https://wushuo.ink/post/rejectfomo/</id>
+        <link href="https://wushuo.ink/post/rejectfomo/">
+        </link>
+        <updated>2021-01-09T03:02:28.000Z</updated>
+        <summary type="html"><![CDATA[<p>明明无伤大雅，我为什么想法设法去除一切广告并且注销知乎和微博 / 无纸化阅读的专注</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>明明无伤大雅，我为什么想法设法去除一切广告并且注销知乎和微博 / 无纸化阅读的专注</p>
+<!-- more -->
+<p>刷了四五年的知乎，连带着微博一起账号注销了。看不到学校负面新闻，也便觉得学校晚上更明亮了。</p>
+<p>打垮我对社交网络的热情的，不只有无加节制的广告，看了 <a href="https://linghao.io/posts/my-time-management-system-2020">Linghao Zhang 的博客</a>，拒绝 <a href="https://en.wikipedia.org/wiki/Fear_of_missing_out">FOMO</a> 让我很是在意，当然卸载知乎和微博只是其中一小环。</p>
+<p>我发现我很难像念中学时候那样专注于看一本书或者学习一类事物的规律。急功近利地掌握方法和运用并动手开始实践：典型的工程思维应该有的方法论段。对方法的求证态度也是一概拿来主义，无需质疑，唯结果而论。至于过程，任他如何糟糕都是封装在看不到的地方。</p>
+<p>当人们议论浮躁在社会中漫延的时候，我发现我早早地在大学就融入到了社会中去了。白天假装努力自我感动，晚上被 APP <strong>信息过载</strong>。</p>
+<p>知乎作为我常刷的软件，不错的算法推荐和用户画像识别，让它总能为我的课余甚至是课上时间增添许多欢乐。若是只用知乎的搜索功能，其实能将有效信息聚集起来，大有益处。但知乎加入了<strong>热搜</strong>，这份榜单总能够分散注意力，很少有人能够为了热搜打开一款 APP，但绝大多数人都会在完成一两分钟基本目的后刷上半小时的热搜。</p>
+<p>从“知乎治校”到“清华学姐”，再到各种“压抑的大学/公司事件”，知乎的热搜并没有给我带来好处。反而有大量的信息铺面而来。</p>
+<p>再谈广告：作为互联网企业从用户口袋里隔空捞钱的手段，知乎的广告投放确实比其他小厂有水准。几乎每个回答下都有广告，这些广告并不是让你点入，而是在看完回答时切换下一个回答过程中，一秒钟手指移动的时间就能进行<strong>潜在的广告投放</strong>。你也许并不感兴趣，也未曾了解到自己被投放了这样的广告，但在广告投放方的眼里，你已经被广告内容<strong>潜移默化</strong>地影响了。除了这样通过知乎直接投放广告的方式，答主也能通过在文章内自行推荐广告链接的方式推送<strong>软广</strong>：通过广告代理人答主的形象进行广告投放，知乎当然也能分得一羹。</p>
+<p>至于微博，已经很久都不在看了。很难有机会让我点开第三方无广告的微博，通过数个捷径前往热搜去看哪些事件正在被大家“刷上去”。</p>
+<p>电子设备正在逐步取代纸质化阅读甚至是书写，我已经很难向从前那样抱着一本书在空调房间里看数小时之久。但愿新的一年里能够认认真真的看书——不管是纸质书或者iPad或者是Kindle，毕竟载体时时在变化，所承载的内容才是恒久不衰的。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[从 OPPO 和 “ColorOS” 谈起]]></title>
+        <id>https://wushuo.ink/post/fromOPPOtoLife/</id>
+        <link href="https://wushuo.ink/post/fromOPPOtoLife/">
+        </link>
+        <updated>2021-01-07T12:52:59.000Z</updated>
+        <summary type="html"><![CDATA[<p>OPPO 作为国民级别的品牌，凭借强大的营销手段和“独特”的设计语言耳熟能详；而 “ColorOS”  作为 OPPO 自主研发的 Android UI，却不配 OS 其名。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>OPPO 作为国民级别的品牌，凭借强大的营销手段和“独特”的设计语言耳熟能详；而 “ColorOS”  作为 OPPO 自主研发的 Android UI，却不配 OS 其名。</p>
+<!-- more -->
+<hr>
+<p>前些天把我妈用了两年的 OPPO 手机换成了 iPhone XR，虽然我妈坚持说手机很好还能用，她很喜欢，我还是替她做主换掉了。知道我妈心疼钱，于是求好哥们费尽心思淘了个黑解的 iPhone XR，不带面容识别，让我妈随便用。知道了价钱，我妈用地省心，也不担心摔了心疼。</p>
+<p>于是剩下的 OPPO A5 手机我就拿来当个电子时钟。当然，作为电子时钟都是后话了，我也曾经对这个刘海屏的手机抱有一点点希望的：3GB RAM，骁龙SMD450，还有和同期发布的 iPhone X 相似的刘海屏幕。但可惜，找遍了全网也没有找到了可以找到刷原生系统的方法。原因当然是 <a href="https://zh.wikipedia.org/wiki/%E5%95%9F%E5%8B%95%E7%A8%8B%E5%BC%8F">BootLoader</a> 被锁住，不仅如此，甚至桌面也被锁住，无法更换第三方桌面。</p>
+<p>印象中 OPPO 手机常常出现于电视广告中，从“充电五分钟，电话两小时”到各色明星大腕的代言。我人生的第一部自己的手机就是 OPPO ，不过几载，曾经 OPPO 骄傲的拍照，充电续航也只剩下美颜，大电池。锁起了桌面，凭借着从前强大的线下商店铺展和广告流量，OPPO 的状况也还过的去。</p>
+<p>但在二〇二〇这个不那么幸运的年份，OPPO 的最后一点差距被彻底拉开，说是 ColorOS 不如称是 ColorUI：华为EMUI开始靠向成熟的iOS，以软件公司著称的小米MIUI，友商vivo全新的wget交互方式。OPPO 却还在完善着自己“操作系统”的广告推送机制。</p>
+<p>即使拖出 OPPO 高端 OnePlus 系列，“不将就”的系统设计对国内的环境也“不将就“。操作系统的不人性化使得 OPPO 的高端线用户开始流失，低端手机搭配完全与价格不符的配置也让低端线用户发誓再也不买这个品牌。</p>
+<p>核心技术的缺失是 OPPO 一直的痛，与此同样遭遇的还有隔壁的 vivo，但既然做不出好的系统，就应该和小米一样打开 BL 锁的权限，让用户能够真正拿到使用硬件的权力，而不是用糟糕的系统使用体验恶心用户。</p>
+<p>我向来不喜欢对一个品牌标榜好或者坏，但 OPPO 在 “ColorOS” 方面的表现这是难尽人意。</p>
+<p>失去核心技术一定会在未来被暴露和无限放大。就像念大学，失去了特别的东西：“每天上课听讲，每次考试复习，每周参加社团活动，和无数大学生一样念完大学四年，任时光荏苒”，何不可以怜惜。念到最后如 OPPO 宣传自己道：“我们这款手机搭载的是八核处理器。”资本家和教授可都是“电子发烧友”：一上手立马发现 SDM450 八核不过是嘘头，没有一点真才实料，根本不是我们要买的手机，或许你最看不上的过时 iPhone5S 比你的方方面面都要强。</p>
+<p>或许会想，为什么要拿 iPhone 和 OPPO 相比较，iPhone 的体量不知道比 OPPO 高到哪里去了。但事实是，iPhone 和 OPPO 正处在同一市场，为什么觉得那些高不可攀的产品和你的目标群体不会有冲突，我这样的打工人也一样如此。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Vim 首行乱码问题解决方法]]></title>
+        <id>https://wushuo.ink/post/VimRenderIssue/</id>
+        <link href="https://wushuo.ink/post/VimRenderIssue/">
+        </link>
+        <updated>2020-12-08T10:59:17.000Z</updated>
+        <summary type="html"><![CDATA[<p>在使用 Vim 时遇到了首行乱码形如&quot;+q436f+q6b75+q6b64&quot;，错误的乱码“掩盖”了正确的内容，却不会覆盖正确的内容，但能够导致首行的内容无法被查看，解决这项问题的方法是在 &quot;.vimrc&quot; 文件中添加 &quot;set t_RV=&quot; 确保 Vim 能够显示正确的内容。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在使用 Vim 时遇到了首行乱码形如&quot;+q436f+q6b75+q6b64&quot;，错误的乱码“掩盖”了正确的内容，却不会覆盖正确的内容，但能够导致首行的内容无法被查看，解决这项问题的方法是在 &quot;.vimrc&quot; 文件中添加 &quot;set t_RV=&quot; 确保 Vim 能够显示正确的内容。</p>
+<!-- more -->
+<ul>
+<li><a href="#%E9%97%AE%E9%A2%98%E5%A4%8D%E7%8E%B0">问题复现</a></li>
+<li><a href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">解决方案</a></li>
+<li><a href="#%E5%BC%95%E7%94%A8%E8%B5%84%E6%96%99">引用资料</a></li>
+<li><a href="#%E4%B8%80%E7%82%B9%E7%82%B9%E6%83%B3%E8%AF%B4%E7%9A%84%E8%AF%9D">想说些话</a></li>
+</ul>
+<hr>
+<h3 id="问题复现">问题复现</h3>
+<p>在我的 <strong>Linux</strong> 虚拟机 (<strong>WSL</strong>) 上运行 Vim 时总会在第一行出现一行乱码，在多次重装 Vim 无果后，终于在 Github 的 <a href="https://github.com/vercel/hyper"><strong>Hyper</strong></a> 项目上找到<a href="https://github.com/vercel/hyper/issues/1037"><strong>答案</strong></a>。</p>
+<p># 我的配置</p>
+<table>
+<thead>
+<tr>
+<th>系统</th>
+<th>Vim</th>
+<th>Shell</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ubuntu 18.04 LTS</td>
+<td>Vim 8.0</td>
+<td>zsh with oh-my-zsh</td>
+</tr>
+</tbody>
+</table>
+<p>目前已知的其他系统可能会存在相同的 Vim 问题：<br>
+<strong>OS X</strong> 10.12 (Sierra)<br>
+<strong>Arch Linux</strong></p>
+<p>在 <strong>WSL</strong> 上使用 Vim 后 (无论是否打开文件)，第一行会出现一行显示乱码，亦或称为<code>Broken first line rendering in VIM</code> (引用自 Github issues)<br>
+<img src="https://wushuo.ink/post-images/1609991249302.webp" alt="vim with render issues" loading="lazy"><br>
+形如<code>+q436f+q6b75+q6b64</code>这种乱码仅能通过<kbd>Ctrl + L</kbd>消除。</p>
+<hr>
+<h3 id="解决方案">解决方案</h3>
+<p>在 Terminal 内编辑 <code>.vimrc</code> 文件，并添加<code>set t_RV=</code>。</p>
+<pre><code class="language-bash"># wushuo @ DESKTOP-91UDQ1D in ~ [19:29:21] C:1
+$ vim ~/.vimrc
+</code></pre>
+<pre><code class="language-javascript">set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set encoding=utf-8
+set fencs=utf-8,gbk
+
+### 设置下面这条的配置哦
+set t_RV=
+### 设置上面这条的配置哦
+
+call plug#begin('~/.vim/plugged')
+Plug 'dense-analysis/ale'
+call plug#end()         
+</code></pre>
+<p>再次打开 Vim，发现首行的渲染错误已经消失了。</p>
+<hr>
+<h3 id="引用资料">引用资料</h3>
+<p><strong>Hyper</strong> 项目下的 <strong>Github issues</strong> ：<br>
+<a href="https://github.com/vercel/hyper/issues/1037">Broken first line rendering in VIM (parseUntilStringTerminator_ aborts) #1037</a></p>
+<hr>
+<h3 id="一点点想说的话">一点点想说的话</h3>
+<p>一篇博客读起来的时间很短，特定内容的博客受众面少，写起来却异常花费时间。<br>
+驱使我写博客的目的是我能够静下心来思考，文字想要精炼，磨难也要经历。临近期末考试和四级考试，博客终于被捡起来写了一篇，维护了一下两个托管在 Github 上的静态站点，如果有时间，还能趁机打开一下 Gittalk 评论 (虽然我知道我的博客无人评论)。</p>
+<p>在北林的大二半年，过的很累，也并不充实，前几周看了 <a href="https://linghao.io">linghao</a> 的博客，发现自己消磨在不必要的事物上的时间太多了。来北京高铁上的写了一半的博客一直搁浅了，卸了知乎，闲来刷刷推特。看着手机的使用时间记录后，推特确实比知乎对时间和思维消耗比知乎少太多了。</p>
+<p>电子系明显比车辆系卷太多了，课程难且不说，精力的消耗难以避免，老师们似乎都沉浸在：“这门课这么难，我教的不错，很有深度，所以学生们收获许多”的幸福里。而我感到的只有 <strong>Push</strong> 。抛开一小部分做硬件的同学来说，学这么多门知识杂碎，耗费精力极高的高难度课程，是将试错成本拉低许多。一本 <strong>CSAPP</strong> 或是 一本 <strong>Algorithm</strong> 的时间就被浪费在”这门课好难，我要挂科了，得好好学习刷题“的时间里了。</p>
+<p>或许是我的时间没有被好好利用，又或许是电子系本身就要天天熬夜刷题才能通过，我对数电，模电和电分真的没什么感觉。相反，<strong>Rust</strong> 和 <strong>Apple GSX 认证</strong> 已经被我加入了提醒事项。我只想做个平凡人，或许平庸人也适合我。</p>
+<p>博客还得坚持写，英语也得坚持学，考试也得去考考。</p>
+<p>写于<br>
+模电考试前两天/四级考试前四天<br>
+北京林业大学 学12号楼</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基于 Fluent Terminal 和 WSL 的 Windows 命令行工具]]></title>
+        <id>https://wushuo.ink/post/fluentterminalwsl/</id>
+        <link href="https://wushuo.ink/post/fluentterminalwsl/">
+        </link>
+        <updated>2020-08-27T02:05:09.000Z</updated>
+        <summary type="html"><![CDATA[<p>嘿，我打赌你一定会喜欢这些优雅的东西！</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>嘿，我打赌你一定会喜欢这些优雅的东西！</p>
+<!-- more -->
+<blockquote>
+<p>适用于 Linux 的 Windows 子系统（英语：Windows Subsystem for Linux，简称WSL）是一个为在Windows 10和Windows Server 2019上能够原生运行Linux二进制可执行文件（ELF格式）的兼容层。----维基百科</p>
+</blockquote>
+<h3 id="效果图演示"># <strong>效果图演示</strong></h3>
+<figure data-type="image" tabindex="1"><img src="https://wushuo.ink/post-images/1610031931735.webp" alt="" title="Theme Tomorrow" loading="lazy"></figure>
+<h3 id="安装-windows-fluent-terminal-来取代古老的-cmd"># <strong>安装 Windows Fluent Terminal 来取代古老的 CMD</strong></h3>
+<ul>
+<li>在 <a href="https://www.microsoft.com/zh-cn/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab">Microsoft Sore</a>或<a href="https://github.com/microsoft/terminal">Github</a>开源社区下载 Windows Fluent Terminal 。</li>
+<li>赶紧开启 <strong>亚克力</strong>/ <strong>Acrylic背景</strong>或者添加您喜爱的图片设为背景</li>
+</ul>
+<h3 id="windows-和-linux-是天生一对"># <strong>Windows 和 Linux 是天生一对</strong></h3>
+<blockquote>
+<p><strong>Microsoft love Linux</strong><br>
+--Microsoft CEO Satya Nadella</p>
+</blockquote>
+<p>在 Windows 安装<strong>适用于Linux 的 Windows 子系统</strong>，不仅可以保留 Windows 个人电脑的便捷，同时享受到 Linux 更加便捷的开发环境和开放的软件环境。</p>
+<h4 id="坐稳了我们要正式开始安装wsl了">坐稳了，我们要正式开始安装<strong>WSL</strong>了</h4>
+<ul>
+<li>在微软商店里下载 <a href="https://www.microsoft.com/zh-cn/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab"><strong>Ubuntu 18.4 LTS</strong></a>系统或是其他你喜欢的  <strong>Linux 子系统</strong></li>
+<li>它会出现在我们的开始菜单栏中，但这并不是我们所需要的</li>
+<li>朋友，这时候微软的自家软件就得开始团结协作了，打开 Windows Fluent Terminal 的菜单，你就能看到 Ubuntu 18.4 LTS 的身影了</li>
+</ul>
+<h3 id="谁说-linux-不能姹紫嫣红"># <strong>谁说 Linux 不能姹紫嫣红</strong></h3>
+<p>现在你也许会想，为什么我的 Linux 没有<strong>五颜六色的代码</strong>，也许更专业地说是代码高亮。</p>
+<h4 id="让-oh-my-zsh-给命令行锦上添花">让 <strong>oh-my-zsh</strong> 给命令行锦上添花</h4>
+<ul>
+<li>跟随 <a href="https://github.com/ohmyzsh/ohmyzsh">Github</a> 开源项目指南，让您的 Linux 配备oh-my-zsh</li>
+</ul>
+<ol>
+<li>使用 Git 从Github 上克隆到本地 或者 通过Github Desktop 手动下载<pre><code>git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh 
+</code></pre>
+</li>
+<li>使用 Windows Fluent Terminal 试试 <strong>cp</strong> 命令的复制上传功能吧<pre><code class="language-shell"># wushuo @ DESKTOP-91UDQ1D in /mnt/c/Users/Shuo [19:24:45]
+$ cd Desktop
+
+# wushuo @ DESKTOP-91UDQ1D in /mnt/c/Users/Shuo/Desktop [19:25:21]
+$ cp ohmyzsh-master.zip /home/wushuo
+
+# wushuo @ DESKTOP-91UDQ1D in /mnt/c/Users/Shuo/Desktop [19:27:21]
+$ cd /home/wushuo
+
+# wushuo @ DESKTOP-91UDQ1D in ~ [19:27:36]
+$ ls
+ohmyzsh-master.zip
+</code></pre>
+</li>
+<li>解压文件并运行 <strong>oh-my-zsh.sh</strong><pre><code class="language-shell"># wushuo @ DESKTOP-91UDQ1D in ~ [19:27:50]
+$ gzip ohmyzsh-master.zip
+
+# wushuo @ DESKTOP-91UDQ1D in ohmyzsh-master [19:27:51]
+$ sudo ./ohmyzsh.sh
+</code></pre>
+</li>
+<li>现在将zsh设为默认shell即可<pre><code class="language-shell">chsh -s $(which zsh)
+</code></pre>
+</li>
+</ol>
+<h3 id="这是-oh-my-zsh独一无二的zsh"># <strong>这是 oh my zsh，独一无二的zsh</strong></h3>
+<ul>
+<li>现在为 oh-my-zsh 设定你喜爱的主题<pre><code class="language-shell">vim ~/.zshrc
+</code></pre>
+</li>
+<li>更改你喜爱的主题通过如 <code>ZHS_THEME=&quot;ys&quot;</code><pre><code class="language-shell">ZSH_THEME=&quot;agnoster&quot; # (this is one of the fancy ones)
+# see https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster
+</code></pre>
+</li>
+</ul>
+<h4 id="不仅如此你也可以通过-windows-fluent-terminal-更改配色">不仅如此，你也可以通过 Windows Fluent Terminal 更改配色</h4>
+<ul>
+<li>默认的设置一直都不错，除非你更偏爱<strong>白色的清晰</strong>，那样 <strong>Tomorrow</strong> 也许才是你的菜</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="https://wushuo.ink/post-images/1610031883798.webp" alt="wsl1" title="Fluent Terminal" loading="lazy"></figure>
+<h3 id="你知道吗git-和-wsl-协作无可匹敌"># <strong>你知道吗，Git 和 WSL 协作无可匹敌</strong></h3>
+<ul>
+<li>还在忍受 <strong>Windows</strong> 上不优雅的 <strong>git</strong> 工具吗，现在投奔 <strong>WSL</strong> 和 <strong>Linux 原生 git</strong> 的怀抱</li>
+<li>通过 <strong>WSL</strong> 对 Windows 的映射，您可以轻松使用 <strong>WSL</strong> 访问主机的资源，<strong>git</strong> 也毫不例外<pre><code class="language-shell">### 通过 git 将图形学项目 Taichi 克隆到本地
+# wushuo @ DESKTOP-91UDQ1D in /mnt/c/Users/Shuo/Desktop [19:57:39]
+$ git clone https://github.com/taichi-dev/taichi
+</code></pre>
+</li>
+</ul>
+<h3 id="感谢您的认真观看我衷心地希望这对您有些许帮助"><strong>感谢您的认真观看，我衷心地希望这对您有些许帮助</strong></h3>
+<h6 id="转载请注明作者及出处">转载请注明作者及出处</h6>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[集成电路封装方式简介]]></title>
+        <id>https://wushuo.ink/post/packagefunction/</id>
+        <link href="https://wushuo.ink/post/packagefunction/">
+        </link>
+        <updated>2020-08-24T15:02:31.000Z</updated>
+        <summary type="html"><![CDATA[<p>本文主要介绍现代半导体行业<strong>芯片</strong>主要的封装方式。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>本文主要介绍现代半导体行业<strong>芯片</strong>主要的封装方式。</p>
+<!-- more -->
+<h3 id="dip-封装"># <strong>DIP</strong> 封装</h3>
+<ul>
+<li>Dual Inline Package 即<strong>双列直插封装</strong></li>
+<li>在没有在线编程时代，便于烧录</li>
+<li>现在较多用于单片机 MCU</li>
+</ul>
+<h4 id="方向和引脚编号">方向和引脚编号</h4>
+<ul>
+<li>当元件的识别缺口朝上时，左侧最上方的引脚为引脚1，其他引脚则以逆时针的顺序依序编号。有时引脚1也会以圆点作为标示。</li>
+</ul>
+<h3 id="pga-封装"># <strong>PGA</strong> 封装</h3>
+<ul>
+<li>Pin Grid Array 即<strong>插针网格阵列</strong></li>
+<li>PGA封装一般是将集成电路（IC）焊接在一块电路板上，电路板的另一面是排列成方阵的插针</li>
+<li>插针可以插入或焊接到其他电路板上对应的插座中，适合于需要频繁插拔的场合</li>
+</ul>
+<h4 id="用途">用途</h4>
+<ul>
+<li>intel早期处理器曾使用PGA封装，如 <a href="https://zh.wikipedia.org/wiki/%E5%A5%94%E8%85%BE4">Intel Pentium 4</a> with 1.4 Ghz 1 Core 1 Thread</li>
+<li><a href="https://www.amd.com/en">AMD</a> 的绝大部分桌面级CPU采用PGA封装，仅有Ryzen Threadripper系列及服务器的EPYC等少量CPU为LGA封装。</li>
+</ul>
+<h3 id="bga-封装"># <strong>BGA</strong> 封装</h3>
+<ul>
+<li>Ball Grid Array 即<strong>球栅阵列封装</strong></li>
+<li>BGA封装常用来永久性固定如微处理器之类的的装置</li>
+<li>BGA封装能提供比其他如<strong>双列直插封装</strong>或<strong>四侧引脚扁平封装</strong>所容纳更多的接脚</li>
+<li>BGA封装技术提供<strong>低电感引脚</strong>，在封装与PCB之间的距离非常短，有了低电感引脚，相较于针脚装置能有更优异的电子特性</li>
+</ul>
+<h4 id="用途-2">用途</h4>
+<ul>
+<li>绝大多数笔记本电脑都采用BGA封装</li>
+</ul>
+<h3 id="lga-封装"># <strong>LGA</strong> 封装</h3>
+<ul>
+<li>Land Grid Array 即<strong>平面网格阵列封装</strong></li>
+<li>LGA封装的特点在于其针脚是位于插座上而非集成电路上。LGA封装的芯片能被连接到印刷电路板（PCB）上或直接焊接至电路板上</li>
+<li>LGA封装与传统针脚在集成电路上的封装方式相比，可减少针脚损坏的问题并可增加脚位</li>
+</ul>
+<h4 id="用途-3">用途</h4>
+<ul>
+<li>Intel 的绝大多数桌面级处理器均采用LGA封装</li>
+<li>AMD 和 IBM 也曾采用过LGA封装，如 AMD 的 Socket TR4 (Zen2) 和 IBM 的 Power 8</li>
+</ul>
+<h3 id="plcc-封装-即-塑料芯片载体"># <strong>PLCC</strong> 封装 即 塑料芯片载体</h3>
+<ul>
+<li>Plastic Leaded Chip Carrier</li>
+<li>PLCC封装在正方形的封装四边都有接脚，相比起其内部用来挂载集成电路的空腔来，整个封装所占体积较大</li>
+<li>PLCC封装为32引脚</li>
+</ul>
+<h3 id="mcm-封装"># <strong>MCM</strong> 封装</h3>
+<ul>
+<li>Multi-Chip Module 即<strong>多芯片模组</strong></li>
+<li>在MCM未发创前，一个封装内多半只有一个裸晶</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hackintosh on intel G41 with 775/771 CPU]]></title>
+        <id>https://wushuo.ink/post/hackintosh/</id>
+        <link href="https://wushuo.ink/post/hackintosh/">
+        </link>
+        <updated>2020-08-23T11:03:45.000Z</updated>
+        <summary type="html"><![CDATA[<p>A Hackintosh is a computer that runs an Apple Macintosh operating system on computer hardware not authorized for the purpose by Apple. This passage is to introduce using intel G41 series motherboard hackintosh on a low budget.</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>A Hackintosh is a computer that runs an Apple Macintosh operating system on computer hardware not authorized for the purpose by Apple. This passage is to introduce using intel G41 series motherboard hackintosh on a low budget.</p>
+<!-- more -->
+<h3 id="showing"># <strong>Showing</strong></h3>
+<figure data-type="image" tabindex="1"><img src="https://wushuo.ink/post-images/1609988673599.webp" alt="Glance" loading="lazy"></figure>
+<h3 id="system-configuration"># <strong>System Configuration</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Parts</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model in Clover Config</td>
+<td>iMac14, 2</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>Intel Xeon L5420 2.5Ghz with 4 Cores 4 Threads</td>
+</tr>
+<tr>
+<td>Motherboard</td>
+<td>AUSU P5G41T-M LX V2</td>
+</tr>
+<tr>
+<td>Graphics</td>
+<td>Pegatron GeForce 310 512 MB HDMI/DVI</td>
+</tr>
+<tr>
+<td>Disk</td>
+<td>Teclast SSD 128GB SATA</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>1333MHz DDR3 2x2G</td>
+</tr>
+<tr>
+<td>Display</td>
+<td>Philips 32PFL3040 1360x768 HDMI</td>
+</tr>
+<tr>
+<td>Audio</td>
+<td>SANSUI with Green Rear Line-out</td>
+</tr>
+</tbody>
+</table>
+<h3 id="performance"># <strong>Performance</strong></h3>
+<ul>
+<li><a href="https://geekbench.com">Geekbench 5</a>: Single-Core Score 380 / Multi-Core Score 1283</li>
+<li>Browser website and Code fluently with 2 x 6MB L2 Cache</li>
+<li>Can not be used as video-editing or render</li>
+</ul>
+<h3 id="build"># <strong>Build</strong></h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8185240"><label class="task-list-item-label" for="task-item-8185240"> wakeup success</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4778684"><label class="task-list-item-label" for="task-item-4778684"> resolution success HDMI/DVI both  can be line-out</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-575683"><label class="task-list-item-label" for="task-item-575683"> audio line-out success in Green Rear and Headphones</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2203029"><label class="task-list-item-label" for="task-item-2203029"> ethernet conect  stably</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5555081"><label class="task-list-item-label" for="task-item-5555081"> iCloud and Appstore replaced SMBIOS</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-6905734"><label class="task-list-item-label" for="task-item-6905734"> Power-on without USB Sticker</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1183712"><label class="task-list-item-label" for="task-item-1183712"> wireless and bluetooh</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6823301"><label class="task-list-item-label" for="task-item-6823301"> USB 3.0 port which can be installed through PCIE x1</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8791927"><label class="task-list-item-label" for="task-item-8791927"> microphone</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8018231"><label class="task-list-item-label" for="task-item-8018231">  Airdrop and Handoff</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3056012"><label class="task-list-item-label" for="task-item-3056012">  iMessage, Facetime and iTunes can not login</label></li>
+</ul>
+<h3 id="about-boot"># <strong>About Boot</strong></h3>
+<blockquote>
+<p><strong>Attention</strong>: if you can have a mac in any way you should install MacOS on your PC through <strong><a href="https://unibeast.com">Unibeast</a></strong></p>
+</blockquote>
+<p>The way I'll introduce worked successfully in any old <a href="https://en.wikipedia.org/wiki/Master_boot_record">MBR</a> PC</p>
+<h4 id="boot-workflow"><strong>boot workflow</strong></h4>
+<p>MBR simulate UEFI ( EFI in Disk ) &gt; enter UEFI Boot &gt; enter Clover Boot ( ESP in MacOS ) &gt; MacOS</p>
+<h4 id="mbr-simulate-uefi-achievement"><strong>MBR simulate UEFI achievement</strong></h4>
+<ol>
+<li>Part 500 MB FAT32 disk0 as <strong>EFI Partition</strong> from boot disk</li>
+<li>Active the <strong>EFI Partition</strong> to allow MBR Boot</li>
+<li>Use <strong>BOOTICE</strong> to simulate UEFI
+<ol>
+<li><strong>MBR Repair</strong> disk0:usr/standalone/i386/<strong>boot0af</strong> to your <strong>boot disk</strong></li>
+<li><strong>PBR Repair</strong> disk0:usr/standalone/i386/<strong>boot1f32alt</strong> to <strong>EFI Partition</strong></li>
+</ol>
+</li>
+<li>Until now your MBR PC is able to simulate UEFI</li>
+</ol>
+<h3 id="install-macos"># <strong>Install macOS</strong></h3>
+<h4 id="known"><strong>Known</strong></h4>
+<ul>
+<li>The macOS version is decided by your PC parts, mostly decided by Graphics</li>
+<li>U Disk is more realiable than writing to disk directly</li>
+<li><a href="http://www.ccmacos.cn/">ccmac</a> is a great tools to install macOS but need for tailor made dmg</li>
+</ul>
+<h4 id="install-important-points"><strong>Install important points</strong></h4>
+<ul>
+<li>Xeon CPU ( Particularly 771 socket <strong>trans to</strong> 775 socket ) need to add boot args: <strong>npci=0x3000</strong></li>
+<li>Nvdia GT 210/GT 310 ( 512 MB / 1024 MB ) is able to be drived by macOS natively and it's the cheapest Graphics</li>
+<li>If <a href="https://www.apple.com/macos/catalina/">macOS Catalina</a> are wished to be installed, the <strong>Kepler</strong> Nvdia Graphics is a good choice
+<ul>
+<li>Recommanded Graphics Dell Nvdia GeForce 640 1024 MB with DP/HDMI/DVI</li>
+</ul>
+</li>
+<li>G41 series motherboard or inetl 775 CPU only support 1333 DDR3 4G <strong>double-sided</strong> Memory and maximum 8G Memory</li>
+<li>Motherboard from Gigabyte/AUSU/MSI match the macOS better ( Gigabyte the best )</li>
+</ul>
+<h3 id="ending"># <strong>Ending</strong></h3>
+<pre><code class="language-bash">echo &quot;Thank u guys who've read patiently, hope u hack successfully!&quot;
+</code></pre>
+<h3 id="more-info-about-hackintosh"># More info about <strong>hackintosh</strong></h3>
+<p>wiki: <a href="https://en.wikipedia.org/wiki/Hackintosh">what is hackintosh</a><br>
+Github: <a href="https://github.com/daliansky/Hackintosh">hackintosh model collection</a><br>
+tonymacx86: <a href="https://en.wikipedia.org/wiki/Hackintosh">guide and forum of hackintosh</a><br>
+Opencore: <a href="https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/">brand new boot</a></p>
+]]></content>
+    </entry>
+</feed>
