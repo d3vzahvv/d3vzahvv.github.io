@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.ink</id>
     <title>Shuo</title>
-    <updated>2021-06-15T10:14:25.218Z</updated>
+    <updated>2021-06-15T12:52:13.826Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.ink"/>
     <link rel="self" href="https://wushuo.ink/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2021, Shuo</rights>
     <entry>
         <title type="html"><![CDATA[卷积积分介绍]]></title>
-        <id>https://wushuo.ink/post/juan-ji-ji-fen-jie-shao/</id>
-        <link href="https://wushuo.ink/post/juan-ji-ji-fen-jie-shao/">
+        <id>https://wushuo.ink/post/introofconvolution/</id>
+        <link href="https://wushuo.ink/post/introofconvolution/">
         </link>
         <updated>2021-06-15T09:24:49.000Z</updated>
         <summary type="html"><![CDATA[<p>卷积、旋积或摺积 ( Convolution ) 是通过两个函数 f 和 g 生成第三个函数的一种数学算子，表征函数 f 与 g 经过翻转和平移的重叠部分函数值乘积对重叠长度的积分。</p>
