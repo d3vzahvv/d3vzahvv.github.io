@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.ink</id>
     <title>Shuo</title>
-    <updated>2021-06-11T15:07:15.857Z</updated>
+    <updated>2021-06-15T10:04:53.338Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.ink"/>
     <link rel="self" href="https://wushuo.ink/atom.xml"/>
@@ -10,6 +10,32 @@
     <logo>https://wushuo.ink/images/avatar.png</logo>
     <icon>https://wushuo.ink/favicon.ico</icon>
     <rights>All rights reserved 2021, Shuo</rights>
+    <entry>
+        <title type="html"><![CDATA[卷积积分介绍]]></title>
+        <id>https://wushuo.ink/post/juan-ji-ji-fen-jie-shao/</id>
+        <link href="https://wushuo.ink/post/juan-ji-ji-fen-jie-shao/">
+        </link>
+        <updated>2021-06-15T09:24:49.000Z</updated>
+        <summary type="html"><![CDATA[<p>卷积、旋积或摺积 ( Convolution ) 是通过两个函数 f 和 g 生成第三个函数的一种数学算子，表征函数 f 与 g 经过翻转和平移的重叠部分函数值乘积对重叠长度的积分。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>卷积、旋积或摺积 ( Convolution ) 是通过两个函数 f 和 g 生成第三个函数的一种数学算子，表征函数 f 与 g 经过翻转和平移的重叠部分函数值乘积对重叠长度的积分。</p>
+<!-- more -->
+<h3 id="卷积积分的定义">卷积积分的定义</h3>
+<p>设 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo separator="true">,</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">f(x), g(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span></span></span></span> 是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="double-struck">R</mi></mrow><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbb">R</span></span></span></span></span> 上的两个可积积分,</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>∗</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mi>f</mi><mo>(</mo><mi>τ</mi><mo>)</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>−</mo><mi>τ</mi><mo>)</mo><mi mathvariant="normal">d</mi><mi>τ</mi></mrow><annotation encoding="application/x-tex">f(x) * g(x)  = \int_{-\infty}^{+\infty}f(\tau)g(x-\tau){\rm d}\tau
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.491512em;vertical-align:-0.970281em;"></span><span class="mop"><span class="mop op-symbol large-op" style="margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.5212310000000002em;"><span style="top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">∞</span></span></span></span><span style="top:-3.8129000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">+</span><span class="mord mtight">∞</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.970281em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.1132em;">τ</span><span class="mclose">)</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.1132em;">τ</span><span class="mclose">)</span><span class="mord"><span class="mord"><span class="mord mathrm">d</span></span></span><span class="mord mathdefault" style="margin-right:0.1132em;">τ</span></span></span></span></span></p>
+<p>也就是</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>f</mi><mo>∗</mo><mi>g</mi><mo>)</mo><mo>(</mo><mi>x</mi><mo>)</mo><mover><mo><mo>=</mo></mo><mrow><mi>d</mi><mi>e</mi><mi>f</mi><mi>i</mi><mi>n</mi><mi>e</mi></mrow></mover><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mi>f</mi><mo>(</mo><mi>τ</mi><mo>)</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>−</mo><mi>τ</mi><mo>)</mo><mi mathvariant="normal">d</mi><mi>τ</mi></mrow><annotation encoding="application/x-tex">(f * g)(x) \overset{define}{=}\int_{-\infty}^{+\infty}f(\tau)g(x-\tau){\rm d}\tau
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.450086em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.200086em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">=</span></span></span><span style="top:-3.613978em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">d</span><span class="mord mathdefault mtight">e</span><span class="mord mathdefault mtight" style="margin-right:0.10764em;">f</span><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight">n</span><span class="mord mathdefault mtight">e</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.491512em;vertical-align:-0.970281em;"></span><span class="mop"><span class="mop op-symbol large-op" style="margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.5212310000000002em;"><span style="top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">∞</span></span></span></span><span style="top:-3.8129000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">+</span><span class="mord mtight">∞</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.970281em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.1132em;">τ</span><span class="mclose">)</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.1132em;">τ</span><span class="mclose">)</span><span class="mord"><span class="mord"><span class="mord mathrm">d</span></span></span><span class="mord mathdefault" style="margin-right:0.1132em;">τ</span></span></span></span></span></p>
+<p>它是其中一个函数翻转，并平移后，与另一个函数的乘积的积分，是一个对平移量的函数</p>
+<h3 id="含义">含义</h3>
+<h4 id="物理意义">物理意义</h4>
+<p>卷积是求和（积分）。 对于线性时不变的系统，输入可以分解成很多强度不同的冲激的和的形式（对于时域就是积分），那么输出也就是这些冲激分别作用到系统产生的响应的和（或者积分）。 所以卷积的物理意义就是表达了时域中输入，系统冲激响应，以及输出之间的关系。</p>
+<h4 id="个人理解">个人理解</h4>
+<p>用非数学的语言描写数学的含义是非常糟糕的，以下仅为个人见解</p>
+<p>如果 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span></span></span></span> 是一个物体的本征规律，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span></span></span></span> 是一个外部作用，当 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span></span></span></span> 不是一次性瞬时的作用，而是沿时间持续的时候，某个时刻物体的状态，取决于他在此前收到的所有外部作用留下的“痕迹”的叠加。要把这个叠加的值算出来，方法就是卷积运算；而卷积中 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span></span></span></span> 函数倒过来运算，是因为越新的时间作用的“痕迹”越是最后作用的</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[矢量分析初步]]></title>
         <id>https://wushuo.ink/post/VectorAnalysisBeginning/</id>
@@ -750,129 +776,6 @@ $ git clone https://github.com/taichi-dev/taichi
 <li>Multi-Chip Module 即<strong>多芯片模组</strong></li>
 <li>在MCM未发创前，一个封装内多半只有一个裸晶</li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hackintosh on intel G41 with 775/771 CPU]]></title>
-        <id>https://wushuo.ink/post/hackintosh/</id>
-        <link href="https://wushuo.ink/post/hackintosh/">
-        </link>
-        <updated>2020-08-23T11:03:45.000Z</updated>
-        <summary type="html"><![CDATA[<p>A Hackintosh is a computer that runs an Apple Macintosh operating system on computer hardware not authorized for the purpose by Apple. This passage is to introduce using intel G41 series motherboard hackintosh on a low budget.</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>A Hackintosh is a computer that runs an Apple Macintosh operating system on computer hardware not authorized for the purpose by Apple. This passage is to introduce using intel G41 series motherboard hackintosh on a low budget.</p>
-<!-- more -->
-<h3 id="showing"># <strong>Showing</strong></h3>
-<figure data-type="image" tabindex="1"><img src="https://wushuo.ink/post-images/1609988673599.webp" alt="Glance" loading="lazy"></figure>
-<h3 id="system-configuration"># <strong>System Configuration</strong></h3>
-<table>
-<thead>
-<tr>
-<th>Parts</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Model in Clover Config</td>
-<td>iMac14, 2</td>
-</tr>
-<tr>
-<td>CPU</td>
-<td>Intel Xeon L5420 2.5Ghz with 4 Cores 4 Threads</td>
-</tr>
-<tr>
-<td>Motherboard</td>
-<td>AUSU P5G41T-M LX V2</td>
-</tr>
-<tr>
-<td>Graphics</td>
-<td>Pegatron GeForce 310 512 MB HDMI/DVI</td>
-</tr>
-<tr>
-<td>Disk</td>
-<td>Teclast SSD 128GB SATA</td>
-</tr>
-<tr>
-<td>Memory</td>
-<td>1333MHz DDR3 2x2G</td>
-</tr>
-<tr>
-<td>Display</td>
-<td>Philips 32PFL3040 1360x768 HDMI</td>
-</tr>
-<tr>
-<td>Audio</td>
-<td>SANSUI with Green Rear Line-out</td>
-</tr>
-</tbody>
-</table>
-<h3 id="performance"># <strong>Performance</strong></h3>
-<ul>
-<li><a href="https://geekbench.com">Geekbench 5</a>: Single-Core Score 380 / Multi-Core Score 1283</li>
-<li>Browser website and Code fluently with 2 x 6MB L2 Cache</li>
-<li>Can not be used as video-editing or render</li>
-</ul>
-<h3 id="build"># <strong>Build</strong></h3>
-<ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7582368"><label class="task-list-item-label" for="task-item-7582368"> wakeup success</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8981954"><label class="task-list-item-label" for="task-item-8981954"> resolution success HDMI/DVI both  can be line-out</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7697357"><label class="task-list-item-label" for="task-item-7697357"> audio line-out success in Green Rear and Headphones</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7652962"><label class="task-list-item-label" for="task-item-7652962"> ethernet conect  stably</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2205403"><label class="task-list-item-label" for="task-item-2205403"> iCloud and Appstore replaced SMBIOS</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3585102"><label class="task-list-item-label" for="task-item-3585102"> Power-on without USB Sticker</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8803376"><label class="task-list-item-label" for="task-item-8803376"> wireless and bluetooh</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8099272"><label class="task-list-item-label" for="task-item-8099272"> USB 3.0 port which can be installed through PCIE x1</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4504205"><label class="task-list-item-label" for="task-item-4504205"> microphone</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6132271"><label class="task-list-item-label" for="task-item-6132271">  Airdrop and Handoff</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7282053"><label class="task-list-item-label" for="task-item-7282053">  iMessage, Facetime and iTunes can not login</label></li>
-</ul>
-<h3 id="about-boot"># <strong>About Boot</strong></h3>
-<blockquote>
-<p><strong>Attention</strong>: if you can have a mac in any way you should install MacOS on your PC through <strong><a href="https://unibeast.com">Unibeast</a></strong></p>
-</blockquote>
-<p>The way I'll introduce worked successfully in any old <a href="https://en.wikipedia.org/wiki/Master_boot_record">MBR</a> PC</p>
-<h4 id="boot-workflow"><strong>boot workflow</strong></h4>
-<p>MBR simulate UEFI ( EFI in Disk ) &gt; enter UEFI Boot &gt; enter Clover Boot ( ESP in MacOS ) &gt; MacOS</p>
-<h4 id="mbr-simulate-uefi-achievement"><strong>MBR simulate UEFI achievement</strong></h4>
-<ol>
-<li>Part 500 MB FAT32 disk0 as <strong>EFI Partition</strong> from boot disk</li>
-<li>Active the <strong>EFI Partition</strong> to allow MBR Boot</li>
-<li>Use <strong>BOOTICE</strong> to simulate UEFI
-<ol>
-<li><strong>MBR Repair</strong> disk0:usr/standalone/i386/<strong>boot0af</strong> to your <strong>boot disk</strong></li>
-<li><strong>PBR Repair</strong> disk0:usr/standalone/i386/<strong>boot1f32alt</strong> to <strong>EFI Partition</strong></li>
-</ol>
-</li>
-<li>Until now your MBR PC is able to simulate UEFI</li>
-</ol>
-<h3 id="install-macos"># <strong>Install macOS</strong></h3>
-<h4 id="known"><strong>Known</strong></h4>
-<ul>
-<li>The macOS version is decided by your PC parts, mostly decided by Graphics</li>
-<li>U Disk is more realiable than writing to disk directly</li>
-<li><a href="http://www.ccmacos.cn/">ccmac</a> is a great tools to install macOS but need for tailor made dmg</li>
-</ul>
-<h4 id="install-important-points"><strong>Install important points</strong></h4>
-<ul>
-<li>Xeon CPU ( Particularly 771 socket <strong>trans to</strong> 775 socket ) need to add boot args: <strong>npci=0x3000</strong></li>
-<li>Nvdia GT 210/GT 310 ( 512 MB / 1024 MB ) is able to be drived by macOS natively and it's the cheapest Graphics</li>
-<li>If <a href="https://www.apple.com/macos/catalina/">macOS Catalina</a> are wished to be installed, the <strong>Kepler</strong> Nvdia Graphics is a good choice
-<ul>
-<li>Recommanded Graphics Dell Nvdia GeForce 640 1024 MB with DP/HDMI/DVI</li>
-</ul>
-</li>
-<li>G41 series motherboard or inetl 775 CPU only support 1333 DDR3 4G <strong>double-sided</strong> Memory and maximum 8G Memory</li>
-<li>Motherboard from Gigabyte/AUSU/MSI match the macOS better ( Gigabyte the best )</li>
-</ul>
-<h3 id="ending"># <strong>Ending</strong></h3>
-<pre><code class="language-bash">echo &quot;Thank u guys who've read patiently, hope u hack successfully!&quot;
-</code></pre>
-<h3 id="more-info-about-hackintosh"># More info about <strong>hackintosh</strong></h3>
-<p>wiki: <a href="https://en.wikipedia.org/wiki/Hackintosh">what is hackintosh</a><br>
-Github: <a href="https://github.com/daliansky/Hackintosh">hackintosh model collection</a><br>
-tonymacx86: <a href="https://en.wikipedia.org/wiki/Hackintosh">guide and forum of hackintosh</a><br>
-Opencore: <a href="https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/">brand new boot</a></p>
 ]]></content>
     </entry>
 </feed>
