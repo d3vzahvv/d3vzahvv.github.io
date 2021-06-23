@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.ink</id>
     <title>Shuo</title>
-    <updated>2021-06-15T12:58:04.636Z</updated>
+    <updated>2021-06-23T16:23:38.236Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.ink"/>
     <link rel="self" href="https://wushuo.ink/atom.xml"/>
@@ -10,6 +10,27 @@
     <logo>https://wushuo.ink/images/avatar.png</logo>
     <icon>https://wushuo.ink/favicon.ico</icon>
     <rights>All rights reserved 2021, Shuo</rights>
+    <entry>
+        <title type="html"><![CDATA[转换器]]></title>
+        <id>https://wushuo.ink/post/LongLifeEvolution/</id>
+        <link href="https://wushuo.ink/post/LongLifeEvolution/">
+        </link>
+        <updated>2021-06-23T15:07:03.000Z</updated>
+        <summary type="html"><![CDATA[<p>怎样过完普通的一生 / converter</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>怎样过完普通的一生 / converter</p>
+<!-- more -->
+<p>高中的时候听过学物竞拿奖的同学念的一篇小作文，叫“接受自己的平凡”，那个时候我还不知道其中话的含义；后来他没学物理了，去了浙大的城乡规划</p>
+<p>现在我在二本学校学着和物理擦边的电子信息，囿于数学的含义里，写着后半生打算怎么过</p>
+<p>我小时候就喜欢研究电子产品 ( 准确来说是喜欢拆解 )，大学读了电子信息发现并不太一样。家里希望继续读下去，我自己没什么想法，想读完书就回到小县城过完一生</p>
+<p>有许多人在不同年龄喜欢收集不同东西，比如兼容多种协议的充电器，各种存储设备，古董键盘，CRT显示器等等</p>
+<p>我从高中开始迷上了接口转换器，那个时候收集了 MicroUSB to Type-C，Type-A to 3.5mm Jack， OTG，DVI to DP 等等转换器；拥有各式各样的转换器一直是我的梦想，比如不会为了打印文件而折腾蓝牙，直接可以用 Type-A to Type-B 线缆高速传输数据，还能支持热插拔</p>
+<p>大二的寒假在家度过，我给家中添置了一台<a href="https://wushuo.ink/post/aboutOpenwrt/">十年前旧电脑改装的软路由</a>，我不仅用它连上了喇叭实现了林檎设备的 Airplay，也将它作为存储设备观看视频和电影，让家中父母购置的 4K 装饰品电视发挥了作用。我在寒假中的娱乐主要来自于折腾这些东西本身，而并非折腾完之后的享受。折腾这些东西学到的大学远没有大学一门课 ( 或者说是有一科考试逼迫我学习 ) 获得的知识多，但我不会感到厌倦，相反乐在其中。我不爱争斗，从小的家庭教育也不是让我超过别人，实现别人已经实现的东西也会让我感到充实 ( 事实上我并无任何创新 )。</p>
+<p>倘若几年后，我在正常作息之余能收集我喜爱的接口转换器 ( 真期待那时 USB 的形状是否能改变，抑或有更多接口样式出现 ) ，可以在闲暇时间看自己改完字幕混流后的电影，这样的人生对现在的我来说就是圆满的。至于娘子，孩子，房子和车子则都不在必要的考量范围内，票子只要能在亲人生病时能够承担医疗费用就足够了 ( 也即是“钱在救命时才是最重要的” )</p>
+<p>于北京林业大学<br>
+二〇二壹年陆月贰拾肆日 凌晨</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[卷积积分介绍]]></title>
         <id>https://wushuo.ink/post/introofconvolution/</id>
@@ -710,72 +731,6 @@ $ git clone https://github.com/taichi-dev/taichi
 </ul>
 <h3 id="感谢您的认真观看我衷心地希望这对您有些许帮助"><strong>感谢您的认真观看，我衷心地希望这对您有些许帮助</strong></h3>
 <h6 id="转载请注明作者及出处">转载请注明作者及出处</h6>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[集成电路封装方式简介]]></title>
-        <id>https://wushuo.ink/post/packagefunction/</id>
-        <link href="https://wushuo.ink/post/packagefunction/">
-        </link>
-        <updated>2020-08-24T15:02:31.000Z</updated>
-        <summary type="html"><![CDATA[<p>本文主要介绍现代半导体行业<strong>芯片</strong>主要的封装方式。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>本文主要介绍现代半导体行业<strong>芯片</strong>主要的封装方式。</p>
-<!-- more -->
-<h3 id="dip-封装"># <strong>DIP</strong> 封装</h3>
-<ul>
-<li>Dual Inline Package 即<strong>双列直插封装</strong></li>
-<li>在没有在线编程时代，便于烧录</li>
-<li>现在较多用于单片机 MCU</li>
-</ul>
-<h4 id="方向和引脚编号">方向和引脚编号</h4>
-<ul>
-<li>当元件的识别缺口朝上时，左侧最上方的引脚为引脚1，其他引脚则以逆时针的顺序依序编号。有时引脚1也会以圆点作为标示。</li>
-</ul>
-<h3 id="pga-封装"># <strong>PGA</strong> 封装</h3>
-<ul>
-<li>Pin Grid Array 即<strong>插针网格阵列</strong></li>
-<li>PGA封装一般是将集成电路（IC）焊接在一块电路板上，电路板的另一面是排列成方阵的插针</li>
-<li>插针可以插入或焊接到其他电路板上对应的插座中，适合于需要频繁插拔的场合</li>
-</ul>
-<h4 id="用途">用途</h4>
-<ul>
-<li>intel早期处理器曾使用PGA封装，如 <a href="https://zh.wikipedia.org/wiki/%E5%A5%94%E8%85%BE4">Intel Pentium 4</a> with 1.4 Ghz 1 Core 1 Thread</li>
-<li><a href="https://www.amd.com/en">AMD</a> 的绝大部分桌面级CPU采用PGA封装，仅有Ryzen Threadripper系列及服务器的EPYC等少量CPU为LGA封装。</li>
-</ul>
-<h3 id="bga-封装"># <strong>BGA</strong> 封装</h3>
-<ul>
-<li>Ball Grid Array 即<strong>球栅阵列封装</strong></li>
-<li>BGA封装常用来永久性固定如微处理器之类的的装置</li>
-<li>BGA封装能提供比其他如<strong>双列直插封装</strong>或<strong>四侧引脚扁平封装</strong>所容纳更多的接脚</li>
-<li>BGA封装技术提供<strong>低电感引脚</strong>，在封装与PCB之间的距离非常短，有了低电感引脚，相较于针脚装置能有更优异的电子特性</li>
-</ul>
-<h4 id="用途-2">用途</h4>
-<ul>
-<li>绝大多数笔记本电脑都采用BGA封装</li>
-</ul>
-<h3 id="lga-封装"># <strong>LGA</strong> 封装</h3>
-<ul>
-<li>Land Grid Array 即<strong>平面网格阵列封装</strong></li>
-<li>LGA封装的特点在于其针脚是位于插座上而非集成电路上。LGA封装的芯片能被连接到印刷电路板（PCB）上或直接焊接至电路板上</li>
-<li>LGA封装与传统针脚在集成电路上的封装方式相比，可减少针脚损坏的问题并可增加脚位</li>
-</ul>
-<h4 id="用途-3">用途</h4>
-<ul>
-<li>Intel 的绝大多数桌面级处理器均采用LGA封装</li>
-<li>AMD 和 IBM 也曾采用过LGA封装，如 AMD 的 Socket TR4 (Zen2) 和 IBM 的 Power 8</li>
-</ul>
-<h3 id="plcc-封装-即-塑料芯片载体"># <strong>PLCC</strong> 封装 即 塑料芯片载体</h3>
-<ul>
-<li>Plastic Leaded Chip Carrier</li>
-<li>PLCC封装在正方形的封装四边都有接脚，相比起其内部用来挂载集成电路的空腔来，整个封装所占体积较大</li>
-<li>PLCC封装为32引脚</li>
-</ul>
-<h3 id="mcm-封装"># <strong>MCM</strong> 封装</h3>
-<ul>
-<li>Multi-Chip Module 即<strong>多芯片模组</strong></li>
-<li>在MCM未发创前，一个封装内多半只有一个裸晶</li>
-</ul>
 ]]></content>
     </entry>
 </feed>
