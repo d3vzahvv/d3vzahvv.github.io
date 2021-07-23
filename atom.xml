@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.ink</id>
     <title>Shuo</title>
-    <updated>2021-07-14T13:17:01.561Z</updated>
+    <updated>2021-07-23T06:02:54.206Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.ink"/>
     <link rel="self" href="https://wushuo.ink/atom.xml"/>
@@ -10,6 +10,107 @@
     <logo>https://wushuo.ink/images/avatar.png</logo>
     <icon>https://wushuo.ink/favicon.ico</icon>
     <rights>All rights reserved 2021, Shuo</rights>
+    <entry>
+        <title type="html"><![CDATA[iTunes 家庭媒体]]></title>
+        <id>https://wushuo.ink/post/iTunesHomeShare/</id>
+        <link href="https://wushuo.ink/post/iTunesHomeShare/">
+        </link>
+        <updated>2021-07-20T07:54:47.000Z</updated>
+        <summary type="html"><![CDATA[<p>流式传输定义很广泛，主要指通过网络传送流媒体 ( 如视频，音频 ) 的技术总称。其特定含义为通过网络将影视节目传送到终端。为了通过 Wi-Fi 传输数字音乐，AirPlay 使用 RTSP 协议，即实时流协议。Apple Lossless 音频编解码器以 44100Hz 的速度传输两个音频通道。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>流式传输定义很广泛，主要指通过网络传送流媒体 ( 如视频，音频 ) 的技术总称。其特定含义为通过网络将影视节目传送到终端。为了通过 Wi-Fi 传输数字音乐，AirPlay 使用 RTSP 协议，即实时流协议。Apple Lossless 音频编解码器以 44100Hz 的速度传输两个音频通道。</p>
+<!-- more -->
+<p>请注意，本文会出现数张较高分辨率照片，它们或为 1280x720 webp 格式，为了确保图片可以被正常加载，你需要确认以下事项：</p>
+<ul>
+<li>能够正常访问 <a href="https://github.com">Github</a> 且能够透过 jsDelivr 以正常速度加载图片</li>
+<li>你的设备或浏览器要求兼容 webp 格式的图像，这里特指 Apple 设备及 Safari 浏览器。Safari 浏览器需要更新至支持 webp 的版本，通常来说需要 iOS 14 以上的 iOS 设备或 macOS 14 Mojave 以上且已经更新至最新 Safari 的 Mac 设备</li>
+<li>若满足以上两项仍然出现图片加载缓慢，请耐心等待，全站已开启惰性加载 ( Lazy Loading )</li>
+</ul>
+<h3 id="目录">目录</h3>
+<ul>
+<li><a href="#airplay-%E4%BB%8B%E7%BB%8D">Airplay 介绍</a></li>
+<li><a href="#itunes-%E8%B5%84%E6%96%99%E5%BA%93%E6%9E%84%E5%BB%BA">iTunes 家庭资料库构建</a></li>
+<li><a href="#itunes-%E8%B5%84%E6%96%99%E5%BA%93%E6%95%B4%E7%90%86">iTunes 家庭资料库整理</a></li>
+<li><a href="#%E5%BD%B1%E7%89%87%E6%B7%B7%E6%B5%81%E5%89%AA%E8%BE%91%E4%BF%AE%E6%94%B9%E5%AD%97%E5%B9%95">影片混流剪辑修改字幕</a></li>
+<li><a href="#%E4%B8%AA%E4%BA%BA%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88">个人配置方案</a></li>
+<li><a href="#%E7%BB%93%E5%B0%BE">结尾</a></li>
+</ul>
+<h3 id="airplay-介绍">Airplay 介绍</h3>
+<p>Airplay 是 Apple 的私有协议，可以使得媒体在 iOS 和 macOS 设备之间流转，同时可以传输媒体的元数据，如封面，艺人，类型，分类等</p>
+<p>Airplay 在简体中文系统中被翻译为了隔空播放，可以在 iOS 和 macOS 的控制中心打开，同时本文所介绍的基于 iTunes 的家庭媒体系统也是通过 Airplay 流转至播放终端</p>
+<p>Airplay 工作原理为在发射端 ( 如 Mac 或 iPhone ) 将流媒体加密，通过 RTSP 协议与接收端握手，将流媒体传输到接收端 ( 通常是 Apple TV 和 HomePod ) 进行硬解码和播放<sup>1</sup></p>
+<p>显然，Airplay 的传输速度取决于局域网的网速，当然也受限于发射端与接收端的速度，如果局域网内基于 RTSP 协议的速度无法到达视频的码率，观影体验将会糟糕<br>
+这里以《普罗米亚》这部影片为例，音频视频总比特率为 13003kbps，这意味着在 RTSP 协议下需要至少 14Mbps 的速度提供较为流畅的播放体验，即我们日常所说的 14M 宽带，但由于 RTSP 协议本身速度并不能达到峰值网速以及 Airplay 协议由多个不同协议构成，建议的网速被要求在 50Mbps 以上</p>
+<p>本文中，我们以 Mac 或 PC 作为发射端，iPhone，iPad，Apple TV 作为接收端</p>
+<h3 id="itunes-资料库构建">iTunes 资料库构建</h3>
+<p>为了得以构建在局域网络运行良好的 iTunes 资料库以便流式传输</p>
+<ul>
+<li>发射端 ( 即存储影片的设备 ) 为一台 Mac 或 PC，并且安装了较新的操作系统和 iTunes</li>
+<li>接收端 ( 即用来观看影片的设备 ) 应该为 Apple 设备 ( 如 Apple TV，iPhone，iPad，Mac )，即使 PC 版 iTunes 也能观看，但体验糟糕</li>
+<li>局域网络速度至少应该在 50Mbps 以上</li>
+</ul>
+<p>如果使用 PC 构建 iTunes 资料库，参考：<br>
+<a href="https://support.apple.com/zh-cn/guide/itunes/itns41350225/windows">通过 PC 上 iTunes 中的“家庭共享”将内容流化到 Apple TV</a><sup>2</sup></p>
+<p>如果通过 Mac 上的 iTunes Store 构建 iTunes 资料库 ( 通常为 Mac OS X Lion 至 macOS Mojave )，参考：<br>
+<a href="https://support.apple.com/zh-cn/guide/tv/atvbc876df1e/tvos">配置运行 macOS Mojave 及更早版本的 Mac，或者 Windows PC：在 iTunes 中，前往“文件”&gt;“家庭共享”，然后选取“打开家庭共享”。输入您的 Apple ID 和密码，然后点按“打开家庭共享”</a><sup>3</sup></p>
+<p>如果通过 Mac 上的 Apple Music App 以及 Apple TV App 构建 iTunes 资料库 ( macOS Catalina 及之后版本 )，参考：<br>
+<a href="https://support.apple.com/zh-cn/HT202190">使用“家庭共享”将媒体从电脑共享到其他设备</a><sup>4</sup></p>
+<p>请注意，无论使用哪一种方法构建 iTunes 资料库，发射端与接收端都必须处在同一网络下，并且登录相同的 Apple ID</p>
+<h3 id="itunes-资料库整理">iTunes 资料库整理</h3>
+<p>Apple 官方给出了<a href="https://support.apple.com/zh-cn/guide/tvapp-mac/atvbe9ddc3f/1.1/mac/11.0">如何在 Apple TV App 中整理 iTunes 资料库</a>，但并未给出细节</p>
+<p>这里本文给出如何对<strong>元数据</strong> ( <em>metadata</em> ) 进行管理，包括 iTunes 资料库如何透过元数据自动管理分类<br>
+以 Apple TV App / macOS Catalina 为例</p>
+<p>请注意，Apple TV App 或 iTunes 会询问是否将流媒体整齐有序的排列，其本质是建立单独的文件夹“媒体”，并将拖入 Apple TV App ( 或 iTunes ) 或 使用 Apple TV App ( 或 iTunes ) 添加的本地媒体<strong>复制</strong>到“媒体”文件夹中。同时，这意味着 Apple TV App ( 或 iTunes ) 对“媒体”文件夹拥有<strong>完全读写权力</strong>，这一点非常重要</p>
+<h4 id="导入流媒体">导入流媒体</h4>
+<p>要想导入流媒体进入资料库，只需要拖入流媒体文件至  Apple TV App ( 或 iTunes ) ，App 会自动将流媒体文件复制到 App 目录下 ( 一般为“媒体”或 “iTunes”)<br>
+<img src="https://wushuo.ink/post-images/1627010596998.webp" alt="" loading="lazy"></p>
+<h4 id="分类流媒体">分类流媒体</h4>
+<p>点击媒体的 更多信息-显示简介-选项，即可开始分类，通常分类选项为三种：影片，电视剧，家庭视频</p>
+<ul>
+<li>影片一般为单集流媒体，如电影，纪录片</li>
+<li>电视剧一般为多集流媒体如，如动画番剧，电视连续剧</li>
+<li>家庭视频一般为自己拍摄的生活视频</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://wushuo.ink/post-images/1627014602113.webp" alt="" loading="lazy"></figure>
+<h4 id="为流媒体设置详细信息即元数据">为流媒体设置详细信息即元数据</h4>
+<p>电视剧的设置选项最多且复杂，这里以电视剧为例：</p>
+<ul>
+<li>标题：本集电视剧的标题，并非电视剧总标题，如第 114514 集标题《你怎么穿着品如的衣服》</li>
+<li>节目：电视剧的总标题，如《回家的诱惑》，同一部电视剧每一集的节目应该设置为一样，资料库会将其自动归档到同一电视剧节目下</li>
+<li>季：英语 Season 的翻译，国内电视剧很少有“季”的概念，这里也指代第几部，如《爱情公寓 4》就是第 4 季</li>
+<li>剧集：本集电视剧在本季中属于第几集，如如《爱情公寓 2》第 1 集的剧集是 1</li>
+<li>剧集 ID：本集电视剧在整个系列中的ID，如《爱情公寓 2》第 1 集的剧集 ID 是 53 ( 第一季为 52 集 )</li>
+<li>发布日期：本集电视剧的发布日期</li>
+<li>归类：自己定义的类</li>
+<li>类型：如群像，爱情，动作，爱情动作等等，自己定义即可选择归类，比“归类”更加实用</li>
+<li>年份：该季发布的年份</li>
+</ul>
+<p>请注意，iTunes 资料库主要通过<strong>元数据</strong> ( <em>metadata</em> ) 进行自动归档，在电视剧设置中，切勿将标题与节目设置错误 ( 例如每一集设置重复的标题而非重复的节目 )，由于资料库对其“媒体”文件夹有<strong>完全读写权力</strong>，“媒体”文件夹内的流媒体文件可能会被自动<strong>覆盖</strong> ( <em>overwrite</em> )，导致珍贵的流媒体文件丢失</p>
+<figure data-type="image" tabindex="2"><img src="https://wushuo.ink/post-images/1627014607595.webp" alt="" loading="lazy"></figure>
+<h3 id="影片混流剪辑修改字幕">影片混流剪辑修改字幕</h3>
+<p>在 Apple 设备上，mp4 / m4v 格式才能够被原生播放，而 mkv 格式则需要被第三方播放器播放<br>
+在 iOS / Mac 设备上，我们可以轻松安装第三方播放器，例如 <a href="https://apps.apple.com/us/app/aplayer-alook-player/id1420356569">Avplayer</a> / <a href="https://iina.io/">IINA</a>，但对于 Apple TV ( 特别是 Apple TV 2 和 Apple TV 3 )，无法识别 iTunes 资料库的 mkv 格式流媒体，在这里对格式转换做简略介绍</p>
+<p>在这里我们只讨论对于关键帧操作的<strong>无损</strong> ( <em>Lossless</em> ) 分割和转换，目前主要流行的工具为 <strong>ffmpeg</strong></p>
+<ul>
+<li>调用 ffmpeg 进行流媒体容器转换，速度快且无损，如将 mkv 快速转换为 mp4，对于电影来说通常只需数秒</li>
+<li>使用开源跨平台软件 LosslessCut 进行操作，LosslessCut 完全支持 ffmpeg，并且带有友好的图形界面和剪辑轨道</li>
+</ul>
+<p>对于流媒体字幕，我们可能需要对字幕文件进行修改，这里使用 <strong>gMKVExtractGUI</strong> 进行视频，音频和字幕的分离，使用文本编辑器 ( 如 VScode ) 对字幕进行修改，再使用 <strong>MKVTool</strong> 进行混流，得到封装完成的 mkv 格式的流媒体文件</p>
+<h3 id="个人配置方案">个人配置方案</h3>
+<p>我将 Mac mini 2014 作为发射端，将我的资料库存储在其中并开启资料库家庭共享，使用 Apple TV 3 作为接受端，只需要将 Mac mini 2014 全天运行 ( Mac 可以全天工作 )，就可以随时打开电视观看 Mac mini 硬盘内的影片<br>
+同时，我的另一台 Mac，iPhone，iPad 也能在任何时候访问资料库内的影片</p>
+<h3 id="结尾">结尾</h3>
+<p>从网络上下载影片，番剧，或是电视连续剧，仅供个人交流学习使用，属于版权问题的灰色地带<br>
+如果经济条件允许，选择如 <a href="https://www.netflix.com/">Netflix</a> 的平台在线观看更好</p>
+<p>文献参考</p>
+<ul>
+<li>[1]  维基百科：<a href="https://en.wikipedia.org/wiki/AirPlay">AirPlay is a proprietary wireless communication protocol stack/suite developed by Apple Inc. that allows streaming between devices of audio, video, device screens, and photos, together with related metadata.</a></li>
+<li>[2] Apple iTunes 使用手册：<a href="https://support.apple.com/zh-cn/guide/itunes/itns41350225/windows">通过 PC 上 iTunes 中的“家庭共享”将内容流化到 Apple TV</a></li>
+<li>[3] Apple TV 使用手册：<a href="https://support.apple.com/zh-cn/guide/tv/atvbc876df1e/tvos">在 Apple TV 上使用家庭共享流化内容</a></li>
+<li>[4] Apple Support：<a href="https://support.apple.com/zh-cn/HT202190">使用“家庭共享”将媒体从电脑共享到其他设备</a></li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[转换器]]></title>
         <id>https://wushuo.ink/post/LongLifeEvolution/</id>
@@ -636,101 +737,6 @@ call plug#end()
 <p>写于<br>
 模电考试前两天/四级考试前四天<br>
 北京林业大学 学12号楼</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[基于 Fluent Terminal 和 WSL 的 Windows 命令行工具]]></title>
-        <id>https://wushuo.ink/post/fluentterminalwsl/</id>
-        <link href="https://wushuo.ink/post/fluentterminalwsl/">
-        </link>
-        <updated>2020-08-27T02:05:09.000Z</updated>
-        <summary type="html"><![CDATA[<p>嘿，我打赌你一定会喜欢这些优雅的东西！</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>嘿，我打赌你一定会喜欢这些优雅的东西！</p>
-<!-- more -->
-<blockquote>
-<p>适用于 Linux 的 Windows 子系统（英语：Windows Subsystem for Linux，简称WSL）是一个为在Windows 10和Windows Server 2019上能够原生运行Linux二进制可执行文件（ELF格式）的兼容层。----维基百科</p>
-</blockquote>
-<h3 id="效果图演示"># <strong>效果图演示</strong></h3>
-<figure data-type="image" tabindex="1"><img src="https://wushuo.ink/post-images/1610031931735.webp" alt="" title="Theme Tomorrow" loading="lazy"></figure>
-<h3 id="安装-windows-fluent-terminal-来取代古老的-cmd"># <strong>安装 Windows Fluent Terminal 来取代古老的 CMD</strong></h3>
-<ul>
-<li>在 <a href="https://www.microsoft.com/zh-cn/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab">Microsoft Sore</a>或<a href="https://github.com/microsoft/terminal">Github</a>开源社区下载 Windows Fluent Terminal 。</li>
-<li>赶紧开启 <strong>亚克力</strong>/ <strong>Acrylic背景</strong>或者添加您喜爱的图片设为背景</li>
-</ul>
-<h3 id="windows-和-linux-是天生一对"># <strong>Windows 和 Linux 是天生一对</strong></h3>
-<blockquote>
-<p><strong>Microsoft love Linux</strong><br>
---Microsoft CEO Satya Nadella</p>
-</blockquote>
-<p>在 Windows 安装<strong>适用于Linux 的 Windows 子系统</strong>，不仅可以保留 Windows 个人电脑的便捷，同时享受到 Linux 更加便捷的开发环境和开放的软件环境。</p>
-<h4 id="坐稳了我们要正式开始安装wsl了">坐稳了，我们要正式开始安装<strong>WSL</strong>了</h4>
-<ul>
-<li>在微软商店里下载 <a href="https://www.microsoft.com/zh-cn/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab"><strong>Ubuntu 18.4 LTS</strong></a>系统或是其他你喜欢的  <strong>Linux 子系统</strong></li>
-<li>它会出现在我们的开始菜单栏中，但这并不是我们所需要的</li>
-<li>朋友，这时候微软的自家软件就得开始团结协作了，打开 Windows Fluent Terminal 的菜单，你就能看到 Ubuntu 18.4 LTS 的身影了</li>
-</ul>
-<h3 id="谁说-linux-不能姹紫嫣红"># <strong>谁说 Linux 不能姹紫嫣红</strong></h3>
-<p>现在你也许会想，为什么我的 Linux 没有<strong>五颜六色的代码</strong>，也许更专业地说是代码高亮。</p>
-<h4 id="让-oh-my-zsh-给命令行锦上添花">让 <strong>oh-my-zsh</strong> 给命令行锦上添花</h4>
-<ul>
-<li>跟随 <a href="https://github.com/ohmyzsh/ohmyzsh">Github</a> 开源项目指南，让您的 Linux 配备oh-my-zsh</li>
-</ul>
-<ol>
-<li>使用 Git 从Github 上克隆到本地 或者 通过Github Desktop 手动下载<pre><code>git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh 
-</code></pre>
-</li>
-<li>使用 Windows Fluent Terminal 试试 <strong>cp</strong> 命令的复制上传功能吧<pre><code class="language-shell"># wushuo @ DESKTOP-91UDQ1D in /mnt/c/Users/Shuo [19:24:45]
-$ cd Desktop
-
-# wushuo @ DESKTOP-91UDQ1D in /mnt/c/Users/Shuo/Desktop [19:25:21]
-$ cp ohmyzsh-master.zip /home/wushuo
-
-# wushuo @ DESKTOP-91UDQ1D in /mnt/c/Users/Shuo/Desktop [19:27:21]
-$ cd /home/wushuo
-
-# wushuo @ DESKTOP-91UDQ1D in ~ [19:27:36]
-$ ls
-ohmyzsh-master.zip
-</code></pre>
-</li>
-<li>解压文件并运行 <strong>oh-my-zsh.sh</strong><pre><code class="language-shell"># wushuo @ DESKTOP-91UDQ1D in ~ [19:27:50]
-$ gzip ohmyzsh-master.zip
-
-# wushuo @ DESKTOP-91UDQ1D in ohmyzsh-master [19:27:51]
-$ sudo ./ohmyzsh.sh
-</code></pre>
-</li>
-<li>现在将zsh设为默认shell即可<pre><code class="language-shell">chsh -s $(which zsh)
-</code></pre>
-</li>
-</ol>
-<h3 id="这是-oh-my-zsh独一无二的zsh"># <strong>这是 oh my zsh，独一无二的zsh</strong></h3>
-<ul>
-<li>现在为 oh-my-zsh 设定你喜爱的主题<pre><code class="language-shell">vim ~/.zshrc
-</code></pre>
-</li>
-<li>更改你喜爱的主题通过如 <code>ZHS_THEME=&quot;ys&quot;</code><pre><code class="language-shell">ZSH_THEME=&quot;agnoster&quot; # (this is one of the fancy ones)
-# see https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster
-</code></pre>
-</li>
-</ul>
-<h4 id="不仅如此你也可以通过-windows-fluent-terminal-更改配色">不仅如此，你也可以通过 Windows Fluent Terminal 更改配色</h4>
-<ul>
-<li>默认的设置一直都不错，除非你更偏爱<strong>白色的清晰</strong>，那样 <strong>Tomorrow</strong> 也许才是你的菜</li>
-</ul>
-<figure data-type="image" tabindex="2"><img src="https://wushuo.ink/post-images/1610031883798.webp" alt="wsl1" title="Fluent Terminal" loading="lazy"></figure>
-<h3 id="你知道吗git-和-wsl-协作无可匹敌"># <strong>你知道吗，Git 和 WSL 协作无可匹敌</strong></h3>
-<ul>
-<li>还在忍受 <strong>Windows</strong> 上不优雅的 <strong>git</strong> 工具吗，现在投奔 <strong>WSL</strong> 和 <strong>Linux 原生 git</strong> 的怀抱</li>
-<li>通过 <strong>WSL</strong> 对 Windows 的映射，您可以轻松使用 <strong>WSL</strong> 访问主机的资源，<strong>git</strong> 也毫不例外<pre><code class="language-shell">### 通过 git 将图形学项目 Taichi 克隆到本地
-# wushuo @ DESKTOP-91UDQ1D in /mnt/c/Users/Shuo/Desktop [19:57:39]
-$ git clone https://github.com/taichi-dev/taichi
-</code></pre>
-</li>
-</ul>
-<h3 id="感谢您的认真观看我衷心地希望这对您有些许帮助"><strong>感谢您的认真观看，我衷心地希望这对您有些许帮助</strong></h3>
-<h6 id="转载请注明作者及出处">转载请注明作者及出处</h6>
 ]]></content>
     </entry>
 </feed>
