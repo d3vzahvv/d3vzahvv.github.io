@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.ink</id>
     <title>Shuo</title>
-    <updated>2021-08-13T14:08:11.325Z</updated>
+    <updated>2021-09-19T15:44:41.869Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.ink"/>
     <link rel="self" href="https://wushuo.ink/atom.xml"/>
@@ -10,6 +10,43 @@
     <logo>https://wushuo.ink/images/avatar.png</logo>
     <icon>https://wushuo.ink/favicon.ico</icon>
     <rights>All rights reserved 2021, Shuo</rights>
+    <entry>
+        <title type="html"><![CDATA[校园网捷径一键登陆及分析]]></title>
+        <id>https://wushuo.ink/post/shortcutsForWebAuthentication/</id>
+        <link href="https://wushuo.ink/post/shortcutsForWebAuthentication/">
+        </link>
+        <updated>2021-09-19T15:29:41.000Z</updated>
+        <summary type="html"><![CDATA[<p>&quot;我曾经惊叹于他们工具的优雅，现在我决定将这些拿来做成玩具&quot;<br>
+我为什么写这些快捷指令</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>&quot;我曾经惊叹于他们工具的优雅，现在我决定将这些拿来做成玩具&quot;<br>
+我为什么写这些快捷指令</p>
+<!-- more -->
+<h3 id="引言">引言</h3>
+<p>为了摆脱烦人的校园网登陆，我决定循着前人的工作<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mrow></mrow><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">^1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span>，使用 Apple Shortcuts 编写可以自动登入校园网的脚本。有了可以参考的对象，这些移植的工作很快就完成了（事实上只花费了数个小时），这些脚本后的逻辑编写者（已经毕业的学长）功不可没</p>
+<h3 id="使用方法">使用方法</h3>
+<p>对于宿舍的校园网自动化：<br>
+<a href="https://www.icloud.com/shortcuts/a8402bae05e441f0ae00030a8e13103f">透过 iCloud 获取分享</a><br>
+对于图书馆（未验证）和实验室的校园网自动化:<br>
+<a href="https://www.icloud.com/shortcuts/de55bf9fb78d418f99e7ddffe59c7972">透过 iCloud 获取分享</a><br>
+学校其他区域的 Wi-Fi 还未开发，请等待更新</p>
+<p>使用 Safari 打开以上链接，并在&quot;设置-快捷指令-允许不受信任的快捷指令&quot;中勾选&quot;允许不受信任的快捷指令&quot;，如果&quot;允许不受信任的快捷指令&quot;为灰色，<br>
+那么需要前往 快捷指令 App 运行任意一次快捷指令，再次前往&quot;设置-快捷指令-允许不受信任的快捷指令&quot;中勾选&quot;允许不受信任的快捷指令&quot;；</p>
+<p>之后点击上方链接，划到快捷指令底部，选择&quot;添加不受信任的快捷指令&quot;（此处为红色）；</p>
+<p>在快捷指令中心找到 已经添加的快捷指令，配置快捷指令中的账号和密码；这需要你找到第 3，4 个文本框，将其中的提示内容（hint）完全删除，输入你的账户和密码；</p>
+<p>大功告成，现在点击完成，在快捷指令中心点击指令，这需要确保你能够的访问 bjfu-wifi 的前端（当然无需在前端认证界面中登录），而并非通用计费网络系统（这部分会在分析中作说明）；</p>
+<p>现在你应该能够看到网络连接成功的通知了，这时打开大家最爱的 bing.com 试试吧；</p>
+<p>为了使你的使用体验更上一层楼，使用 自动化 操作，设定&quot;当iPhone加入'bjfu-wifi'时，运行快捷指令&quot;吧，这样每当你连接（所在区域）的校园网时，就可以点击两下快捷指令通知完成校园网认证。</p>
+<h3 id="分析">分析</h3>
+<p>当我看到金融 16 级徐同学的 Bjfu_Home 项目时，我觉得把 Python 变成 Shortcuts 能行！我着手开始工作前就是验证原项目的可行性，我使用 curl 在电脑上先 GET 到部分数据，再发送 POST 请求并完成验证，这些操作如此容易。但到了 Shortcuts 上一切寸步难行，我没有找到能够抓取 请求报头 的指令，因为&quot;获取网络内容&quot;指令中没有 HEAD 请求。直到我试遍了所有的快捷指令，找到了&quot;扩展URL&quot;就是获取请求报文头部，一切的问题迎刃而解（其实还遇到了 Content-Type 的相关问题 XD）</p>
+<p>未完待续</p>
+<h3 id="备注">备注</h3>
+<ul>
+<li>[1] 这些快捷指令离不开 <a href="https://github.com/xzy103">@xyz103</a> 的 <a href="https://github.com/xzy103/Bjfu_Home/tree/master/BjfuHome">Bjfu_Home</a> 相关工作，再次致谢</li>
+<li>[2] 这篇博客在 <a href="https://inns.studio/mak">mak.ink</a> 完成，感谢 <a href="https://github.com/shuding">@shuding</a> 为便携性 Markdown 做出的工作（我认为这可能是在 iPad 上最好的 Markdown 编辑器）</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[iTunes 家庭媒体]]></title>
         <id>https://wushuo.ink/post/iTunesHomeShare/</id>
@@ -658,85 +695,6 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 <p>我向来不喜欢对一个品牌标榜好或者坏，但 OPPO 在 “ColorOS” 方面的表现这是难尽人意。</p>
 <p>失去核心技术一定会在未来被暴露和无限放大。就像念大学，失去了特别的东西：“每天上课听讲，每次考试复习，每周参加社团活动，和无数大学生一样念完大学四年，任时光荏苒”，何不可以怜惜。念到最后如 OPPO 宣传自己道：“我们这款手机搭载的是八核处理器。”资本家和教授可都是“电子发烧友”：一上手立马发现 SDM450 八核不过是嘘头，没有一点真才实料，根本不是我们要买的手机，或许你最看不上的过时 iPhone5S 比你的方方面面都要强。</p>
 <p>或许会想，为什么要拿 iPhone 和 OPPO 相比较，iPhone 的体量不知道比 OPPO 高到哪里去了。但事实是，iPhone 和 OPPO 正处在同一市场，为什么觉得那些高不可攀的产品和你的目标群体不会有冲突，我这样的打工人也一样如此。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Vim 首行乱码问题解决方法]]></title>
-        <id>https://wushuo.ink/post/VimRenderIssue/</id>
-        <link href="https://wushuo.ink/post/VimRenderIssue/">
-        </link>
-        <updated>2020-12-08T10:59:17.000Z</updated>
-        <summary type="html"><![CDATA[<p>在使用 Vim 时遇到了首行乱码形如&quot;+q436f+q6b75+q6b64&quot;，错误的乱码“掩盖”了正确的内容，却不会覆盖正确的内容，但能够导致首行的内容无法被查看，解决这项问题的方法是在 &quot;.vimrc&quot; 文件中添加 &quot;set t_RV=&quot; 确保 Vim 能够显示正确的内容。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>在使用 Vim 时遇到了首行乱码形如&quot;+q436f+q6b75+q6b64&quot;，错误的乱码“掩盖”了正确的内容，却不会覆盖正确的内容，但能够导致首行的内容无法被查看，解决这项问题的方法是在 &quot;.vimrc&quot; 文件中添加 &quot;set t_RV=&quot; 确保 Vim 能够显示正确的内容。</p>
-<!-- more -->
-<ul>
-<li><a href="#%E9%97%AE%E9%A2%98%E5%A4%8D%E7%8E%B0">问题复现</a></li>
-<li><a href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88">解决方案</a></li>
-<li><a href="#%E5%BC%95%E7%94%A8%E8%B5%84%E6%96%99">引用资料</a></li>
-<li><a href="#%E4%B8%80%E7%82%B9%E7%82%B9%E6%83%B3%E8%AF%B4%E7%9A%84%E8%AF%9D">想说些话</a></li>
-</ul>
-<hr>
-<h3 id="问题复现">问题复现</h3>
-<p>在我的 <strong>Linux</strong> 虚拟机 (<strong>WSL</strong>) 上运行 Vim 时总会在第一行出现一行乱码，在多次重装 Vim 无果后，终于在 Github 的 <a href="https://github.com/vercel/hyper"><strong>Hyper</strong></a> 项目上找到<a href="https://github.com/vercel/hyper/issues/1037"><strong>答案</strong></a>。</p>
-<p># 我的配置</p>
-<table>
-<thead>
-<tr>
-<th>系统</th>
-<th>Vim</th>
-<th>Shell</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ubuntu 18.04 LTS</td>
-<td>Vim 8.0</td>
-<td>zsh with oh-my-zsh</td>
-</tr>
-</tbody>
-</table>
-<p>目前已知的其他系统可能会存在相同的 Vim 问题：<br>
-<strong>OS X</strong> 10.12 (Sierra)<br>
-<strong>Arch Linux</strong></p>
-<p>在 <strong>WSL</strong> 上使用 Vim 后 (无论是否打开文件)，第一行会出现一行显示乱码，亦或称为<code>Broken first line rendering in VIM</code> (引用自 Github issues)<br>
-<img src="https://wushuo.ink/post-images/1609991249302.webp" alt="vim with render issues" loading="lazy"><br>
-形如<code>+q436f+q6b75+q6b64</code>这种乱码仅能通过<kbd>Ctrl + L</kbd>消除。</p>
-<hr>
-<h3 id="解决方案">解决方案</h3>
-<p>在 Terminal 内编辑 <code>.vimrc</code> 文件，并添加<code>set t_RV=</code>。</p>
-<pre><code class="language-bash"># wushuo @ DESKTOP-91UDQ1D in ~ [19:29:21] C:1
-$ vim ~/.vimrc
-</code></pre>
-<pre><code class="language-javascript">set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
-set termencoding=utf-8
-set encoding=utf-8
-set fencs=utf-8,gbk
-
-### 设置下面这条的配置哦
-set t_RV=
-### 设置上面这条的配置哦
-
-call plug#begin('~/.vim/plugged')
-Plug 'dense-analysis/ale'
-call plug#end()         
-</code></pre>
-<p>再次打开 Vim，发现首行的渲染错误已经消失了。</p>
-<hr>
-<h3 id="引用资料">引用资料</h3>
-<p><strong>Hyper</strong> 项目下的 <strong>Github issues</strong> ：<br>
-<a href="https://github.com/vercel/hyper/issues/1037">Broken first line rendering in VIM (parseUntilStringTerminator_ aborts) #1037</a></p>
-<hr>
-<h3 id="一点点想说的话">一点点想说的话</h3>
-<p>一篇博客读起来的时间很短，特定内容的博客受众面少，写起来却异常花费时间。<br>
-驱使我写博客的目的是我能够静下心来思考，文字想要精炼，磨难也要经历。临近期末考试和四级考试，博客终于被捡起来写了一篇，维护了一下两个托管在 Github 上的静态站点，如果有时间，还能趁机打开一下 Gittalk 评论 (虽然我知道我的博客无人评论)。</p>
-<p>在北林的大二半年，过的很累，也并不充实，前几周看了 <a href="https://linghao.io">linghao</a> 的博客，发现自己消磨在不必要的事物上的时间太多了。来北京高铁上的写了一半的博客一直搁浅了，卸了知乎，闲来刷刷推特。看着手机的使用时间记录后，推特确实比知乎对时间和思维消耗比知乎少太多了。</p>
-<p>电子系明显比车辆系卷太多了，课程难且不说，精力的消耗难以避免，老师们似乎都沉浸在：“这门课这么难，我教的不错，很有深度，所以学生们收获许多”的幸福里。而我感到的只有 <strong>Push</strong> 。抛开一小部分做硬件的同学来说，学这么多门知识杂碎，耗费精力极高的高难度课程，是将试错成本拉低许多。一本 <strong>CSAPP</strong> 或是 一本 <strong>Algorithm</strong> 的时间就被浪费在”这门课好难，我要挂科了，得好好学习刷题“的时间里了。</p>
-<p>或许是我的时间没有被好好利用，又或许是电子系本身就要天天熬夜刷题才能通过，我对数电，模电和电分真的没什么感觉。相反，<strong>Rust</strong> 和 <strong>Apple GSX 认证</strong> 已经被我加入了提醒事项。我只想做个平凡人，或许平庸人也适合我。</p>
-<p>博客还得坚持写，英语也得坚持学，考试也得去考考。</p>
-<p>写于<br>
-模电考试前两天/四级考试前四天<br>
-北京林业大学 学12号楼</p>
 ]]></content>
     </entry>
 </feed>
