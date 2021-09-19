@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.ink</id>
     <title>Shuo</title>
-    <updated>2021-09-19T15:44:41.869Z</updated>
+    <updated>2021-09-19T15:50:50.890Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.ink"/>
     <link rel="self" href="https://wushuo.ink/atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>https://wushuo.ink/favicon.ico</icon>
     <rights>All rights reserved 2021, Shuo</rights>
     <entry>
-        <title type="html"><![CDATA[校园网捷径一键登陆及分析]]></title>
+        <title type="html"><![CDATA[校园网捷径一键登录及分析]]></title>
         <id>https://wushuo.ink/post/shortcutsForWebAuthentication/</id>
         <link href="https://wushuo.ink/post/shortcutsForWebAuthentication/">
         </link>
@@ -23,13 +23,14 @@
 我为什么写这些快捷指令</p>
 <!-- more -->
 <h3 id="引言">引言</h3>
-<p>为了摆脱烦人的校园网登陆，我决定循着前人的工作<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mrow></mrow><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">^1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span>，使用 Apple Shortcuts 编写可以自动登入校园网的脚本。有了可以参考的对象，这些移植的工作很快就完成了（事实上只花费了数个小时），这些脚本后的逻辑编写者（已经毕业的学长）功不可没</p>
+<p>为了摆脱烦人的校园网登录，我决定循着前人的工作<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mrow></mrow><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">^1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span>，使用 Apple Shortcuts 编写可以自动登入校园网的脚本。有了可以参考的对象，这些移植的工作很快就完成了（事实上只花费了数个小时），这些脚本后的逻辑编写者（已经毕业的学长）功不可没</p>
 <h3 id="使用方法">使用方法</h3>
 <p>对于宿舍的校园网自动化：<br>
 <a href="https://www.icloud.com/shortcuts/a8402bae05e441f0ae00030a8e13103f">透过 iCloud 获取分享</a><br>
 对于图书馆（未验证）和实验室的校园网自动化:<br>
 <a href="https://www.icloud.com/shortcuts/de55bf9fb78d418f99e7ddffe59c7972">透过 iCloud 获取分享</a><br>
 学校其他区域的 Wi-Fi 还未开发，请等待更新</p>
+<h3 id="详细步骤">详细步骤</h3>
 <p>使用 Safari 打开以上链接，并在&quot;设置-快捷指令-允许不受信任的快捷指令&quot;中勾选&quot;允许不受信任的快捷指令&quot;，如果&quot;允许不受信任的快捷指令&quot;为灰色，<br>
 那么需要前往 快捷指令 App 运行任意一次快捷指令，再次前往&quot;设置-快捷指令-允许不受信任的快捷指令&quot;中勾选&quot;允许不受信任的快捷指令&quot;；</p>
 <p>之后点击上方链接，划到快捷指令底部，选择&quot;添加不受信任的快捷指令&quot;（此处为红色）；</p>
