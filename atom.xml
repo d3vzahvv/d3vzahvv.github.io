@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.ink</id>
     <title>Shuo</title>
-    <updated>2021-11-01T13:16:19.941Z</updated>
+    <updated>2021-11-01T16:45:00.510Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.ink"/>
     <link rel="self" href="https://wushuo.ink/atom.xml"/>
@@ -10,6 +10,43 @@
     <logo>https://wushuo.ink/images/avatar.png</logo>
     <icon>https://wushuo.ink/favicon.ico</icon>
     <rights>All rights reserved 2021, Shuo</rights>
+    <entry>
+        <title type="html"><![CDATA[Leetcode 刷题笔记]]></title>
+        <id>https://wushuo.ink/post/leetcode-shua-ti-zhuan-lan/</id>
+        <link href="https://wushuo.ink/post/leetcode-shua-ti-zhuan-lan/">
+        </link>
+        <updated>2021-10-25T09:52:51.000Z</updated>
+        <summary type="html"><![CDATA[<p>使用 Golang 刷 Leetcode 的笔记，包含一部分 Golang 算法和数据结构的内容。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>使用 Golang 刷 Leetcode 的笔记，包含一部分 Golang 算法和数据结构的内容。</p>
+<!-- more -->
+<hr>
+<h3 id="目录">目录</h3>
+<ul>
+<li><a href="#leetcode">刷题体会</a>
+<ul>
+<li><a href="#array-index">数组与下标</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="leetcode">Leetcode</h2>
+<h3 id="array-index">Array Index</h3>
+<h4 id="寻找中间值">寻找中间值</h4>
+<pre><code class="language-go">func findMedian(numSorted []int) float64 {
+    numSortedLen := len(numSorted)
+    slice1 := numSorted[:numSortedLen/2]
+    slice2 := numSorted[numSortedLen/2:]
+    if (len(slice1) == len(slice2)) {
+        return float64((numSorted[numSortedLen/2] + numSorted[numSortedLen/2 - 1])) / 2
+    }
+    // 其实这里应该写成下面更好
+    // return float64((slice1[numSortedLen / 2 - 1] + slice2[0]))
+    // 在
+    return float64(numSorted[numSortedLen/2])
+}
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[校园网捷径一键登录及分析]]></title>
         <id>https://wushuo.ink/post/shortcutsForWebAuthentication/</id>
@@ -673,28 +710,6 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 <p>再谈广告：作为互联网企业从用户口袋里隔空捞钱的手段，知乎的广告投放确实比其他小厂有水准。几乎每个回答下都有广告，这些广告并不是让你点入，而是在看完回答时切换下一个回答过程中，一秒钟手指移动的时间就能进行<strong>潜在的广告投放</strong>。你也许并不感兴趣，也未曾了解到自己被投放了这样的广告，但在广告投放方的眼里，你已经被广告内容<strong>潜移默化</strong>地影响了。除了这样通过知乎直接投放广告的方式，答主也能通过在文章内自行推荐广告链接的方式推送<strong>软广</strong>：通过广告代理人答主的形象进行广告投放，知乎当然也能分得一羹。</p>
 <p>至于微博，已经很久都不在看了。很难有机会让我点开第三方无广告的微博，通过数个捷径前往热搜去看哪些事件正在被大家“刷上去”。</p>
 <p>电子设备正在逐步取代纸质化阅读甚至是书写，我已经很难向从前那样抱着一本书在空调房间里看数小时之久。但愿新的一年里能够认认真真的看书——不管是纸质书或者iPad或者是Kindle，毕竟载体时时在变化，所承载的内容才是恒久不衰的。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[从 OPPO 和 “ColorOS” 谈起]]></title>
-        <id>https://wushuo.ink/post/fromOPPOtoLife/</id>
-        <link href="https://wushuo.ink/post/fromOPPOtoLife/">
-        </link>
-        <updated>2021-01-07T12:52:59.000Z</updated>
-        <summary type="html"><![CDATA[<p>OPPO 作为国民级别的品牌，凭借强大的营销手段和“独特”的设计语言耳熟能详；而 “ColorOS”  作为 OPPO 自主研发的 Android UI，却不配 OS 其名。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>OPPO 作为国民级别的品牌，凭借强大的营销手段和“独特”的设计语言耳熟能详；而 “ColorOS”  作为 OPPO 自主研发的 Android UI，却不配 OS 其名。</p>
-<!-- more -->
-<hr>
-<p>前些天把我妈用了两年的 OPPO 手机换成了 iPhone XR，虽然我妈坚持说手机很好还能用，她很喜欢，我还是替她做主换掉了。知道我妈心疼钱，于是求好哥们费尽心思淘了个黑解的 iPhone XR，不带面容识别，让我妈随便用。知道了价钱，我妈用地省心，也不担心摔了心疼。</p>
-<p>于是剩下的 OPPO A5 手机我就拿来当个电子时钟。当然，作为电子时钟都是后话了，我也曾经对这个刘海屏的手机抱有一点点希望的：3GB RAM，骁龙SMD450，还有和同期发布的 iPhone X 相似的刘海屏幕。但可惜，找遍了全网也没有找到了可以找到刷原生系统的方法。原因当然是 <a href="https://zh.wikipedia.org/wiki/%E5%95%9F%E5%8B%95%E7%A8%8B%E5%BC%8F">BootLoader</a> 被锁住，不仅如此，甚至桌面也被锁住，无法更换第三方桌面。</p>
-<p>印象中 OPPO 手机常常出现于电视广告中，从“充电五分钟，电话两小时”到各色明星大腕的代言。我人生的第一部自己的手机就是 OPPO ，不过几载，曾经 OPPO 骄傲的拍照，充电续航也只剩下美颜，大电池。锁起了桌面，凭借着从前强大的线下商店铺展和广告流量，OPPO 的状况也还过的去。</p>
-<p>但在二〇二〇这个不那么幸运的年份，OPPO 的最后一点差距被彻底拉开，说是 ColorOS 不如称是 ColorUI：华为EMUI开始靠向成熟的iOS，以软件公司著称的小米MIUI，友商vivo全新的wget交互方式。OPPO 却还在完善着自己“操作系统”的广告推送机制。</p>
-<p>即使拖出 OPPO 高端 OnePlus 系列，“不将就”的系统设计对国内的环境也“不将就“。操作系统的不人性化使得 OPPO 的高端线用户开始流失，低端手机搭配完全与价格不符的配置也让低端线用户发誓再也不买这个品牌。</p>
-<p>核心技术的缺失是 OPPO 一直的痛，与此同样遭遇的还有隔壁的 vivo，但既然做不出好的系统，就应该和小米一样打开 BL 锁的权限，让用户能够真正拿到使用硬件的权力，而不是用糟糕的系统使用体验恶心用户。</p>
-<p>我向来不喜欢对一个品牌标榜好或者坏，但 OPPO 在 “ColorOS” 方面的表现这是难尽人意。</p>
-<p>失去核心技术一定会在未来被暴露和无限放大。就像念大学，失去了特别的东西：“每天上课听讲，每次考试复习，每周参加社团活动，和无数大学生一样念完大学四年，任时光荏苒”，何不可以怜惜。念到最后如 OPPO 宣传自己道：“我们这款手机搭载的是八核处理器。”资本家和教授可都是“电子发烧友”：一上手立马发现 SDM450 八核不过是嘘头，没有一点真才实料，根本不是我们要买的手机，或许你最看不上的过时 iPhone5S 比你的方方面面都要强。</p>
-<p>或许会想，为什么要拿 iPhone 和 OPPO 相比较，iPhone 的体量不知道比 OPPO 高到哪里去了。但事实是，iPhone 和 OPPO 正处在同一市场，为什么觉得那些高不可攀的产品和你的目标群体不会有冲突，我这样的打工人也一样如此。</p>
 ]]></content>
     </entry>
 </feed>

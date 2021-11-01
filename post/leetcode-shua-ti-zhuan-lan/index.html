@@ -2,16 +2,17 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@SuWhuo" />
     <meta name="twitter:creator" content="@SuWhuo" />
-    <meta property="og:title" content="循环和下标越界 " />
+    <meta property="og:title" content="Leetcode 刷题笔记 " />
     <meta property="og:image" content="https://wushuo.ink/images/avatar.png" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="https://wushuo.ink/post/loopInPython/ " />
+    <meta property="og:description" content="&lt;p&gt;使用 Golang 刷 Leetcode 的笔记，包含一部分 Golang 算法和数据结构的内容。&lt;/p&gt;
+" />
+    <meta property="og:url" content="https://wushuo.ink/post/leetcode-shua-ti-zhuan-lan/ " />
 <head>
     <meta charset="utf-8"/>
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>循环和下标越界 | Shuo</title>
+<title>Leetcode 刷题笔记 | Shuo</title>
 
 <link rel="shortcut icon" href="https://wushuo.ink/favicon.ico?v=1635785097132">
 
@@ -96,54 +97,42 @@
         <div class="post-detail gt-bg-theme-color-second">
             <article class="gt-post-content">
                 <h2 class="post-title">
-                    循环和下标越界
+                    Leetcode 刷题笔记
                 </h2>
                 <div class="post-info">
                     <time class="post-time gt-c-content-color-first">
-                        · 2020-04-19 ·
+                        · 2021-10-25 ·
                     </time>
-                    
-                        <a href="https://wushuo.ink/tag/oMeXPv02m6/" class="post-tags">
-                            # 算法
-                        </a>
                     
                 </div>
                 <div class="post-content">
-                    <blockquote>
-<p>失之毫厘，差之千里。</p>
-</blockquote>
-<p>无论是刷题亦或是科学运算中，<strong>循环体</strong>和<strong>数组</strong>，<strong>列表</strong>的搭配总是不可避免地平凡出现。如果想要写出漂亮，优雅的代码，对边界条件和特殊取值的理解应当精确。<br>
-下面是笔者在 <a href="http://leetcode.com">Leetcode</a> 刷题常常遇到的循环体和下标问题：</p>
+                    <p>使用 Golang 刷 Leetcode 的笔记，包含一部分 Golang 算法和数据结构的内容。</p>
+<!-- more -->
+<hr>
+<h3 id="目录">目录</h3>
 <ul>
-<li>循环内的操作是否使循环条件改变</li>
-</ul>
-<p>for循环：</p>
-<pre><code class="language-python">maxnum = 9
-j = 0
-for i in range(0, maxnum):
-    maxnum = maxnum - 1
-    j = j + 1
-print(j) &quot;&quot;&quot; j = 10 &quot;&quot;&quot;
-</code></pre>
-<p>while循环</p>
-<pre><code class="language-python">num = 10
-j = 0
-i = 0
-while i &lt;= 10 and j &lt;= 5:
-    j = j + 1
-    i = i + 1
-print(j)&quot;&quot;&quot; j = 6 &quot;&quot;&quot;
-</code></pre>
+<li><a href="#leetcode">刷题体会</a>
 <ul>
-<li>循环和切片操作<br>
-循环和切片<strong>起始值</strong>都能取到，<strong>结束值</strong>都不能取到，在对字符串操作时，应当注意边界操作</li>
+<li><a href="#array-index">数组与下标</a></li>
 </ul>
-<pre><code class="language-python">s = 'abcdef'
-for i in range(0, len(s)):
-    for j in range(i, i + j + 1):
-        pass
+</li>
+</ul>
+<h2 id="leetcode">Leetcode</h2>
+<h3 id="array-index">Array Index</h3>
+<h4 id="寻找中间值">寻找中间值</h4>
+<pre><code class="language-go">func findMedian(numSorted []int) float64 {
+    numSortedLen := len(numSorted)
+    slice1 := numSorted[:numSortedLen/2]
+    slice2 := numSorted[numSortedLen/2:]
+    if (len(slice1) == len(slice2)) {
+        return float64((numSorted[numSortedLen/2] + numSorted[numSortedLen/2 - 1])) / 2
+    }
+    // 其实这里应该写成下面更好
+    // return float64((slice1[numSortedLen / 2 - 1] + slice2[0]))
+    // 在
+    return float64(numSorted[numSortedLen/2])
+}
 </code></pre>
-<p>我们在<strong>for 循环</strong>过程中，应确保<strong>起始值</strong>小于<strong>结束值</strong>，否则程序会在两者相等时跳出循环。</p>
 
                 </div>
             </article>
@@ -153,8 +142,8 @@ for i in range(0, len(s)):
         
             <div class="next-post">
                 <div class="next gt-c-content-color-first">下一篇</div>
-                <a href="https://wushuo.ink/post/pythonic/" class="post-title gt-a-link">
-                    Pythonic
+                <a href="https://wushuo.ink/post/shortcutsForWebAuthentication/" class="post-title gt-a-link">
+                    校园网捷径一键登录及分析
                 </a>
             </div>
         
