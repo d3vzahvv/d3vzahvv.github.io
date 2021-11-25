@@ -2,17 +2,16 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@SuWhuo" />
     <meta name="twitter:creator" content="@SuWhuo" />
-    <meta property="og:title" content="基于 Fluent Terminal 和 WSL 的 Windows 命令行工具 " />
+    <meta property="og:title" content="机器学习概念 " />
     <meta property="og:image" content="https://wushuo.ink/images/avatar.png" />
-    <meta property="og:description" content="&lt;p&gt;嘿，我打赌你一定会喜欢这些优雅的东西！&lt;/p&gt;
-" />
-    <meta property="og:url" content="http://localhost:4000/post/fluentterminalwsl/ " />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="http://localhost:4000/post/ji-qi-xue-xi-gai-nian/ " />
 <head>
     <meta charset="utf-8"/>
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>基于 Fluent Terminal 和 WSL 的 Windows 命令行工具 | Shuo</title>
+<title>机器学习概念 | Shuo</title>
 
 <link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1637815490921">
 
@@ -97,108 +96,21 @@
         <div class="post-detail gt-bg-theme-color-second">
             <article class="gt-post-content">
                 <h2 class="post-title">
-                    基于 Fluent Terminal 和 WSL 的 Windows 命令行工具
+                    机器学习概念
                 </h2>
                 <div class="post-info">
                     <time class="post-time gt-c-content-color-first">
-                        · 2020-08-27 ·
+                        · 2021-11-19 ·
                     </time>
-                    
-                        <a href="http://localhost:4000/tag/HWd8FqIYiW/" class="post-tags">
-                            # 技术
-                        </a>
-                    
-                        <a href="http://localhost:4000/tag/LQsqOF6Ydo/" class="post-tags">
-                            # Linux
-                        </a>
                     
                 </div>
                 <div class="post-content">
-                    <p>嘿，我打赌你一定会喜欢这些优雅的东西！</p>
-<!-- more -->
-<blockquote>
-<p>适用于 Linux 的 Windows 子系统（英语：Windows Subsystem for Linux，简称WSL）是一个为在Windows 10和Windows Server 2019上能够原生运行Linux二进制可执行文件（ELF格式）的兼容层。----维基百科</p>
-</blockquote>
-<h3 id="效果图演示"># <strong>效果图演示</strong></h3>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1610031931735.webp" alt="" title="Theme Tomorrow" loading="lazy"></figure>
-<h3 id="安装-windows-fluent-terminal-来取代古老的-cmd"># <strong>安装 Windows Fluent Terminal 来取代古老的 CMD</strong></h3>
-<ul>
-<li>在 <a href="https://www.microsoft.com/zh-cn/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab">Microsoft Sore</a>或<a href="https://github.com/microsoft/terminal">Github</a>开源社区下载 Windows Fluent Terminal 。</li>
-<li>赶紧开启 <strong>亚克力</strong>/ <strong>Acrylic背景</strong>或者添加您喜爱的图片设为背景</li>
+                    <ul>
+<li>high bias - underfit 欠拟合</li>
+<li>high variance - overfit 过拟合</li>
+<li>cv ( cross validation ) 交叉验证</li>
+<li>learning-curve 学习曲线</li>
 </ul>
-<h3 id="windows-和-linux-是天生一对"># <strong>Windows 和 Linux 是天生一对</strong></h3>
-<blockquote>
-<p><strong>Microsoft love Linux</strong><br>
---Microsoft CEO Satya Nadella</p>
-</blockquote>
-<p>在 Windows 安装<strong>适用于Linux 的 Windows 子系统</strong>，不仅可以保留 Windows 个人电脑的便捷，同时享受到 Linux 更加便捷的开发环境和开放的软件环境。</p>
-<h4 id="坐稳了我们要正式开始安装wsl了">坐稳了，我们要正式开始安装<strong>WSL</strong>了</h4>
-<ul>
-<li>在微软商店里下载 <a href="https://www.microsoft.com/zh-cn/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab"><strong>Ubuntu 18.4 LTS</strong></a>系统或是其他你喜欢的  <strong>Linux 子系统</strong></li>
-<li>它会出现在我们的开始菜单栏中，但这并不是我们所需要的</li>
-<li>朋友，这时候微软的自家软件就得开始团结协作了，打开 Windows Fluent Terminal 的菜单，你就能看到 Ubuntu 18.4 LTS 的身影了</li>
-</ul>
-<h3 id="谁说-linux-不能姹紫嫣红"># <strong>谁说 Linux 不能姹紫嫣红</strong></h3>
-<p>现在你也许会想，为什么我的 Linux 没有<strong>五颜六色的代码</strong>，也许更专业地说是代码高亮。</p>
-<h4 id="让-oh-my-zsh-给命令行锦上添花">让 <strong>oh-my-zsh</strong> 给命令行锦上添花</h4>
-<ul>
-<li>跟随 <a href="https://github.com/ohmyzsh/ohmyzsh">Github</a> 开源项目指南，让您的 Linux 配备oh-my-zsh</li>
-</ul>
-<ol>
-<li>使用 Git 从Github 上克隆到本地 或者 通过Github Desktop 手动下载<pre><code>git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh 
-</code></pre>
-</li>
-<li>使用 Windows Fluent Terminal 试试 <strong>cp</strong> 命令的复制上传功能吧<pre><code class="language-shell"># wushuo @ DESKTOP-91UDQ1D in /mnt/c/Users/Shuo [19:24:45]
-$ cd Desktop
-
-# wushuo @ DESKTOP-91UDQ1D in /mnt/c/Users/Shuo/Desktop [19:25:21]
-$ cp ohmyzsh-master.zip /home/wushuo
-
-# wushuo @ DESKTOP-91UDQ1D in /mnt/c/Users/Shuo/Desktop [19:27:21]
-$ cd /home/wushuo
-
-# wushuo @ DESKTOP-91UDQ1D in ~ [19:27:36]
-$ ls
-ohmyzsh-master.zip
-</code></pre>
-</li>
-<li>解压文件并运行 <strong>oh-my-zsh.sh</strong><pre><code class="language-shell"># wushuo @ DESKTOP-91UDQ1D in ~ [19:27:50]
-$ gzip ohmyzsh-master.zip
-
-# wushuo @ DESKTOP-91UDQ1D in ohmyzsh-master [19:27:51]
-$ sudo ./ohmyzsh.sh
-</code></pre>
-</li>
-<li>现在将zsh设为默认shell即可<pre><code class="language-shell">chsh -s $(which zsh)
-</code></pre>
-</li>
-</ol>
-<h3 id="这是-oh-my-zsh独一无二的zsh"># <strong>这是 oh my zsh，独一无二的zsh</strong></h3>
-<ul>
-<li>现在为 oh-my-zsh 设定你喜爱的主题<pre><code class="language-shell">vim ~/.zshrc
-</code></pre>
-</li>
-<li>更改你喜爱的主题通过如 <code>ZHS_THEME=&quot;ys&quot;</code><pre><code class="language-shell">ZSH_THEME=&quot;agnoster&quot; # (this is one of the fancy ones)
-# see https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster
-</code></pre>
-</li>
-</ul>
-<h4 id="不仅如此你也可以通过-windows-fluent-terminal-更改配色">不仅如此，你也可以通过 Windows Fluent Terminal 更改配色</h4>
-<ul>
-<li>默认的设置一直都不错，除非你更偏爱<strong>白色的清晰</strong>，那样 <strong>Tomorrow</strong> 也许才是你的菜</li>
-</ul>
-<figure data-type="image" tabindex="2"><img src="http://localhost:4000/post-images/1610031883798.webp" alt="wsl1" title="Fluent Terminal" loading="lazy"></figure>
-<h3 id="你知道吗git-和-wsl-协作无可匹敌"># <strong>你知道吗，Git 和 WSL 协作无可匹敌</strong></h3>
-<ul>
-<li>还在忍受 <strong>Windows</strong> 上不优雅的 <strong>git</strong> 工具吗，现在投奔 <strong>WSL</strong> 和 <strong>Linux 原生 git</strong> 的怀抱</li>
-<li>通过 <strong>WSL</strong> 对 Windows 的映射，您可以轻松使用 <strong>WSL</strong> 访问主机的资源，<strong>git</strong> 也毫不例外<pre><code class="language-shell">### 通过 git 将图形学项目 Taichi 克隆到本地
-# wushuo @ DESKTOP-91UDQ1D in /mnt/c/Users/Shuo/Desktop [19:57:39]
-$ git clone https://github.com/taichi-dev/taichi
-</code></pre>
-</li>
-</ul>
-<h3 id="感谢您的认真观看我衷心地希望这对您有些许帮助"><strong>感谢您的认真观看，我衷心地希望这对您有些许帮助</strong></h3>
-<h6 id="转载请注明作者及出处">转载请注明作者及出处</h6>
 
                 </div>
             </article>
@@ -208,8 +120,8 @@ $ git clone https://github.com/taichi-dev/taichi
         
             <div class="next-post">
                 <div class="next gt-c-content-color-first">下一篇</div>
-                <a href="http://localhost:4000/post/packagefunction/" class="post-title gt-a-link">
-                    集成电路封装方式简介
+                <a href="http://localhost:4000/post/shortcutsForWebAuthentication/" class="post-title gt-a-link">
+                    校园网捷径一键登录及分析
                 </a>
             </div>
         

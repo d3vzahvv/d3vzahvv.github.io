@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.ink</id>
     <title>Shuo</title>
-    <updated>2021-11-13T14:55:02.269Z</updated>
+    <updated>2021-11-25T04:44:53.945Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.ink"/>
     <link rel="self" href="https://wushuo.ink/atom.xml"/>
@@ -11,40 +11,17 @@
     <icon>https://wushuo.ink/favicon.ico</icon>
     <rights>All rights reserved 2021, Shuo</rights>
     <entry>
-        <title type="html"><![CDATA[Leetcode 刷题笔记]]></title>
-        <id>https://wushuo.ink/post/leetcode/</id>
-        <link href="https://wushuo.ink/post/leetcode/">
+        <title type="html"><![CDATA[机器学习概念]]></title>
+        <id>https://wushuo.ink/post/ji-qi-xue-xi-gai-nian/</id>
+        <link href="https://wushuo.ink/post/ji-qi-xue-xi-gai-nian/">
         </link>
-        <updated>2021-10-25T09:52:51.000Z</updated>
-        <summary type="html"><![CDATA[<p>使用 Golang 刷 Leetcode 的笔记，包含一部分 Golang 算法和数据结构的内容。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>使用 Golang 刷 Leetcode 的笔记，包含一部分 Golang 算法和数据结构的内容。</p>
-<!-- more -->
-<hr>
-<h3 id="目录">目录</h3>
-<ul>
-<li><a href="#leetcode">刷题体会</a>
-<ul>
-<li><a href="#array-index">数组与下标</a></li>
+        <updated>2021-11-19T08:24:11.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>high bias - underfit 欠拟合</li>
+<li>high variance - overfit 过拟合</li>
+<li>cv ( cross validation ) 交叉验证</li>
+<li>learning-curve 学习曲线</li>
 </ul>
-</li>
-</ul>
-<h2 id="leetcode">Leetcode</h2>
-<h3 id="array-index">Array Index</h3>
-<h4 id="寻找中间值">寻找中间值</h4>
-<pre><code class="language-go">func findMedian(numSorted []int) float64 {
-    numSortedLen := len(numSorted)
-    slice1 := numSorted[:numSortedLen/2]
-    slice2 := numSorted[numSortedLen/2:]
-    if (len(slice1) == len(slice2)) {
-        return float64((numSorted[numSortedLen/2] + numSorted[numSortedLen/2 - 1])) / 2
-    }
-    // 其实这里应该写成下面更好
-    // return float64((slice1[numSortedLen / 2 - 1] + slice2[0]))
-    // 在
-    return float64(numSorted[numSortedLen/2])
-}
-</code></pre>
 ]]></content>
     </entry>
     <entry>
