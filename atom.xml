@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://wushuo.ink</id>
+    <id>http://localhost:4000</id>
     <title>Shuo</title>
-    <updated>2021-11-25T04:44:53.945Z</updated>
+    <updated>2021-11-25T04:45:29.573Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://wushuo.ink"/>
-    <link rel="self" href="https://wushuo.ink/atom.xml"/>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
     <subtitle>我的故事写不进作文</subtitle>
-    <logo>https://wushuo.ink/images/avatar.png</logo>
-    <icon>https://wushuo.ink/favicon.ico</icon>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2021, Shuo</rights>
     <entry>
-        <title type="html"><![CDATA[机器学习概念]]></title>
-        <id>https://wushuo.ink/post/ji-qi-xue-xi-gai-nian/</id>
-        <link href="https://wushuo.ink/post/ji-qi-xue-xi-gai-nian/">
-        </link>
-        <updated>2021-11-19T08:24:11.000Z</updated>
-        <content type="html"><![CDATA[<ul>
-<li>high bias - underfit 欠拟合</li>
-<li>high variance - overfit 过拟合</li>
-<li>cv ( cross validation ) 交叉验证</li>
-<li>learning-curve 学习曲线</li>
-</ul>
-]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[校园网捷径一键登录及分析]]></title>
-        <id>https://wushuo.ink/post/shortcutsForWebAuthentication/</id>
-        <link href="https://wushuo.ink/post/shortcutsForWebAuthentication/">
+        <id>http://localhost:4000/post/shortcutsForWebAuthentication/</id>
+        <link href="http://localhost:4000/post/shortcutsForWebAuthentication/">
         </link>
         <updated>2021-09-19T15:29:41.000Z</updated>
         <summary type="html"><![CDATA[<p>&quot;我曾经惊叹于他们工具的优雅，现在我决定将这些拿来做成玩具&quot;<br>
@@ -63,8 +49,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[iTunes 家庭媒体]]></title>
-        <id>https://wushuo.ink/post/iTunesHomeShare/</id>
-        <link href="https://wushuo.ink/post/iTunesHomeShare/">
+        <id>http://localhost:4000/post/iTunesHomeShare/</id>
+        <link href="http://localhost:4000/post/iTunesHomeShare/">
         </link>
         <updated>2021-07-20T07:54:47.000Z</updated>
         <summary type="html"><![CDATA[<p>流式传输定义很广泛，主要指通过网络传送流媒体 ( 如视频，音频 ) 的技术总称。其特定含义为通过网络将影视节目传送到终端。为了通过 Wi-Fi 传输数字音乐，AirPlay 使用 RTSP 协议，即实时流协议。Apple Lossless 音频编解码器以 44100Hz 的速度传输两个音频通道。</p>
@@ -114,7 +100,7 @@
 <p>请注意，Apple TV App 或 iTunes 会询问是否将流媒体整齐有序的排列，其本质是建立单独的文件夹“媒体”，并将拖入 Apple TV App ( 或 iTunes ) 或 使用 Apple TV App ( 或 iTunes ) 添加的本地媒体<strong>复制</strong>到“媒体”文件夹中。同时，这意味着 Apple TV App ( 或 iTunes ) 对“媒体”文件夹拥有<strong>完全读写权力</strong>，这一点非常重要</p>
 <h4 id="导入流媒体">导入流媒体</h4>
 <p>要想导入流媒体进入资料库，只需要拖入流媒体文件至  Apple TV App ( 或 iTunes ) ，App 会自动将流媒体文件复制到 App 目录下 ( 一般为“媒体”或 “iTunes”)<br>
-<img src="https://wushuo.ink/post-images/1627010596998.webp" alt="" loading="lazy"></p>
+<img src="http://localhost:4000/post-images/1627010596998.webp" alt="" loading="lazy"></p>
 <h4 id="分类流媒体">分类流媒体</h4>
 <p>点击媒体的 更多信息-显示简介-选项，即可开始分类，通常分类选项为三种：影片，电视剧，家庭视频</p>
 <ul>
@@ -122,7 +108,7 @@
 <li>电视剧一般为多集流媒体如，如动画番剧，电视连续剧</li>
 <li>家庭视频一般为自己拍摄的生活视频</li>
 </ul>
-<figure data-type="image" tabindex="1"><img src="https://wushuo.ink/post-images/1627014602113.webp" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1627014602113.webp" alt="" loading="lazy"></figure>
 <h4 id="为流媒体设置详细信息即元数据">为流媒体设置详细信息即元数据</h4>
 <p>电视剧的设置选项最多且复杂，这里以电视剧为例：</p>
 <ul>
@@ -137,7 +123,7 @@
 <li>年份：该季发布的年份</li>
 </ul>
 <p>请注意，iTunes 资料库主要通过<strong>元数据</strong> ( <em>metadata</em> ) 进行自动归档，在电视剧设置中，切勿将标题与节目设置错误 ( 例如每一集设置重复的标题而非重复的节目 )，由于资料库对其“媒体”文件夹有<strong>完全读写权力</strong>，“媒体”文件夹内的流媒体文件可能会被自动<strong>覆盖</strong> ( <em>overwrite</em> )，导致珍贵的流媒体文件丢失</p>
-<figure data-type="image" tabindex="2"><img src="https://wushuo.ink/post-images/1627014607595.webp" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="http://localhost:4000/post-images/1627014607595.webp" alt="" loading="lazy"></figure>
 <h3 id="影片混流剪辑修改字幕">影片混流剪辑修改字幕</h3>
 <p>在 Apple 设备上，mp4 / m4v 格式才能够被原生播放，而 mkv 格式则需要被第三方播放器播放<br>
 在 iOS / Mac 设备上，我们可以轻松安装第三方播放器，例如 <a href="https://apps.apple.com/us/app/aplayer-alook-player/id1420356569">Avplayer</a> / <a href="https://iina.io/">IINA</a>，但对于 Apple TV ( 特别是 Apple TV 2 和 Apple TV 3 )，无法识别 iTunes 资料库的 mkv 格式流媒体，在这里对格式转换做简略介绍</p>
@@ -164,8 +150,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[转换器]]></title>
-        <id>https://wushuo.ink/post/LongLifeEvolution/</id>
-        <link href="https://wushuo.ink/post/LongLifeEvolution/">
+        <id>http://localhost:4000/post/LongLifeEvolution/</id>
+        <link href="http://localhost:4000/post/LongLifeEvolution/">
         </link>
         <updated>2021-06-23T15:07:03.000Z</updated>
         <summary type="html"><![CDATA[<p>怎样过完普通的一生 / converter</p>
@@ -185,8 +171,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[卷积积分介绍]]></title>
-        <id>https://wushuo.ink/post/introofconvolution/</id>
-        <link href="https://wushuo.ink/post/introofconvolution/">
+        <id>http://localhost:4000/post/introofconvolution/</id>
+        <link href="http://localhost:4000/post/introofconvolution/">
         </link>
         <updated>2021-06-15T09:24:49.000Z</updated>
         <summary type="html"><![CDATA[<p>卷积、旋积或摺积 ( Convolution ) 是通过两个函数 f 和 g 生成第三个函数的一种数学算子，表征函数 f 与 g 经过翻转和平移的重叠部分函数值乘积对重叠长度的积分。</p>
@@ -211,8 +197,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[矢量分析初步]]></title>
-        <id>https://wushuo.ink/post/VectorAnalysisBeginning/</id>
-        <link href="https://wushuo.ink/post/VectorAnalysisBeginning/">
+        <id>http://localhost:4000/post/VectorAnalysisBeginning/</id>
+        <link href="http://localhost:4000/post/VectorAnalysisBeginning/">
         </link>
         <updated>2021-05-26T14:24:30.000Z</updated>
         <summary type="html"><![CDATA[<p>矢量分析初步主要介绍 &quot;梯度, 散度, 旋度&quot; 的概念及其之间的关系</p>
@@ -509,8 +495,8 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
     </entry>
     <entry>
         <title type="html"><![CDATA[这是和工具们的故事]]></title>
-        <id>https://wushuo.ink/post/withMyTools/</id>
-        <link href="https://wushuo.ink/post/withMyTools/">
+        <id>http://localhost:4000/post/withMyTools/</id>
+        <link href="http://localhost:4000/post/withMyTools/">
         </link>
         <updated>2021-02-12T11:40:55.000Z</updated>
         <summary type="html"><![CDATA[<p>一直着手于工具, 或是即刻着手于眼前; 即使到现在我也没有办法做出决定</p>
@@ -540,8 +526,8 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
     </entry>
     <entry>
         <title type="html"><![CDATA[再见了，DW1820A]]></title>
-        <id>https://wushuo.ink/post/hackintoshFromPerfectToGiveup/</id>
-        <link href="https://wushuo.ink/post/hackintoshFromPerfectToGiveup/">
+        <id>http://localhost:4000/post/hackintoshFromPerfectToGiveup/</id>
+        <link href="http://localhost:4000/post/hackintoshFromPerfectToGiveup/">
         </link>
         <updated>2021-01-14T02:36:34.000Z</updated>
         <summary type="html"><![CDATA[<p>从 DW1820A 到手已经半个月了，从 Airdrop 到 Airplay，再到 Command 和 Option，一圈下来还是 Windows 10 更加适合我。别了，Hackintosh。</p>
@@ -560,8 +546,8 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
     </entry>
     <entry>
         <title type="html"><![CDATA[我的家庭组网：软路由从联网到智能家居]]></title>
-        <id>https://wushuo.ink/post/aboutOpenwrt/</id>
-        <link href="https://wushuo.ink/post/aboutOpenwrt/">
+        <id>http://localhost:4000/post/aboutOpenwrt/</id>
+        <link href="http://localhost:4000/post/aboutOpenwrt/">
         </link>
         <updated>2021-01-11T11:44:48.000Z</updated>
         <summary type="html"><![CDATA[<p>OpenWrt 是适合于嵌入式设备的一个 Linux 发行版。<br>
@@ -600,16 +586,16 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 </ul>
 <h3 id="功能展示">功能展示</h3>
 <h4 id="airplay2-隔空播放">Airplay2 (隔空播放)</h4>
-<figure data-type="image" tabindex="1"><img src="https://wushuo.ink/post-images/1610370521699.webp" alt="Airplay2" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1610370521699.webp" alt="Airplay2" loading="lazy"></figure>
 <h4 id="后台监控">后台监控</h4>
-<figure data-type="image" tabindex="2"><img src="https://wushuo.ink/post-images/1610370776164.webp" alt="monitor" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="http://localhost:4000/post-images/1610370776164.webp" alt="monitor" loading="lazy"></figure>
 <h4 id="流媒体播放-dlna-和-私人网盘">流媒体播放 (DLNA) 和 私人网盘</h4>
 <ul>
 <li>Aplayer in iPad</li>
 </ul>
-<figure data-type="image" tabindex="3"><img src="https://wushuo.ink/post-images/1610518394674.webp" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="http://localhost:4000/post-images/1610518394674.webp" alt="" loading="lazy"></figure>
 <h4 id="更快的速度和更稳定的视频播放">更快的速度和更稳定的视频播放</h4>
-<figure data-type="image" tabindex="4"><img src="https://wushuo.ink/post-images/1610378026837.webp" alt="VideoPlay" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="http://localhost:4000/post-images/1610378026837.webp" alt="VideoPlay" loading="lazy"></figure>
 <hr>
 <h3 id="准备工作">准备工作</h3>
 <h4 id="从了解网络拓扑开始">从了解网络拓扑开始</h4>
@@ -650,12 +636,12 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 <hr>
 <h3 id="图形界面">图形界面</h3>
 <p>确保你的设备接入到了家用Wi-Fi路由器的网络中，在浏览器中输入<code>192.168.5.1</code>，输入先前设置的密码<br>
-<img src="https://wushuo.ink/post-images/1610376881526.webp" alt="webOfOpenwrt" loading="lazy"></p>
+<img src="http://localhost:4000/post-images/1610376881526.webp" alt="webOfOpenwrt" loading="lazy"></p>
 <h4 id="开始联网">开始联网</h4>
 <p>在 <strong>网络</strong> - <strong>接口</strong> - <strong>WAN</strong> - 将传输协议改为 <strong>PPPoE</strong><br>
 用户名和密码为宽带拨号用户名和密码<br>
 保存后测试即可上网<br>
-<img src="https://wushuo.ink/post-images/1610378344618.webp" alt="connectPPPoE" loading="lazy"></p>
+<img src="http://localhost:4000/post-images/1610378344618.webp" alt="connectPPPoE" loading="lazy"></p>
 <h3 id="更多服务">更多服务</h3>
 <p>如果第三方编译的镜像提供了更多的服务</p>
 <h4 id="隔空播放">隔空播放</h4>
@@ -670,8 +656,8 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
     </entry>
     <entry>
         <title type="html"><![CDATA[断舍离]]></title>
-        <id>https://wushuo.ink/post/rejectfomo/</id>
-        <link href="https://wushuo.ink/post/rejectfomo/">
+        <id>http://localhost:4000/post/rejectfomo/</id>
+        <link href="http://localhost:4000/post/rejectfomo/">
         </link>
         <updated>2021-01-09T03:02:28.000Z</updated>
         <summary type="html"><![CDATA[<p>明明无伤大雅，我为什么想法设法去除一切广告并且注销知乎和微博 / 无纸化阅读的专注</p>
@@ -687,6 +673,28 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 <p>再谈广告：作为互联网企业从用户口袋里隔空捞钱的手段，知乎的广告投放确实比其他小厂有水准。几乎每个回答下都有广告，这些广告并不是让你点入，而是在看完回答时切换下一个回答过程中，一秒钟手指移动的时间就能进行<strong>潜在的广告投放</strong>。你也许并不感兴趣，也未曾了解到自己被投放了这样的广告，但在广告投放方的眼里，你已经被广告内容<strong>潜移默化</strong>地影响了。除了这样通过知乎直接投放广告的方式，答主也能通过在文章内自行推荐广告链接的方式推送<strong>软广</strong>：通过广告代理人答主的形象进行广告投放，知乎当然也能分得一羹。</p>
 <p>至于微博，已经很久都不在看了。很难有机会让我点开第三方无广告的微博，通过数个捷径前往热搜去看哪些事件正在被大家“刷上去”。</p>
 <p>电子设备正在逐步取代纸质化阅读甚至是书写，我已经很难向从前那样抱着一本书在空调房间里看数小时之久。但愿新的一年里能够认认真真的看书——不管是纸质书或者iPad或者是Kindle，毕竟载体时时在变化，所承载的内容才是恒久不衰的。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[从 OPPO 和 “ColorOS” 谈起]]></title>
+        <id>http://localhost:4000/post/fromOPPOtoLife/</id>
+        <link href="http://localhost:4000/post/fromOPPOtoLife/">
+        </link>
+        <updated>2021-01-07T12:52:59.000Z</updated>
+        <summary type="html"><![CDATA[<p>OPPO 作为国民级别的品牌，凭借强大的营销手段和“独特”的设计语言耳熟能详；而 “ColorOS”  作为 OPPO 自主研发的 Android UI，却不配 OS 其名。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>OPPO 作为国民级别的品牌，凭借强大的营销手段和“独特”的设计语言耳熟能详；而 “ColorOS”  作为 OPPO 自主研发的 Android UI，却不配 OS 其名。</p>
+<!-- more -->
+<hr>
+<p>前些天把我妈用了两年的 OPPO 手机换成了 iPhone XR，虽然我妈坚持说手机很好还能用，她很喜欢，我还是替她做主换掉了。知道我妈心疼钱，于是求好哥们费尽心思淘了个黑解的 iPhone XR，不带面容识别，让我妈随便用。知道了价钱，我妈用地省心，也不担心摔了心疼。</p>
+<p>于是剩下的 OPPO A5 手机我就拿来当个电子时钟。当然，作为电子时钟都是后话了，我也曾经对这个刘海屏的手机抱有一点点希望的：3GB RAM，骁龙SMD450，还有和同期发布的 iPhone X 相似的刘海屏幕。但可惜，找遍了全网也没有找到了可以找到刷原生系统的方法。原因当然是 <a href="https://zh.wikipedia.org/wiki/%E5%95%9F%E5%8B%95%E7%A8%8B%E5%BC%8F">BootLoader</a> 被锁住，不仅如此，甚至桌面也被锁住，无法更换第三方桌面。</p>
+<p>印象中 OPPO 手机常常出现于电视广告中，从“充电五分钟，电话两小时”到各色明星大腕的代言。我人生的第一部自己的手机就是 OPPO ，不过几载，曾经 OPPO 骄傲的拍照，充电续航也只剩下美颜，大电池。锁起了桌面，凭借着从前强大的线下商店铺展和广告流量，OPPO 的状况也还过的去。</p>
+<p>但在二〇二〇这个不那么幸运的年份，OPPO 的最后一点差距被彻底拉开，说是 ColorOS 不如称是 ColorUI：华为EMUI开始靠向成熟的iOS，以软件公司著称的小米MIUI，友商vivo全新的wget交互方式。OPPO 却还在完善着自己“操作系统”的广告推送机制。</p>
+<p>即使拖出 OPPO 高端 OnePlus 系列，“不将就”的系统设计对国内的环境也“不将就“。操作系统的不人性化使得 OPPO 的高端线用户开始流失，低端手机搭配完全与价格不符的配置也让低端线用户发誓再也不买这个品牌。</p>
+<p>核心技术的缺失是 OPPO 一直的痛，与此同样遭遇的还有隔壁的 vivo，但既然做不出好的系统，就应该和小米一样打开 BL 锁的权限，让用户能够真正拿到使用硬件的权力，而不是用糟糕的系统使用体验恶心用户。</p>
+<p>我向来不喜欢对一个品牌标榜好或者坏，但 OPPO 在 “ColorOS” 方面的表现这是难尽人意。</p>
+<p>失去核心技术一定会在未来被暴露和无限放大。就像念大学，失去了特别的东西：“每天上课听讲，每次考试复习，每周参加社团活动，和无数大学生一样念完大学四年，任时光荏苒”，何不可以怜惜。念到最后如 OPPO 宣传自己道：“我们这款手机搭载的是八核处理器。”资本家和教授可都是“电子发烧友”：一上手立马发现 SDM450 八核不过是嘘头，没有一点真才实料，根本不是我们要买的手机，或许你最看不上的过时 iPhone5S 比你的方方面面都要强。</p>
+<p>或许会想，为什么要拿 iPhone 和 OPPO 相比较，iPhone 的体量不知道比 OPPO 高到哪里去了。但事实是，iPhone 和 OPPO 正处在同一市场，为什么觉得那些高不可攀的产品和你的目标群体不会有冲突，我这样的打工人也一样如此。</p>
 ]]></content>
     </entry>
 </feed>
