@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>https://wushuo.me</id>
     <title>Shuo</title>
-    <updated>2022-07-09T12:41:11.995Z</updated>
+    <updated>2022-07-09T12:42:39.277Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="https://wushuo.me"/>
+    <link rel="self" href="https://wushuo.me/atom.xml"/>
     <subtitle>我的故事写不进作文</subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+    <logo>https://wushuo.me/images/avatar.png</logo>
+    <icon>https://wushuo.me/favicon.ico</icon>
     <rights>All rights reserved 2022, Shuo</rights>
     <entry>
         <title type="html"><![CDATA[Intro to Linear Algebra]]></title>
-        <id>http://localhost:4000/post/IntroToLinearAlgebra/</id>
-        <link href="http://localhost:4000/post/IntroToLinearAlgebra/">
+        <id>https://wushuo.me/post/IntroToLinearAlgebra/</id>
+        <link href="https://wushuo.me/post/IntroToLinearAlgebra/">
         </link>
         <updated>2022-07-05T10:38:00.000Z</updated>
         <summary type="html"><![CDATA[<p>MIT 18.06 by Glibert Strang</p>
@@ -170,8 +170,8 @@ x + 2y + z = 2\\
     </entry>
     <entry>
         <title type="html"><![CDATA[校园网捷径一键登录及分析]]></title>
-        <id>http://localhost:4000/post/shortcutsForWebAuthentication/</id>
-        <link href="http://localhost:4000/post/shortcutsForWebAuthentication/">
+        <id>https://wushuo.me/post/shortcutsForWebAuthentication/</id>
+        <link href="https://wushuo.me/post/shortcutsForWebAuthentication/">
         </link>
         <updated>2021-09-19T15:29:41.000Z</updated>
         <summary type="html"><![CDATA[<p>&quot;我曾经惊叹于他们工具的优雅，现在我决定将这些拿来做成玩具&quot;<br>
@@ -207,8 +207,8 @@ x + 2y + z = 2\\
     </entry>
     <entry>
         <title type="html"><![CDATA[iTunes 家庭媒体]]></title>
-        <id>http://localhost:4000/post/iTunesHomeShare/</id>
-        <link href="http://localhost:4000/post/iTunesHomeShare/">
+        <id>https://wushuo.me/post/iTunesHomeShare/</id>
+        <link href="https://wushuo.me/post/iTunesHomeShare/">
         </link>
         <updated>2021-07-20T07:54:47.000Z</updated>
         <summary type="html"><![CDATA[<p>流式传输定义很广泛，主要指通过网络传送流媒体 ( 如视频，音频 ) 的技术总称。其特定含义为通过网络将影视节目传送到终端。为了通过 Wi-Fi 传输数字音乐，AirPlay 使用 RTSP 协议，即实时流协议。Apple Lossless 音频编解码器以 44100Hz 的速度传输两个音频通道。</p>
@@ -258,7 +258,7 @@ x + 2y + z = 2\\
 <p>请注意，Apple TV App 或 iTunes 会询问是否将流媒体整齐有序的排列，其本质是建立单独的文件夹“媒体”，并将拖入 Apple TV App ( 或 iTunes ) 或 使用 Apple TV App ( 或 iTunes ) 添加的本地媒体<strong>复制</strong>到“媒体”文件夹中。同时，这意味着 Apple TV App ( 或 iTunes ) 对“媒体”文件夹拥有<strong>完全读写权力</strong>，这一点非常重要</p>
 <h4 id="导入流媒体">导入流媒体</h4>
 <p>要想导入流媒体进入资料库，只需要拖入流媒体文件至  Apple TV App ( 或 iTunes ) ，App 会自动将流媒体文件复制到 App 目录下 ( 一般为“媒体”或 “iTunes”)<br>
-<img src="http://localhost:4000/post-images/1627010596998.webp" alt="" loading="lazy"></p>
+<img src="https://wushuo.me/post-images/1627010596998.webp" alt="" loading="lazy"></p>
 <h4 id="分类流媒体">分类流媒体</h4>
 <p>点击媒体的 更多信息-显示简介-选项，即可开始分类，通常分类选项为三种：影片，电视剧，家庭视频</p>
 <ul>
@@ -266,7 +266,7 @@ x + 2y + z = 2\\
 <li>电视剧一般为多集流媒体如，如动画番剧，电视连续剧</li>
 <li>家庭视频一般为自己拍摄的生活视频</li>
 </ul>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1627014602113.webp" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://wushuo.me/post-images/1627014602113.webp" alt="" loading="lazy"></figure>
 <h4 id="为流媒体设置详细信息即元数据">为流媒体设置详细信息即元数据</h4>
 <p>电视剧的设置选项最多且复杂，这里以电视剧为例：</p>
 <ul>
@@ -281,7 +281,7 @@ x + 2y + z = 2\\
 <li>年份：该季发布的年份</li>
 </ul>
 <p>请注意，iTunes 资料库主要通过<strong>元数据</strong> ( <em>metadata</em> ) 进行自动归档，在电视剧设置中，切勿将标题与节目设置错误 ( 例如每一集设置重复的标题而非重复的节目 )，由于资料库对其“媒体”文件夹有<strong>完全读写权力</strong>，“媒体”文件夹内的流媒体文件可能会被自动<strong>覆盖</strong> ( <em>overwrite</em> )，导致珍贵的流媒体文件丢失</p>
-<figure data-type="image" tabindex="2"><img src="http://localhost:4000/post-images/1627014607595.webp" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://wushuo.me/post-images/1627014607595.webp" alt="" loading="lazy"></figure>
 <h3 id="影片混流剪辑修改字幕">影片混流剪辑修改字幕</h3>
 <p>在 Apple 设备上，mp4 / m4v 格式才能够被原生播放，而 mkv 格式则需要被第三方播放器播放<br>
 在 iOS / Mac 设备上，我们可以轻松安装第三方播放器，例如 <a href="https://apps.apple.com/us/app/aplayer-alook-player/id1420356569">Avplayer</a> / <a href="https://iina.io/">IINA</a>，但对于 Apple TV ( 特别是 Apple TV 2 和 Apple TV 3 )，无法识别 iTunes 资料库的 mkv 格式流媒体，在这里对格式转换做简略介绍</p>
@@ -308,8 +308,8 @@ x + 2y + z = 2\\
     </entry>
     <entry>
         <title type="html"><![CDATA[转换器]]></title>
-        <id>http://localhost:4000/post/LongLifeEvolution/</id>
-        <link href="http://localhost:4000/post/LongLifeEvolution/">
+        <id>https://wushuo.me/post/LongLifeEvolution/</id>
+        <link href="https://wushuo.me/post/LongLifeEvolution/">
         </link>
         <updated>2021-06-23T15:07:03.000Z</updated>
         <summary type="html"><![CDATA[<p>怎样过完普通的一生 / converter</p>
@@ -329,8 +329,8 @@ x + 2y + z = 2\\
     </entry>
     <entry>
         <title type="html"><![CDATA[卷积积分介绍]]></title>
-        <id>http://localhost:4000/post/introofconvolution/</id>
-        <link href="http://localhost:4000/post/introofconvolution/">
+        <id>https://wushuo.me/post/introofconvolution/</id>
+        <link href="https://wushuo.me/post/introofconvolution/">
         </link>
         <updated>2021-06-15T09:24:49.000Z</updated>
         <summary type="html"><![CDATA[<p>卷积、旋积或摺积 ( Convolution ) 是通过两个函数 f 和 g 生成第三个函数的一种数学算子，表征函数 f 与 g 经过翻转和平移的重叠部分函数值乘积对重叠长度的积分。</p>
@@ -355,8 +355,8 @@ x + 2y + z = 2\\
     </entry>
     <entry>
         <title type="html"><![CDATA[矢量分析初步]]></title>
-        <id>http://localhost:4000/post/VectorAnalysisBeginning/</id>
-        <link href="http://localhost:4000/post/VectorAnalysisBeginning/">
+        <id>https://wushuo.me/post/VectorAnalysisBeginning/</id>
+        <link href="https://wushuo.me/post/VectorAnalysisBeginning/">
         </link>
         <updated>2021-05-26T14:24:30.000Z</updated>
         <summary type="html"><![CDATA[<p>矢量分析初步主要介绍 &quot;梯度, 散度, 旋度&quot; 的概念及其之间的关系</p>
@@ -653,8 +653,8 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
     </entry>
     <entry>
         <title type="html"><![CDATA[这是和工具们的故事]]></title>
-        <id>http://localhost:4000/post/withMyTools/</id>
-        <link href="http://localhost:4000/post/withMyTools/">
+        <id>https://wushuo.me/post/withMyTools/</id>
+        <link href="https://wushuo.me/post/withMyTools/">
         </link>
         <updated>2021-02-12T11:40:55.000Z</updated>
         <summary type="html"><![CDATA[<p>一直着手于工具, 或是即刻着手于眼前; 即使到现在我也没有办法做出决定</p>
@@ -684,8 +684,8 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
     </entry>
     <entry>
         <title type="html"><![CDATA[再见了，DW1820A]]></title>
-        <id>http://localhost:4000/post/hackintoshFromPerfectToGiveup/</id>
-        <link href="http://localhost:4000/post/hackintoshFromPerfectToGiveup/">
+        <id>https://wushuo.me/post/hackintoshFromPerfectToGiveup/</id>
+        <link href="https://wushuo.me/post/hackintoshFromPerfectToGiveup/">
         </link>
         <updated>2021-01-14T02:36:34.000Z</updated>
         <summary type="html"><![CDATA[<p>从 DW1820A 到手已经半个月了，从 Airdrop 到 Airplay，再到 Command 和 Option，一圈下来还是 Windows 10 更加适合我。别了，Hackintosh。</p>
@@ -704,8 +704,8 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
     </entry>
     <entry>
         <title type="html"><![CDATA[我的家庭组网：软路由从联网到智能家居]]></title>
-        <id>http://localhost:4000/post/aboutOpenwrt/</id>
-        <link href="http://localhost:4000/post/aboutOpenwrt/">
+        <id>https://wushuo.me/post/aboutOpenwrt/</id>
+        <link href="https://wushuo.me/post/aboutOpenwrt/">
         </link>
         <updated>2021-01-11T11:44:48.000Z</updated>
         <summary type="html"><![CDATA[<p>OpenWrt 是适合于嵌入式设备的一个 Linux 发行版。<br>
@@ -744,16 +744,16 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 </ul>
 <h3 id="功能展示">功能展示</h3>
 <h4 id="airplay2-隔空播放">Airplay2 (隔空播放)</h4>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1610370521699.webp" alt="Airplay2" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://wushuo.me/post-images/1610370521699.webp" alt="Airplay2" loading="lazy"></figure>
 <h4 id="后台监控">后台监控</h4>
-<figure data-type="image" tabindex="2"><img src="http://localhost:4000/post-images/1610370776164.webp" alt="monitor" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://wushuo.me/post-images/1610370776164.webp" alt="monitor" loading="lazy"></figure>
 <h4 id="流媒体播放-dlna-和-私人网盘">流媒体播放 (DLNA) 和 私人网盘</h4>
 <ul>
 <li>Aplayer in iPad</li>
 </ul>
-<figure data-type="image" tabindex="3"><img src="http://localhost:4000/post-images/1610518394674.webp" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://wushuo.me/post-images/1610518394674.webp" alt="" loading="lazy"></figure>
 <h4 id="更快的速度和更稳定的视频播放">更快的速度和更稳定的视频播放</h4>
-<figure data-type="image" tabindex="4"><img src="http://localhost:4000/post-images/1610378026837.webp" alt="VideoPlay" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://wushuo.me/post-images/1610378026837.webp" alt="VideoPlay" loading="lazy"></figure>
 <hr>
 <h3 id="准备工作">准备工作</h3>
 <h4 id="从了解网络拓扑开始">从了解网络拓扑开始</h4>
@@ -794,12 +794,12 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 <hr>
 <h3 id="图形界面">图形界面</h3>
 <p>确保你的设备接入到了家用Wi-Fi路由器的网络中，在浏览器中输入<code>192.168.5.1</code>，输入先前设置的密码<br>
-<img src="http://localhost:4000/post-images/1610376881526.webp" alt="webOfOpenwrt" loading="lazy"></p>
+<img src="https://wushuo.me/post-images/1610376881526.webp" alt="webOfOpenwrt" loading="lazy"></p>
 <h4 id="开始联网">开始联网</h4>
 <p>在 <strong>网络</strong> - <strong>接口</strong> - <strong>WAN</strong> - 将传输协议改为 <strong>PPPoE</strong><br>
 用户名和密码为宽带拨号用户名和密码<br>
 保存后测试即可上网<br>
-<img src="http://localhost:4000/post-images/1610378344618.webp" alt="connectPPPoE" loading="lazy"></p>
+<img src="https://wushuo.me/post-images/1610378344618.webp" alt="connectPPPoE" loading="lazy"></p>
 <h3 id="更多服务">更多服务</h3>
 <p>如果第三方编译的镜像提供了更多的服务</p>
 <h4 id="隔空播放">隔空播放</h4>
@@ -814,8 +814,8 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
     </entry>
     <entry>
         <title type="html"><![CDATA[断舍离]]></title>
-        <id>http://localhost:4000/post/rejectfomo/</id>
-        <link href="http://localhost:4000/post/rejectfomo/">
+        <id>https://wushuo.me/post/rejectfomo/</id>
+        <link href="https://wushuo.me/post/rejectfomo/">
         </link>
         <updated>2021-01-09T03:02:28.000Z</updated>
         <summary type="html"><![CDATA[<p>明明无伤大雅，我为什么想法设法去除一切广告并且注销知乎和微博 / 无纸化阅读的专注</p>
