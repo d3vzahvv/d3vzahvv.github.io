@@ -2,14 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.me</id>
     <title>Shuo</title>
-    <updated>2023-10-06T10:08:03.498Z</updated>
+    <updated>2024-05-21T08:16:03.640Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.me"/>
     <link rel="self" href="https://wushuo.me/atom.xml"/>
     <subtitle>我的故事写不进作文</subtitle>
     <logo>https://wushuo.me/images/avatar.png</logo>
     <icon>https://wushuo.me/favicon.ico</icon>
-    <rights>All rights reserved 2023, Shuo</rights>
+    <rights>All rights reserved 2024, Shuo</rights>
+    <entry>
+        <title type="html"><![CDATA[生活]]></title>
+        <id>https://wushuo.me/post/seikatsu/</id>
+        <link href="https://wushuo.me/post/seikatsu/">
+        </link>
+        <updated>2024-05-21T06:12:22.000Z</updated>
+        <summary type="html"><![CDATA[<p>文章标题的《生活》来自 ハローモンテスキュ 的专辑名称，日语发音为 せいかつ / seikatsu；文章末尾附有这支专辑的流媒体平台的超链接</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>文章标题的《生活》来自 ハローモンテスキュ 的专辑名称，日语发音为 せいかつ / seikatsu；文章末尾附有这支专辑的流媒体平台的超链接</p>
+<!-- more -->
+<p>最近在写研究计划书，英文缩写为 RP，然而我一直不清楚到底是 Research Proposal （研究提案）还是 Research Plan （研究计划）；我当然更倾向于前者，一方面 Proposal 这个词听起来更高级，另一方面异想天开的两页 PDF 文档根本称不上计划。RP 一词放到国内应当翻译为开题报告比较贴切，只是 RP 是作为申请材料提交的一部分，和实际的研究内容不是强相关的</p>
+<p>本科的时候不喜欢 ML 相关的东西，也没有过多接触火热的 AI；如今到了研究计划书里，却要加入一大堆各种神经网络模型论文的引用。只能说，这是为了生活。不过好在 RP 的方向可以自己选择，撇开神经网络，还有一些自己感兴趣的朴素的媒体处理可以写，也算没有白学信号处理这些课</p>
+<p>比起晦涩难懂的受限玻尔兹曼机，上班儿生活显然更加无聊；在没啥研发内容的研发岗上班，短短几天我就理解到上班的意义就是<strong>挣钱</strong>，学习行业内的业务能力只不过是初入职场的安慰剂，升职加薪更是领导的大饼。在公司里当个小研发员，换来的是：在人挤人的调休节假日晒出来的精美朋友圈</p>
+<p>上班的一小段日子里，每天在工位上摸鱼，心情好去帮高级工程师调试板子，每天 3 小时的通勤。即使我从来不在意 Leader 和办公室其他人的目光 5:30 到点就走人，回到家依然累得倒头就睡。我发现在这种上班氛围里，我失去了对我喜爱的东西的热情，我没有时间骑车，也没有时间看硬件，我的英语和日语完全没办法继续练习。</p>
+<p>之后我辞了职，拿了 N2 的证书，穷玩了长三角的城市，备考托福托业，学数学</p>
+<p>当我听到在外企上班的朋友说，她有时候需要 24 小时 standby，我一点也不羡慕她的双休和薪资了</p>
+<p>在家躺平被老中社会视为一种罪恶，特别是之前麻木的工作赚的钱也不少，主要原因是除了交通费以外没有其他开支。但沉湎在麻木的工作里让我感到害怕，我很害怕让我失去重新开始<strong>追逐目标的勇气</strong>和继续学习的能力</p>
+<p>因此尽管有家里人的压力（集中于学习方面而不是宅家躺平方面）和浪费的快一年时间，我显然想要有更多机会，即使这些机会最后没有转化为结果，我也并不后悔。我备考托福的时间是备考托业考试的几十倍，托福并没有考到想要的分数，之后草草报名了托业，卷子甚至有 1/8 来不及写，依然拿了能用的分数。不可否认托业这种野鸡考试对比托福有些高攀了，但是回想复习托福的那段经历，对托业一定是有帮助的。</p>
+<p>英语考试的努力都不会白白浪费，更何况是在家躺平的挣扎的生活</p>
+<p>附言：<br>
+这篇文章动笔之前想的很多，动笔之后写得断断续续；可能我写不出任何有深度的东西了，写得完全是流水账。如果您可以看完，我会十分感谢（笑）</p>
+<p>生活　ー　ハローモンテスキュー</p>
+<ul>
+<li>Apple Music <a href="https://music.apple.com/cn/album/%E7%94%9F%E6%B4%BB/1479017557">专辑链接</a></li>
+<li>Spotify <a href="https://open.spotify.com/album/6R27I6rHkULBNFW1ehbELy">专辑链接</a></li>
+<li>Youtube <a href="https://www.youtube.com/watch?v=7Nx9Of0dtLo&amp;list=OLAK5uy_m87lLS-zKxnz82gej5S4uL5Hwn-yEN_Kg">专辑合集</a></li>
+<li>QQ 音乐 <a href="https://y.qq.com/n/ryqq/albumDetail/001YYpjP0ehJYR">专辑链接</a></li>
+<li>网易云音乐 <a href="https://music.163.com/#/album?id=191155054">专辑链接</a></li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[新年旧札]]></title>
         <id>https://wushuo.me/post/genealogy/</id>
@@ -680,26 +711,6 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></spa
 <p>辛丑年正月初一<br>
 于浙江省长兴县泗安镇二界岭<br>
 由手机热点发送</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[再见了，DW1820A]]></title>
-        <id>https://wushuo.me/post/hackintoshFromPerfectToGiveup/</id>
-        <link href="https://wushuo.me/post/hackintoshFromPerfectToGiveup/">
-        </link>
-        <updated>2021-01-14T02:36:34.000Z</updated>
-        <summary type="html"><![CDATA[<p>从 DW1820A 到手已经半个月了，从 Airdrop 到 Airplay，再到 Command 和 Option，一圈下来还是 Windows 10 更加适合我。别了，Hackintosh。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>从 DW1820A 到手已经半个月了，从 Airdrop 到 Airplay，再到 Command 和 Option，一圈下来还是 Windows 10 更加适合我。别了，Hackintosh。</p>
-<!-- more -->
-<p>博通 DW1820A 是戴尔为 XPS13 9350 定制的一款网卡，因为能够在 macOS 下被驱动，并且能够正常使用隔空投送，接力这些 Apple 原生服务被熟知。在黑苹果圈子里被炒到了接近 200 软妹币，要知道支持 Wi-Fi 6 和 蓝牙 5.1 的 intel AX200 才 70 元。</p>
-<p>DW1820A 在 macOS 下的体验确实<strong>几乎</strong>完美，但 hacintosh 的稳定性让我抓狂。Opencore 的引导几乎总是出现问题，失去了 T2 芯片作为安全启动引导，hackintosh 在<strong>引导阶段</strong>无法加载驱动和屏幕闪烁。</p>
-<p>至于 macOS 下的快捷键，对于熟悉了多年 Windows 操作方式的我来说，已经很难把手指移到 Command 键的位置执行操作了。加之 macOS 对第三方鼠标没有平滑滚动，无法对触控板和鼠标进行单独操控，除了使用<strong>非系统级</strong>软件，很难解决鼠标在 macOS 下的体验。</p>
-<p>系统本身的稳定性层面，蓝牙与 5Ghz 频段冲突造成系统级卡顿，颠覆了我对 macOS 无比流畅的想象。不同接口造成 macOS 在某些软件下还没有 Windows 渲染流畅。</p>
-<p>原本让我觉得 macOS 就是开发设备的一个重要原因就是 <strong>shell</strong>，类 Unix 系统自带 shell 让 ssh / git 不再是困难。但 Windows 10 的 Fluent Terminal 搭配 Linux 子系统平步青云地做到了这些，这让我失去了对 macOS 最后一点点的幻想。</p>
-<p><strong>稳定性</strong>，最终让我选择了 Windows 10 202H，流畅的动画和支持<strong>硬件加速 GPU</strong>。</p>
-<p>格式化了 D 盘，换掉了 键盘上的 Command 键，再见了 DW1820A，再见了 macOS，再见了hackintosh。</p>
-<p>下次再见才是<strong>一派新风貌</strong>。</p>
 ]]></content>
     </entry>
 </feed>
