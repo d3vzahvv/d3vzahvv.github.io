@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wushuo.me</id>
     <title>Shuo</title>
-    <updated>2024-08-24T15:43:08.360Z</updated>
+    <updated>2024-08-25T00:28:08.682Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wushuo.me"/>
     <link rel="self" href="https://wushuo.me/atom.xml"/>
@@ -40,8 +40,8 @@ ASS 格式可以高度自定义，显示效果出众，成为了不少字幕组�
 <p>字幕文件有不同的存在形式：</p>
 <p><strong>内嵌字幕</strong>又叫烧录字幕，国内流媒体视频网站中的字幕大多是内嵌字幕，它的原理是将字幕字体烧录到视频上，使字体成为视频的像素点。这种烧录是有损的，会使原视频被字幕遮挡的部分损失<br>
 当然，由于字幕和视频转化为了“新的包含字幕的视频”，新视频不存在兼容性问题，播放器在播放时无需调用字幕，只需要播放新视频即可</p>
-<p><strong>内封字幕</strong>是指将上述介绍的字幕格式文件封装在视频文件中，字幕和视频只有一个文件（如 <code>视频.mkv</code>），字幕是独立于视频存在的。内封字幕视频的字幕文件可以被简单地提取出来，也可以对字幕修改后重新封装回原视频</p>
-<p><strong>外挂字幕</strong>是指字幕文件独立于视频文件，在播放时由播放器挂载到视频上。如同一级目录下包含 <code>视频.mkv</code>、<code>字幕.ass</code> 格式的文件。外挂字幕便于修改，但需要播放器支持挂载字幕</p>
+<p><strong>内封字幕</strong>是指将上述介绍的字幕格式文件封装在视频文件中，字幕和视频只有一个文件（如 <code>video.mkv</code> ），字幕是独立于视频存在的。内封字幕视频的字幕文件可以被简单地提取出来，也可以对字幕修改后重新封装回原视频</p>
+<p><strong>外挂字幕</strong>是指字幕文件独立于视频文件，在播放时由播放器挂载到视频上。如同一级目录下包含 <code>video.mkv</code>、<code>subtitle.ass</code> 格式的文件。外挂字幕便于修改，但需要播放器支持挂载字幕</p>
 <h3 id="字幕字体子集化">字幕字体子集化</h3>
 <p>字体文件通常包含了所有的<strong>字符</strong>字体，这使得字体文件较大，<strong>字体子集化</strong>可以将需要使用的<strong>字符的字体</strong>单独提取出来，以供调用</p>
 <p>这非常容易理解，我们不妨打个比方：<br>
