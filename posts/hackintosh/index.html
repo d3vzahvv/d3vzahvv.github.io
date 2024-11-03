@@ -198,11 +198,11 @@ Can not be used as video-editing or render
 
 Attention: if you can have a mac in any way you should install MacOS on your PC through Unibeast" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wushuo.me/posts/hackintosh/" /><meta property="og:image" content="https://wushuo.me/img/cover-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://wushuo.me/posts/hackintosh/" /><meta property="og:image" content="https://wushuo.me/img/cover-image-0.jpg"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-08-23T19:03:45+08:00" />
 <meta property="article:modified_time" content="2020-08-23T19:03:45+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://wushuo.me/img/cover-image.jpg"/>
+<meta name="twitter:image" content="https://wushuo.me/img/cover-image-0.jpg"/>
 
 <meta name="twitter:title" content="Hackintosh on intel G41 with 775/771 CPU"/>
 <meta name="twitter:description" content="A Hackintosh is a computer that runs an Apple Macintosh operating system on computer hardware not authorized for the purpose by Apple. This passage is to introduce using intel G41 series motherboard hackintosh on a low budget.
@@ -310,7 +310,7 @@ Attention: if you can have a mac in any way you should install MacOS on your PC 
   "articleBody": "A Hackintosh is a computer that runs an Apple Macintosh operating system on computer hardware not authorized for the purpose by Apple. This passage is to introduce using intel G41 series motherboard hackintosh on a low budget.\n# Showing # System Configuration Parts Type Model in Clover Config iMac14, 2 CPU Intel Xeon L5420 2.5Ghz with 4 Cores 4 Threads Motherboard AUSU P5G41T-M LX V2 Graphics Pegatron GeForce 310 512 MB HDMI/DVI Disk Teclast SSD 128GB SATA Memory 1333MHz DDR3 2x2G Display Philips 32PFL3040 1360x768 HDMI Audio SANSUI with Green Rear Line-out # Performance Geekbench 5: Single-Core Score 380 / Multi-Core Score 1283 Browser website and Code fluently with 2 x 6MB L2 Cache Can not be used as video-editing or render # Build wakeup success resolution success HDMI/DVI both can be line-out audio line-out success in Green Rear and Headphones ethernet conect stably iCloud and Appstore replaced SMBIOS Power-on without USB Sticker wireless and bluetooh USB 3.0 port which can be installed through PCIE x1 microphone Airdrop and Handoff iMessage, Facetime and iTunes can not login # About Boot Attention: if you can have a mac in any way you should install MacOS on your PC through Unibeast\nThe way I’ll introduce worked successfully in any old MBR PC\nboot workflow MBR simulate UEFI ( EFI in Disk ) \u003e enter UEFI Boot \u003e enter Clover Boot ( ESP in MacOS ) \u003e MacOS\nMBR simulate UEFI achievement Part 500 MB FAT32 disk0 as EFI Partition from boot disk Active the EFI Partition to allow MBR Boot Use BOOTICE to simulate UEFI MBR Repair disk0:usr/standalone/i386/boot0af to your boot disk PBR Repair disk0:usr/standalone/i386/boot1f32alt to EFI Partition Until now your MBR PC is able to simulate UEFI # Install macOS Known The macOS version is decided by your PC parts, mostly decided by Graphics U Disk is more realiable than writing to disk directly Install important points Xeon CPU ( Particularly 771 socket trans to 775 socket ) need to add boot args: npci=0x3000 Nvdia GT 210/GT 310 ( 512 MB / 1024 MB ) is able to be drived by macOS natively and it’s the cheapest Graphics If macOS Catalina are wished to be installed, the Kepler Nvdia Graphics is a good choice Recommanded Graphics Dell Nvdia GeForce 640 1024 MB with DP/HDMI/DVI G41 series motherboard or inetl 775 CPU only support 1333 DDR3 4G double-sided Memory and maximum 8G Memory Motherboard from Gigabyte/AUSU/MSI match the macOS better ( Gigabyte the best ) # Ending Thank u guys who’ve read patiently, hope u hack successfully!\n# More info about hackintosh wiki: what is hackintosh Github: hackintosh model collection tonymacx86: guide and forum of hackintosh Opencore: brand new boot\n",
   "wordCount" : "448",
   "inLanguage": "en",
-  "image": "https://wushuo.me/img/cover-image.jpg","datePublished": "2020-08-23T19:03:45+08:00",
+  "image": "https://wushuo.me/img/cover-image-0.jpg","datePublished": "2020-08-23T19:03:45+08:00",
   "dateModified": "2020-08-23T19:03:45+08:00",
   "author":{
     "@type": "Person",
