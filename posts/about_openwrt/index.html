@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>我的家庭组网：软路由从联网到智能家居 | Shuo</title>
+<meta name="keywords" content="">
+<meta name="description" content="OpenWrt 是适合于嵌入式设备的一个 Linux 发行版。
+对于开发者来说，OpenWrt是一个框架，开发者不必麻烦地构建整个固件就能得到想要的应用程序；对于用户来说，这意味着完全定制的能力，与以往不同的方式使用设备，OPKG 包含超过3500个软件。 默认使用 LuCI 作为 website 交互界面。
+
+这是一篇 Step by Step 的关于 x86 架构组建 Openwrt 家庭软路由的教程。你将可以了解到 Openwrt 在现代家庭网络中大放异彩：私人云盘，流媒体托管，负载均衡，流量管控，隔空播放，甚至更多值得想象的功能；并且你只需基本的电脑知识和简单的硬件就能在你的家中实现。
+注意：
+
+你的家庭网络必须接入互联网运营商且能正常上网
+你需要一台闲置的台式电脑（当然您也可以选择以极低的价格购买 x86 软路由，约 200 元人民币）
+你需要一台无线硬路由（即普通的 WI-FI 路由器）/ AP
+确保光猫工作在桥接模式下（日常生活中联网无需拨号上网即桥接模式）
+
+目录
+
+有限的功能展示
+准备工作
+
+网络拓扑
+硬件条件
+
+
+系统安装
+图像界面设置
+更多服务
+
+隔空播放
+广告过滤
+DLNA流媒体服务
+连接互联网
+
+
+
+功能展示
+Airplay2 (隔空播放)
+
+
+后台监控
+
+
+流媒体播放 (DLNA) 和 私人网盘
+
+Aplayer in iPad
+
+
+
+更快的速度和更稳定的视频播放
+
+">
+<meta name="author" content="">
+<link rel="canonical" href="https://wushuo.me/posts/about_openwrt/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://wushuo.me/assets/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://wushuo.me/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://wushuo.me/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://wushuo.me/apple-touch-icon.png">
+<link rel="mask-icon" href="https://wushuo.me/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://wushuo.me/posts/about_openwrt/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="我的家庭组网：软路由从联网到智能家居" />
+<meta property="og:description" content="OpenWrt 是适合于嵌入式设备的一个 Linux 发行版。
+对于开发者来说，OpenWrt是一个框架，开发者不必麻烦地构建整个固件就能得到想要的应用程序；对于用户来说，这意味着完全定制的能力，与以往不同的方式使用设备，OPKG 包含超过3500个软件。 默认使用 LuCI 作为 website 交互界面。
+
+这是一篇 Step by Step 的关于 x86 架构组建 Openwrt 家庭软路由的教程。你将可以了解到 Openwrt 在现代家庭网络中大放异彩：私人云盘，流媒体托管，负载均衡，流量管控，隔空播放，甚至更多值得想象的功能；并且你只需基本的电脑知识和简单的硬件就能在你的家中实现。
+注意：
+
+你的家庭网络必须接入互联网运营商且能正常上网
+你需要一台闲置的台式电脑（当然您也可以选择以极低的价格购买 x86 软路由，约 200 元人民币）
+你需要一台无线硬路由（即普通的 WI-FI 路由器）/ AP
+确保光猫工作在桥接模式下（日常生活中联网无需拨号上网即桥接模式）
+
+目录
+
+有限的功能展示
+准备工作
+
+网络拓扑
+硬件条件
+
+
+系统安装
+图像界面设置
+更多服务
+
+隔空播放
+广告过滤
+DLNA流媒体服务
+连接互联网
+
+
+
+功能展示
+Airplay2 (隔空播放)
+
+
+后台监控
+
+
+流媒体播放 (DLNA) 和 私人网盘
+
+Aplayer in iPad
+
+
+
+更快的速度和更稳定的视频播放
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wushuo.me/posts/about_openwrt/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-01-11T19:44:48+08:00" />
+<meta property="article:modified_time" content="2021-01-11T19:44:48+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="我的家庭组网：软路由从联网到智能家居"/>
+<meta name="twitter:description" content="OpenWrt 是适合于嵌入式设备的一个 Linux 发行版。
+对于开发者来说，OpenWrt是一个框架，开发者不必麻烦地构建整个固件就能得到想要的应用程序；对于用户来说，这意味着完全定制的能力，与以往不同的方式使用设备，OPKG 包含超过3500个软件。 默认使用 LuCI 作为 website 交互界面。
+
+这是一篇 Step by Step 的关于 x86 架构组建 Openwrt 家庭软路由的教程。你将可以了解到 Openwrt 在现代家庭网络中大放异彩：私人云盘，流媒体托管，负载均衡，流量管控，隔空播放，甚至更多值得想象的功能；并且你只需基本的电脑知识和简单的硬件就能在你的家中实现。
+注意：
+
+你的家庭网络必须接入互联网运营商且能正常上网
+你需要一台闲置的台式电脑（当然您也可以选择以极低的价格购买 x86 软路由，约 200 元人民币）
+你需要一台无线硬路由（即普通的 WI-FI 路由器）/ AP
+确保光猫工作在桥接模式下（日常生活中联网无需拨号上网即桥接模式）
+
+目录
+
+有限的功能展示
+准备工作
+
+网络拓扑
+硬件条件
+
+
+系统安装
+图像界面设置
+更多服务
+
+隔空播放
+广告过滤
+DLNA流媒体服务
+连接互联网
+
+
+
+功能展示
+Airplay2 (隔空播放)
+
+
+后台监控
+
+
+流媒体播放 (DLNA) 和 私人网盘
+
+Aplayer in iPad
+
+
+
+更快的速度和更稳定的视频播放
+
+"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://wushuo.me/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "我的家庭组网：软路由从联网到智能家居",
+      "item": "https://wushuo.me/posts/about_openwrt/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "我的家庭组网：软路由从联网到智能家居",
+  "name": "我的家庭组网：软路由从联网到智能家居",
+  "description": "OpenWrt 是适合于嵌入式设备的一个 Linux 发行版。 对于开发者来说，OpenWrt是一个框架，开发者不必麻烦地构建整个固件就能得到想要的应用程序；对于用户来说，这意味着完全定制的能力，与以往不同的方式使用设备，OPKG 包含超过3500个软件。 默认使用 LuCI 作为 website 交互界面。\n这是一篇 Step by Step 的关于 x86 架构组建 Openwrt 家庭软路由的教程。你将可以了解到 Openwrt 在现代家庭网络中大放异彩：私人云盘，流媒体托管，负载均衡，流量管控，隔空播放，甚至更多值得想象的功能；并且你只需基本的电脑知识和简单的硬件就能在你的家中实现。\n注意：\n你的家庭网络必须接入互联网运营商且能正常上网 你需要一台闲置的台式电脑（当然您也可以选择以极低的价格购买 x86 软路由，约 200 元人民币） 你需要一台无线硬路由（即普通的 WI-FI 路由器）/ AP 确保光猫工作在桥接模式下（日常生活中联网无需拨号上网即桥接模式） 目录 有限的功能展示 准备工作 网络拓扑 硬件条件 系统安装 图像界面设置 更多服务 隔空播放 广告过滤 DLNA流媒体服务 连接互联网 功能展示 Airplay2 (隔空播放) 后台监控 流媒体播放 (DLNA) 和 私人网盘 Aplayer in iPad 更快的速度和更稳定的视频播放 ",
+  "keywords": [
+    
+  ],
+  "articleBody": "OpenWrt 是适合于嵌入式设备的一个 Linux 发行版。 对于开发者来说，OpenWrt是一个框架，开发者不必麻烦地构建整个固件就能得到想要的应用程序；对于用户来说，这意味着完全定制的能力，与以往不同的方式使用设备，OPKG 包含超过3500个软件。 默认使用 LuCI 作为 website 交互界面。\n这是一篇 Step by Step 的关于 x86 架构组建 Openwrt 家庭软路由的教程。你将可以了解到 Openwrt 在现代家庭网络中大放异彩：私人云盘，流媒体托管，负载均衡，流量管控，隔空播放，甚至更多值得想象的功能；并且你只需基本的电脑知识和简单的硬件就能在你的家中实现。\n注意：\n你的家庭网络必须接入互联网运营商且能正常上网 你需要一台闲置的台式电脑（当然您也可以选择以极低的价格购买 x86 软路由，约 200 元人民币） 你需要一台无线硬路由（即普通的 WI-FI 路由器）/ AP 确保光猫工作在桥接模式下（日常生活中联网无需拨号上网即桥接模式） 目录 有限的功能展示 准备工作 网络拓扑 硬件条件 系统安装 图像界面设置 更多服务 隔空播放 广告过滤 DLNA流媒体服务 连接互联网 功能展示 Airplay2 (隔空播放) 后台监控 流媒体播放 (DLNA) 和 私人网盘 Aplayer in iPad 更快的速度和更稳定的视频播放 准备工作 从了解网络拓扑开始 软路由的工作模式主要分为：主路由和旁路由，本文主要介绍软路由作为主路由的工作模式。 接线方式:\n光纤 \u003e 光猫 (调制解调器) \u003e 软路由WAN口 软路由LAN口 \u003e 家用WI-FI路由 (以下两种任选一种) 软路由LAN口 \u003e 家用WI-FI路由WAN口 (此时家用Wi-Fi路由启用 DHCP) 软路由LAN口 \u003e 家用Wi-Fi路由LAN口 (此时家用Wi-Fi路由不启用 DHCP，同时需要将家用Wi-Fi路由的网段设置在软路由LAN口网段下) 软路由的硬件准备 确保充当软路由的 x86 电脑可以正常工作 x86 电脑的以太网接口有两个以上 (LAN口和WAN口)，台式电脑可以通过购买 PCI 或者 PCI-E 网卡拓展为双网口 可以正常使用的无线硬路由 (即家用Wi-Fi路由器) 系统安装 准备安装 PE启动盘 (请使用U盘制作PE启动盘，注意：制作PE启动盘会格式化U盘) 用以启动 PE 安装 Openwrt Openwrt 第三方镜像 (推荐功能齐全的第三方编译镜像) 写盘工具 (推荐DiskImage) 开始安装 注意：请先确保按照网络拓扑中的接线连接设备 如不确定哪一个是WAN口，可以进行至图像界面时，成功进入网页管理页面即为成功，否则将 WAN 口网线和 LAN 口网线调转\n在 PE 模式下使用写盘工具向 x86 PC 硬盘写入 Openwrt 镜像\n设置密码 重启电脑, 进入命令行，输入passwd设定 Openwrt 的密码 (同时也是 LuCI 可视化界面的密码) 注意：设定密码形如123456时 Linux 是不会显示 ******，输入完成直接回车即可；再次确认输入再回车即可。\n设定 LAN 口的网段:vim /etc/config/network，找到config interface 'lan'，并将其中的option ipaddr '192.68.1.1'改为option ipaddr '192.68.5.1'(或者将其改为你喜欢的网段) 注意：文本编辑器Vim按i (insert) 向光标前方插入并进入编辑模式，对IP进行编辑后，按Esc推出编辑模式，最后按:wq (write and quit) 保存。详细信息请自行 Googlehow to use vim\n图形界面 确保你的设备接入到了家用Wi-Fi路由器的网络中，在浏览器中输入192.168.5.1，输入先前设置的密码 开始联网 在 网络 - 接口 - WAN - 将传输协议改为 PPPoE 用户名和密码为宽带拨号用户名和密码 保存后测试即可上网 更多服务 如果第三方编译的镜像提供了更多的服务\n隔空播放 可以打开 Airplay2 功能，并将音响通过USB声卡连接到 Openwrt，可以实现类似 Apple HomePad 的音乐隔空播放功能\n广告过滤 打开广告过滤，即可从路由器层面过滤掉广告\nDLNA流媒体服务 挂载磁盘分区后，确保有足够的空间即可打开DLNA服务\n连接互联网 有了Openwrt，连接互联网再也不是问题，更快的访问速度和更高的性能，妈妈再也不用担心看4K卡住了\n",
+  "wordCount" : "186",
+  "inLanguage": "en",
+  "datePublished": "2021-01-11T19:44:48+08:00",
+  "dateModified": "2021-01-11T19:44:48+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://wushuo.me/posts/about_openwrt/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shuo",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://wushuo.me/assets/favicon.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://wushuo.me/" accesskey="h" title="Shuo (Alt + H)">Shuo</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      我的家庭组网：软路由从联网到智能家居
+    </h1>
+    <div class="post-meta"><span title='2021-01-11 19:44:48 +0800 CST'>January 11, 2021</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>OpenWrt 是适合于嵌入式设备的一个 Linux 发行版。
+对于开发者来说，OpenWrt是一个框架，开发者不必麻烦地构建整个固件就能得到想要的应用程序；对于用户来说，<strong>这意味着完全定制的能力</strong>，与以往不同的方式使用设备，OPKG 包含超过3500个软件。 默认使用 LuCI 作为 website 交互界面。</p>
+<!-- raw HTML omitted -->
+<p>这是一篇 <strong>Step by Step</strong> 的关于 x86 架构组建 <a href="https://github.com/openwrt/openwrt">Openwrt</a> 家庭<strong>软路由</strong>的<strong>教程</strong>。你将可以了解到 Openwrt 在现代家庭网络中大放异彩：<strong>私人云盘，流媒体托管，负载均衡，流量管控，隔空播放，甚至更多值得想象的功能</strong>；并且你只需基本的电脑知识和简单的硬件就能在你的家中实现。</p>
+<p><strong>注意</strong>：</p>
+<ol>
+<li>你的家庭网络必须接入互联网运营商且能正常上网</li>
+<li>你需要一台闲置的台式电脑（当然您也可以选择以极低的价格购买 x86 软路由，约 200 元人民币）</li>
+<li>你需要一台无线硬路由（即普通的 WI-FI 路由器）/ AP</li>
+<li>确保光猫工作在桥接模式下（日常生活中联网无需拨号上网即桥接模式）</li>
+</ol>
+<h3 id="目录">目录<a hidden class="anchor" aria-hidden="true" href="#目录">#</a></h3>
+<ul>
+<li><a href="#%E5%8A%9F%E8%83%BD%E5%B1%95%E7%A4%BA">有限的功能展示</a></li>
+<li><a href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">准备工作</a>
+<ul>
+<li><a href="#%E4%BB%8E%E4%BA%86%E8%A7%A3%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%BC%80%E5%A7%8B">网络拓扑</a></li>
+<li><a href="#%E8%BD%AF%E8%B7%AF%E7%94%B1%E7%9A%84%E7%A1%AC%E4%BB%B6%E5%87%86%E5%A4%87">硬件条件</a></li>
+</ul>
+</li>
+<li><a href="#%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85">系统安装</a></li>
+<li><a href="#%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2">图像界面设置</a></li>
+<li><a href="#%E6%9B%B4%E5%A4%9A%E6%9C%8D%E5%8A%A1">更多服务</a>
+<ul>
+<li><a href="#%E9%9A%94%E7%A9%BA%E6%92%AD%E6%94%BE">隔空播放</a></li>
+<li><a href="#%E5%B9%BF%E5%91%8A%E8%BF%87%E6%BB%A4">广告过滤</a></li>
+<li><a href="#dlna%E6%B5%81%E5%AA%92%E4%BD%93%E6%9C%8D%E5%8A%A1">DLNA流媒体服务</a></li>
+<li><a href="#%E8%BF%9E%E6%8E%A5%E4%BA%92%E8%81%94%E7%BD%91">连接互联网</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="功能展示">功能展示<a hidden class="anchor" aria-hidden="true" href="#功能展示">#</a></h3>
+<h4 id="airplay2-隔空播放">Airplay2 (隔空播放)<a hidden class="anchor" aria-hidden="true" href="#airplay2-隔空播放">#</a></h4>
+<p><img loading="lazy" src="/img/1610370521699.webp" alt="Airplay2"  />
+</p>
+<h4 id="后台监控">后台监控<a hidden class="anchor" aria-hidden="true" href="#后台监控">#</a></h4>
+<p><img loading="lazy" src="/img/1610370776164.webp" alt="monitor"  />
+</p>
+<h4 id="流媒体播放-dlna-和-私人网盘">流媒体播放 (DLNA) 和 私人网盘<a hidden class="anchor" aria-hidden="true" href="#流媒体播放-dlna-和-私人网盘">#</a></h4>
+<ul>
+<li>Aplayer in iPad</li>
+</ul>
+<p><img loading="lazy" src="/img/1610518394674.webp" alt=""  />
+</p>
+<h4 id="更快的速度和更稳定的视频播放">更快的速度和更稳定的视频播放<a hidden class="anchor" aria-hidden="true" href="#更快的速度和更稳定的视频播放">#</a></h4>
+<p><img loading="lazy" src="/img/1610378026837.webp" alt="VideoPlay"  />
+</p>
+<hr>
+<h3 id="准备工作">准备工作<a hidden class="anchor" aria-hidden="true" href="#准备工作">#</a></h3>
+<h4 id="从了解网络拓扑开始">从了解网络拓扑开始<a hidden class="anchor" aria-hidden="true" href="#从了解网络拓扑开始">#</a></h4>
+<p>软路由的工作模式主要分为：<strong>主路由</strong>和<strong>旁路由</strong>，本文主要介绍<strong>软路由作为主路由</strong>的工作模式。
+<strong>接线方式</strong>:</p>
+<ol>
+<li>光纤 &gt; 光猫 (调制解调器) &gt; 软路由WAN口</li>
+<li>软路由LAN口 &gt; 家用WI-FI路由 (以下两种任选一种)
+<ul>
+<li>软路由LAN口 &gt; 家用WI-FI路由WAN口 (此时家用Wi-Fi路由启用 DHCP)</li>
+<li>软路由LAN口 &gt; 家用Wi-Fi路由LAN口 (此时家用Wi-Fi路由不启用 DHCP，同时需要将家用Wi-Fi路由的网段设置在软路由LAN口网段下)</li>
+</ul>
+</li>
+</ol>
+<h4 id="软路由的硬件准备">软路由的硬件准备<a hidden class="anchor" aria-hidden="true" href="#软路由的硬件准备">#</a></h4>
+<ol>
+<li>确保充当软路由的 x86 电脑可以正常工作</li>
+<li>x86 电脑的以太网接口有两个以上 (LAN口和WAN口)，台式电脑可以通过购买 <code>PCI</code> 或者 <code>PCI-E</code> 网卡拓展为双网口</li>
+<li>可以正常使用的无线硬路由 (即家用Wi-Fi路由器)</li>
+</ol>
+<hr>
+<h3 id="系统安装">系统安装<a hidden class="anchor" aria-hidden="true" href="#系统安装">#</a></h3>
+<h4 id="准备安装">准备安装<a hidden class="anchor" aria-hidden="true" href="#准备安装">#</a></h4>
+<ol>
+<li>PE启动盘 (请使用U盘制作PE启动盘，<strong>注意</strong>：<strong>制作PE启动盘会格式化U盘</strong>) 用以启动 PE 安装 Openwrt</li>
+<li>Openwrt 第三方镜像 (推荐功能齐全的第三方编译镜像)</li>
+<li>写盘工具 (推荐DiskImage)</li>
+</ol>
+<h4 id="开始安装">开始安装<a hidden class="anchor" aria-hidden="true" href="#开始安装">#</a></h4>
+<p><strong>注意：请先确保按照<a href="#%E4%BB%8E%E4%BA%86%E8%A7%A3%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%BC%80%E5%A7%8B">网络拓扑</a>中的接线连接设备</strong>
+如不确定哪一个是WAN口，可以进行至<a href="#%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2">图像界面</a>时，成功进入网页管理页面即为成功，否则将 WAN 口网线和 LAN 口网线调转</p>
+<p>在 PE 模式下使用写盘工具向 x86 PC 硬盘写入 Openwrt 镜像</p>
+<h4 id="设置密码">设置密码<a hidden class="anchor" aria-hidden="true" href="#设置密码">#</a></h4>
+<p>重启电脑, 进入命令行，输入<code>passwd</code>设定 Openwrt 的密码 (同时也是 LuCI 可视化界面的密码)
+<strong>注意</strong>：设定密码形如<code>123456</code>时 Linux 是不会显示 <code>******</code>，输入完成直接回车即可；再次确认输入再回车即可。</p>
+<p>设定 LAN 口的网段:<code>vim /etc/config/network</code>，找到<code>config interface 'lan'</code>，并将其中的<code>option ipaddr '192.68.1.1'</code>改为<code>option ipaddr '192.68.5.1'</code>(或者将其改为你喜欢的网段)
+<strong>注意</strong>：文本编辑器<code>Vim</code>按<!-- raw HTML omitted -->i<!-- raw HTML omitted --> (insert) 向光标前方插入并进入编辑模式，对<code>IP</code>进行编辑后，按<!-- raw HTML omitted -->Esc<!-- raw HTML omitted -->推出编辑模式，最后按<!-- raw HTML omitted -->:wq<!-- raw HTML omitted --> (write and quit) 保存。详细信息请自行 Google<code>how to use vim</code></p>
+<hr>
+<h3 id="图形界面">图形界面<a hidden class="anchor" aria-hidden="true" href="#图形界面">#</a></h3>
+<p>确保你的设备接入到了家用Wi-Fi路由器的网络中，在浏览器中输入<code>192.168.5.1</code>，输入先前设置的密码
+<img loading="lazy" src="/img/1610376881526.webp" alt="webOfOpenwrt"  />
+</p>
+<h4 id="开始联网">开始联网<a hidden class="anchor" aria-hidden="true" href="#开始联网">#</a></h4>
+<p>在 <strong>网络</strong> - <strong>接口</strong> - <strong>WAN</strong> - 将传输协议改为 <strong>PPPoE</strong>
+用户名和密码为宽带拨号用户名和密码
+保存后测试即可上网
+<img loading="lazy" src="/img/1610378344618.webp" alt="connectPPPoE"  />
+</p>
+<h3 id="更多服务">更多服务<a hidden class="anchor" aria-hidden="true" href="#更多服务">#</a></h3>
+<p>如果第三方编译的镜像提供了更多的服务</p>
+<h4 id="隔空播放">隔空播放<a hidden class="anchor" aria-hidden="true" href="#隔空播放">#</a></h4>
+<p>可以打开 <strong>Airplay2</strong> 功能，并将音响通过USB声卡连接到 Openwrt，可以实现类似 <strong>Apple HomePad</strong> 的音乐隔空播放功能</p>
+<h4 id="广告过滤">广告过滤<a hidden class="anchor" aria-hidden="true" href="#广告过滤">#</a></h4>
+<p>打开<strong>广告过滤</strong>，即可从路由器层面过滤掉广告</p>
+<h4 id="dlna流媒体服务">DLNA流媒体服务<a hidden class="anchor" aria-hidden="true" href="#dlna流媒体服务">#</a></h4>
+<p>挂载磁盘分区后，确保有足够的空间即可打开DLNA服务</p>
+<h4 id="连接互联网">连接互联网<a hidden class="anchor" aria-hidden="true" href="#连接互联网">#</a></h4>
+<p>有了Openwrt，连接互联网再也不是问题，更快的访问速度和更高的性能，妈妈再也不用担心看4K卡住了</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://wushuo.me/">Shuo</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

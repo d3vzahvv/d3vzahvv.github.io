@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Shuo</title>
+    <link>https://wushuo.me/</link>
+    <description>Recent content on Shuo</description>
+    <generator>Hugo -- 0.136.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 24 Aug 2024 21:20:07 +0800</lastBuildDate>
+    <atom:link href="https://wushuo.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>静默 / 进路</title>
+      <link>https://wushuo.me/posts/lockdown-and-future/</link>
+      <pubDate>Wed, 26 Oct 2022 00:17:05 +0800</pubDate>
+      <guid>https://wushuo.me/posts/lockdown-and-future/</guid>
+      <description>&lt;p&gt;从 2022 年寒假到 2022 年 11 月，我一直在浙江；这期间发生了许多改变我原先想法的事：上海封城，亲人离世，浅入不同的文化，结识不同的朋友。时间流逝地飞快，把我抛在原地；庆幸的是在这段摆脱了喧哗的静默里，我可以陪家人一起，自由地吸着小城里弥漫着夏天味道的空气&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;大约是 2022 年 2 月底，上海封城
+亲戚的小区被封了，五十多岁的阿姨在微信群里哭起来。我们这些外地人和江北人只能望着上海每天增加的数字，看看《上海发布》微信公众号聊以慰藉
+渐渐有人开始逃离上海，徒步去火车站和机场；更多人被转移去了方舱，睡在地板上······
+这场运动一直持续到 8 月初，南浦大桥终于又有了车流，可上海再也不是&lt;strong&gt;精神上海人&lt;/strong&gt;心中的上海了&lt;/p&gt;
+&lt;p&gt;再后来外婆离世，一行人坐救护车从浙江到了安徽
+她去世前几天还多次说谢谢我照顾她，胰岛素注射笔我已经可以很熟练地使用了
+只是我觉得中式葬礼难免有些太过复杂了，锣鼓喧天又休息不好，还要跋山涉水
+外婆去世后，关于遗产问题又是一些摩擦；却没人关心外婆家里的相册，最后记录着外公外婆一家的相册也不知道被丢到哪个角落&lt;/p&gt;
+&lt;p&gt;小城的生活成本不算高，但也不低
+一份老娘舅的午饭如果只单点“鱼香肉丝”和“白米饭”，可以被压缩到 10 元，还有免费的一杯大麦茶赠送；如果要点套餐，就要 30 元，因为加上了带银鱼的水蒸蛋，两块蒸饺和一碟小菜；有意思的是，老娘舅所有的套餐价格和单点没有任何区别，也即是套餐无优惠
+除了吃，我在小城里几乎没有别的消费，我去的场所几乎只需要支付免费的“浙江健康码”和“国务院行程码”，健康码里的核酸检测必须是三天以内。这当然不是什么大问题，毕竟就和商场门口的保安所说的，核酸检测又不需要钱，而且到处都有&lt;/p&gt;
+&lt;p&gt;和我妈的争吵不休但没有什么大矛盾
+我的作息因为玩 VRchat 的原因，时区向西移动了一些。但最近已经不太沉迷 VRchat 了，作息也在慢慢调整。我考上大学的时候，我妈可以在给定一所大学名称的情况下，断言这所大学是 985 还是 211 ；现在我妈自发地开始了解世界其他的大学，周边发达国家 / 地区的大学，她能迅速判断 国立 / 公立 / 私立，然后教育我不能躺平
+有天晚上我妈指着手机上的抖音中介说：这个咨询的人懂的还没我多
+至于我爸，他在二十大前买入了股票，可想又是亏损的&lt;/p&gt;
+&lt;p&gt;花了好多时间的 VRchat，认识了不同的朋友们，有些不再联系，有些加了微信，有些对我信任，有些杳无音讯，有些伸出援手&lt;/p&gt;
+&lt;p&gt;自己要选怎么样的路只有自己知道，
+反正我是没搞清楚&lt;/p&gt;
+&lt;p&gt;于中华人民共和国浙江省境内
+二零二二年拾月贰拾陆日 午夜&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>字幕和字体子集化</title>
+      <link>https://wushuo.me/posts/subtitle/</link>
+      <pubDate>Sat, 24 Aug 2024 21:20:07 +0800</pubDate>
+      <guid>https://wushuo.me/posts/subtitle/</guid>
+      <description>&lt;p&gt;本文简单地介绍了常见媒体字幕的形式，以及字体子集化在跨平台媒体播放里的作用&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;字幕格式&#34;&gt;字幕格式&lt;/h3&gt;
+&lt;p&gt;字幕（Subtitle）作为辅助观影的工具，广泛存在于我们身边。下面介绍几种&lt;strong&gt;本地媒体&lt;/strong&gt;中常见的字幕格式及其特点：&lt;/p&gt;
+&lt;p&gt;它们分别是 &lt;code&gt;.sub&lt;/code&gt;、&lt;code&gt;.srt&lt;/code&gt;、&lt;code&gt;.ass&lt;/code&gt;、&lt;code&gt;.pgs&lt;/code&gt; 格式的字幕&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SUB&lt;/strong&gt; 格式的字幕常用于 DVD 中，这里不过多介绍，只需要了解 SUB 格式的字幕显示的是实际的文本字幕，而并非图片字幕&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SRT&lt;/strong&gt; 格式（Subripper）是最简单的文本字幕格式，扩展名为.srt，其组成为：一行字幕序号，一行时间代码，一行字幕数据
+如：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;45&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;00:02:52,184 --&amp;gt; 00:02:53,617
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;慢慢来
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这表示：第45个字幕，显示时间从该影片开始的第2分52.184秒到第2分53.617秒，内容为“慢慢来”$^1$
+SRT 格式作为最简单的文本字幕，得到了广泛的应用，相比于 ASS 格式兼容性更佳，绝大多数媒体播放器都支持 SRT 格式&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ASS&lt;/strong&gt; 格式（Advanced SubStation Alpha）采用 SSA V4+ 脚本语言编写，可以实现更高级的字幕效果，比如自定义字体大小，样式；实现字幕渐入渐出；和卡拉 OK 一样的字幕颜色加载等等
+ASS 字幕一般在头部定义需要使用到的字幕的字体样式，例如定义字幕样式 &lt;code&gt;Default&lt;/code&gt; 并在后续时间轴中调用该格式
+ASS 格式可以高度自定义，显示效果出众，成为了不少字幕组的选择；但并非所有播放器都能很好的支持；也会遇到缺失字体而导致字幕不协调的问题&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PGS&lt;/strong&gt; 格式（Presentation Graphic Stream）字幕一般用于成熟的电影行业，是一种将图片字幕单独分离出来的格式。这种格式的好处在于不会对原片造成损失，分离的形式使不同语言的字幕可以切换，图片流形式又可以保证在不同播放器上的兼容性，无需依赖字体&lt;/p&gt;
+&lt;h3 id=&#34;字幕加载形式&#34;&gt;字幕加载形式&lt;/h3&gt;
+&lt;p&gt;字幕文件有不同的存在形式：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;内嵌字幕&lt;/strong&gt;又叫烧录字幕，国内流媒体视频网站中的字幕大多是内嵌字幕，它的原理是将字幕字体烧录到视频上，使字体成为视频的像素点。这种烧录是有损的，会使原视频被字幕遮挡的部分损失
+当然，由于字幕和视频转化为了“新的包含字幕的视频”，新视频不存在兼容性问题，播放器在播放时无需调用字幕，只需要播放新视频即可&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;内封字幕&lt;/strong&gt;是指将上述介绍的字幕格式文件封装在视频文件中，字幕和视频只有一个文件（如 &lt;code&gt;video.mkv&lt;/code&gt; ），字幕是独立于视频存在的。内封字幕视频的字幕文件可以被简单地提取出来，也可以对字幕修改后重新封装回原视频&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;外挂字幕&lt;/strong&gt;是指字幕文件独立于视频文件，在播放时由播放器挂载到视频上。如同一级目录下包含 &lt;code&gt;video.mkv&lt;/code&gt;、&lt;code&gt;subtitle.ass&lt;/code&gt; 格式的文件。外挂字幕便于修改，但需要播放器支持挂载字幕&lt;/p&gt;
+&lt;h3 id=&#34;字幕字体子集化&#34;&gt;字幕字体子集化&lt;/h3&gt;
+&lt;p&gt;字体文件通常包含了所有的&lt;strong&gt;字符&lt;/strong&gt;字体，这使得字体文件较大，&lt;strong&gt;字体子集化&lt;/strong&gt;可以将需要使用的&lt;strong&gt;字符的字体&lt;/strong&gt;单独提取出来，以供调用&lt;/p&gt;
+&lt;p&gt;这非常容易理解，我们不妨打个比方：
+您需要前往后院拧紧栅栏上的螺丝，栅栏上有十字螺丝和梅花螺丝，于是你从工具箱拿了一把十字螺丝刀和梅花螺丝刀，并前往后院修理螺丝
+在这个例子里，工具箱就是字体文件，而十字螺丝刀和梅花螺丝刀就是我们字体子集化后的文件，我们需要多少字符的字体，就子集化多少字符的字体，因为这样可以节省空间&lt;/p&gt;
+&lt;p&gt;相信聪明的你已经理解了什么是字体子集化，我们在上文提及到&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ASS 格式可以高度自定义，显示效果出众，成为了不少字幕组的选择
+ASS 格式的字幕会遇到缺失字体而导致字幕不协调的问题&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>生活</title>
+      <link>https://wushuo.me/posts/seikatsu/</link>
+      <pubDate>Sat, 24 Aug 2024 21:20:07 +0800</pubDate>
+      <guid>https://wushuo.me/posts/seikatsu/</guid>
+      <description>&lt;p&gt;文章标题的《生活》来自 ハローモンテスキュ 的专辑名称，日语发音为 せいかつ / seikatsu；文章末尾附有这支专辑的流媒体平台的超链接&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;最近在写研究计划书，英文缩写为 RP，然而我一直不清楚到底是 Research Proposal （研究提案）还是 Research Plan （研究计划）；我当然更倾向于前者，一方面 Proposal 这个词听起来更高级，另一方面异想天开的两页 PDF 文档根本称不上计划。RP 一词放到国内应当翻译为开题报告比较贴切，只是 RP 是作为申请材料提交的一部分，和实际的研究内容不是强相关的&lt;/p&gt;
+&lt;p&gt;本科的时候不喜欢 ML 相关的东西，也没有过多接触火热的 AI；如今到了研究计划书里，却要加入一大堆各种神经网络模型论文的引用。只能说，这是为了生活。不过好在 RP 的方向可以自己选择，撇开神经网络，还有一些自己感兴趣的朴素的媒体处理可以写，也算没有白学信号处理这些课&lt;/p&gt;
+&lt;p&gt;比起晦涩难懂的受限玻尔兹曼机，上班儿生活显然更加无聊；在没啥研发内容的研发岗上班，短短几天我就理解到上班的意义就是&lt;strong&gt;挣钱&lt;/strong&gt;，学习行业内的业务能力只不过是初入职场的安慰剂，升职加薪更是领导的大饼。在公司里当个小研发员，换来的是：在人挤人的调休节假日晒出来的精美朋友圈&lt;/p&gt;
+&lt;p&gt;上班的一小段日子里，每天在工位上摸鱼，心情好去帮高级工程师调试板子，每天 3 小时的通勤。即使我从来不在意 Leader 和办公室其他人的目光 5:30 到点就走人，回到家依然累得倒头就睡。我发现在这种上班氛围里，我失去了对我喜爱的东西的热情，我没有时间骑车，也没有时间看硬件，我的英语和日语完全没办法继续练习。&lt;/p&gt;
+&lt;p&gt;之后我辞了职，拿了 N2 的证书，穷玩了长三角的城市，备考托福托业，学数学&lt;/p&gt;
+&lt;p&gt;当我听到在外企上班的朋友说，她有时候需要 24 小时 standby，我一点也不羡慕她的双休和薪资了&lt;/p&gt;
+&lt;p&gt;在家躺平被老中社会视为一种罪恶，特别是之前麻木的工作赚的钱也不少，主要原因是除了交通费以外没有其他开支。但沉湎在麻木的工作里让我感到害怕，我很害怕让我失去重新开始&lt;strong&gt;追逐目标的勇气&lt;/strong&gt;和继续学习的能力&lt;/p&gt;
+&lt;p&gt;因此尽管有家里人的压力（集中于学习方面而不是宅家躺平方面）和浪费的快一年时间，我显然想要有更多机会，即使这些机会最后没有转化为结果，我也并不后悔。我备考托福的时间是备考托业考试的几十倍，托福并没有考到想要的分数，之后草草报名了托业，卷子甚至有 1/8 来不及写，依然拿了能用的分数。不可否认托业这种野鸡考试对比托福有些高攀了，但是回想复习托福的那段经历，对托业一定是有帮助的。&lt;/p&gt;
+&lt;p&gt;英语考试的努力都不会白白浪费，更何况是在家躺平的挣扎的生活&lt;/p&gt;
+&lt;p&gt;附言：
+这篇文章动笔之前想的很多，动笔之后写得断断续续；可能我写不出任何有深度的东西了，写得完全是流水账。如果您可以看完，我会十分感谢（笑）&lt;/p&gt;
+&lt;p&gt;生活　ー　ハローモンテスキュー&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apple Music &lt;a href=&#34;https://music.apple.com/cn/album/%E7%94%9F%E6%B4%BB/1479017557&#34;&gt;专辑链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Spotify &lt;a href=&#34;https://open.spotify.com/album/6R27I6rHkULBNFW1ehbELy&#34;&gt;专辑链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Youtube &lt;a href=&#34;https://www.youtube.com/watch?v=7Nx9Of0dtLo&amp;amp;list=OLAK5uy_m87lLS-zKxnz82gej5S4uL5Hwn-yEN_Kg&#34;&gt;专辑合集&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;QQ 音乐 &lt;a href=&#34;https://y.qq.com/n/ryqq/albumDetail/001YYpjP0ehJYR&#34;&gt;专辑链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;网易云音乐 &lt;a href=&#34;https://music.163.com/#/album?id=191155054&#34;&gt;专辑链接&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>新年旧札</title>
+      <link>https://wushuo.me/posts/genealogy/</link>
+      <pubDate>Wed, 01 Feb 2023 19:18:50 +0800</pubDate>
+      <guid>https://wushuo.me/posts/genealogy/</guid>
+      <description>&lt;p&gt;过年回我爷爷奶奶家所闻&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;我奶奶告诉我她的一只眼睛是被她妈妈不小心打瞎的，嫁不出去（寻不到好人家）于是嫁给我了我爷爷&lt;/p&gt;
+&lt;p&gt;我奶奶的妈妈（太奶奶）是红军的弃婴，出生在安徽郎溪。后来亲生父亲来接她回北京，她没认她父亲自然也没有去北京，后来嫁给了安徽郎溪的一个当地大户人家（也就是我奶奶的生理学父亲¹）作小妾，生下了我奶奶&lt;/p&gt;
+&lt;p&gt;后来太奶奶被赶出家门（原因不知），带着我奶奶从&lt;strong&gt;安徽郎溪&lt;/strong&gt;一路要饭到&lt;strong&gt;浙江长兴泗安&lt;/strong&gt;，在这里带着我奶奶&lt;a href=&#34;https://baike.baidu.com/item/%E6%94%B9%E5%AB%81/5131032&#34;&gt;改嫁&lt;/a&gt;，于是我奶奶就有了新的父亲
+&lt;img loading=&#34;lazy&#34; src=&#34;https://wushuo.me/img/1675252904078.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;和我奶奶比起来，我爷爷则更像是土著浙江人，因为他家族的移民要追溯到清末年间的河南信阳下江南移民
+我 爷爷的爷爷（高祖父）被放在箩筐里，从&lt;strong&gt;河南光山&lt;/strong&gt;挑在箩筐里移民到&lt;strong&gt;浙江长兴&lt;/strong&gt;，从此在这里定居。因此，我爷爷在浙江长兴出生，讲的却不是吴语片区的方言（长兴话），而是河南官话（准确来说是河南光山方言）&lt;/p&gt;
+&lt;p&gt;我爷爷奶奶的村里，几乎讲的都是“河南话”，这是由于整个村里都是从河南移民而来的人
+近年来，住在主城区周边的村落的河南移民后代也都进入主城区发展，主城区内的吴语方言²和河南话也由原来的吴语方言主导转变为两种方言通用&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;依我浅薄的买菜经验，绝大多数卖菜的老板，超市的员工，都会听说两种方言&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这里有一篇来自河南罗山县人民政府政协撰写的&lt;a href=&#34;http://www.luoshan.gov.cn/news.php?cid=8&amp;amp;id=4221&#34;&gt;《一担箩筐下江南的历史正剧——信阳地区清朝末年移民苏浙皖环太湖历史考察记略》&lt;/a&gt;
+一言以蔽之，清末&lt;a href=&#34;https://baike.baidu.com/item/%E5%A4%AA%E5%B9%B3%E5%A4%A9%E5%9B%BD%E8%BF%90%E5%8A%A8/472841&#34;&gt;&lt;strong&gt;太平天国运动&lt;/strong&gt;&lt;/a&gt;导致江浙皖环太湖地区人口锐减（有关这方面的研究甚多），来自河南的人口迁移到环太湖地区，我爷爷就是其中的后代
+&lt;img loading=&#34;lazy&#34; src=&#34;https://wushuo.me/img/1675254580950.jpg&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;如果说移民有什么影响，那么大道理想当然一大堆。但清末那次移民，还是给了我的&lt;strong&gt;小学生活&lt;/strong&gt;带来了很多不愉快&lt;/p&gt;
+&lt;p&gt;我的小学就读在主城区的小区内，又是以 No. 数字命名的公立小学。老师，同学们在非授课时间说的都是吴语方言；老师在上课骂人时也用的是我听不懂的吴语方言，这也导致我对吴语方言的学习非常抵触，到现在为止能听懂大部分当地的吴语方言，杭州话，上海话等等，会说的也只有那几句骂人的话。我真心认为我就读的那所小学的教师素质无法匹配上它 “XX 县第 X 小学” 的名字，所有人对校园霸凌熟视无睹，老师也可以随便打小学生&lt;/p&gt;
+&lt;p&gt;公立初中（依旧是城区），明显感觉到教师素质提高一节，老师几乎很少骂人，没有动手打人的习惯，身边也几乎很少有说吴语方言的同学了&lt;/p&gt;
+&lt;p&gt;上了高中，从乡镇上考来的同学多了，移民后代讲河南方言的同学多了起来，班上甚至有一半以上的同学都会说河南方言（我觉得也可能是和时间推移人口流动有关）&lt;/p&gt;
+&lt;p&gt;有次在北京打车，碰到个河南的大哥他说的话我听得懂，我就跟他说我家乡河南方言。他问我哪里的，我说浙江，慢慢跟他解释移民的事&lt;/p&gt;
+&lt;p&gt;注释：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;生理学父亲：使用这个词语的立场没有任何性别倾向&lt;/li&gt;
+&lt;li&gt;吴语方言：这里的吴语方言特指浙江省湖州市（太湖沿岸片区）的吴语方言&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>转换器</title>
+      <link>https://wushuo.me/posts/long_life_evolution/</link>
+      <pubDate>Wed, 23 Jun 2021 23:07:03 +0800</pubDate>
+      <guid>https://wushuo.me/posts/long_life_evolution/</guid>
+      <description>&lt;p&gt;怎样过完普通的一生 / converter&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;高中的时候听过学物竞拿奖的同学念的一篇小作文，叫“接受自己的平凡”，那个时候我还不知道其中话的含义；后来他没学物理了，去了浙大的城乡规划&lt;/p&gt;
+&lt;p&gt;现在我在二本学校学着和物理擦边的电子信息，囿于数学的含义里，写着后半生打算怎么过&lt;/p&gt;
+&lt;p&gt;我小时候就喜欢研究电子产品 ( 准确来说是喜欢拆解 )，大学读了电子信息发现并不太一样。家里希望继续读下去，我自己没什么想法，想读完书就回到小县城过完一生&lt;/p&gt;
+&lt;p&gt;有许多人在不同年龄喜欢收集不同东西，比如兼容多种协议的充电器，各种存储设备，古董键盘，CRT显示器等等&lt;/p&gt;
+&lt;p&gt;我从高中开始迷上了接口转换器，那个时候收集了 MicroUSB to Type-C，Type-A to 3.5mm Jack， OTG，DVI to DP 等等转换器；拥有各式各样的转换器一直是我的梦想，比如不会为了打印文件而折腾蓝牙，直接可以用 Type-A to Type-B 线缆高速传输数据，还能支持热插拔&lt;/p&gt;
+&lt;p&gt;大二的寒假在家度过，我给家中添置了一台&lt;a href=&#34;https://wushuo.me/post/about_openwrt/&#34;&gt;十年前旧电脑改装的软路由&lt;/a&gt;，我不仅用它连上了喇叭实现了林檎设备的 Airplay，也将它作为存储设备观看视频和电影，让家中父母购置的 4K 装饰品电视发挥了作用。我在寒假中的娱乐主要来自于折腾这些东西本身，而并非折腾完之后的享受。折腾这些东西学到的大学远没有大学一门课 ( 或者说是有一科考试逼迫我学习 ) 获得的知识多，但我不会感到厌倦，相反乐在其中。我不爱争斗，从小的家庭教育也不是让我超过别人，实现别人已经实现的东西也会让我感到充实 ( 事实上我并无任何创新 )。&lt;/p&gt;
+&lt;p&gt;倘若几年后，我在正常作息之余能收集我喜爱的接口转换器 ( 真期待那时 USB 的形状是否能改变，抑或有更多接口样式出现 ) ，可以在闲暇时间看自己改完字幕混流后的电影，这样的人生对现在的我来说就是圆满的。至于娘子，孩子，房子和车子则都不在必要的考量范围内，票子只要能在亲人生病时能够承担医疗费用就足够了 ( 也即是“钱在救命时才是最重要的” )&lt;/p&gt;
+&lt;p&gt;于北京林业大学
+二〇二壹年陆月贰拾肆日 凌晨&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>矢量分析初步</title>
+      <link>https://wushuo.me/posts/vector-analysis-beginning/</link>
+      <pubDate>Wed, 26 May 2021 22:24:30 +0800</pubDate>
+      <guid>https://wushuo.me/posts/vector-analysis-beginning/</guid>
+      <description>&lt;p&gt;矢量分析初步主要介绍 &amp;ldquo;梯度, 散度, 旋度&amp;rdquo; 的概念及其之间的关系；梯度、散度和旋度是矢量分析中的基本运算符，主要用于描述标量场和矢量场中的变化情况，广泛应用于物理学和工程学中的多个领域&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;标量场和矢量场&#34;&gt;标量场和矢量场&lt;/h3&gt;
+&lt;h4 id=&#34;标量场&#34;&gt;标量场&lt;/h4&gt;
+&lt;p&gt;标量场是物理量为标量所确定的场, 如温度场, 密度场等, 表示为
+$$ u = u(x, y, z) $$&lt;/p&gt;
+&lt;h4 id=&#34;矢量场&#34;&gt;矢量场&lt;/h4&gt;
+&lt;p&gt;矢量场是物理量为矢量所确定的场, 如力场, 电场等, 表示为
+$$\vec{F} = \vec{F}(x, y, z) $$&lt;/p&gt;
+&lt;h3 id=&#34;方向导数&#34;&gt;方向导数&lt;/h3&gt;
+&lt;p&gt;在函数定义域的内点，对某一方向求导得到的导数。 一般为二元函数和三元函数的方向导数，方向导数可分为沿直线方向和沿曲线方向的方向导数, 表示为
+$$ \nabla_{v}u(l) = \frac{\partial u}{\partial l}  $$&lt;/p&gt;
+&lt;h3 id=&#34;梯度&#34;&gt;梯度&lt;/h3&gt;
+&lt;p&gt;梯度的方向可以理解为沿变化率上升最快的方向, 一元函数的梯度是标量函数, 多元函数的梯度是向量值函数&lt;/p&gt;
+&lt;p&gt;三维空间的梯度可以想象为小球在地形上下落的趋势, 小球在无干扰情况下总沿一个方向下落, 这个方向的反方向 ( 即上升的方向 ) 就是梯度的方向
+四维空间的梯度可以想象为某个气体分子在冷热不均的空间中总沿最冷方向运动, 这个最冷方向的反方向就是梯度的方向
+梯度表示为
+$$ grad ; u(x, y, z) = \vec{e_x}\frac{\partial u}{\partial x} + \vec{e_y}\frac{\partial u}{\partial y} + \vec{e_z}\frac{\partial u}{\partial z}$$
+由哈密顿算符
+$$\nabla = \vec{e_x}\frac{\partial}{\partial x} + \vec{e_y}\frac{\partial}{\partial y} + \vec{e_z}\frac{\partial}{\partial z}$$
+则梯度可以表示为
+$$ grad ; u(x, y, z) = \nabla u $$&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>我的家庭组网：软路由从联网到智能家居</title>
+      <link>https://wushuo.me/posts/about_openwrt/</link>
+      <pubDate>Mon, 11 Jan 2021 19:44:48 +0800</pubDate>
+      <guid>https://wushuo.me/posts/about_openwrt/</guid>
+      <description>&lt;p&gt;OpenWrt 是适合于嵌入式设备的一个 Linux 发行版。
+对于开发者来说，OpenWrt是一个框架，开发者不必麻烦地构建整个固件就能得到想要的应用程序；对于用户来说，&lt;strong&gt;这意味着完全定制的能力&lt;/strong&gt;，与以往不同的方式使用设备，OPKG 包含超过3500个软件。 默认使用 LuCI 作为 website 交互界面。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;这是一篇 &lt;strong&gt;Step by Step&lt;/strong&gt; 的关于 x86 架构组建 &lt;a href=&#34;https://github.com/openwrt/openwrt&#34;&gt;Openwrt&lt;/a&gt; 家庭&lt;strong&gt;软路由&lt;/strong&gt;的&lt;strong&gt;教程&lt;/strong&gt;。你将可以了解到 Openwrt 在现代家庭网络中大放异彩：&lt;strong&gt;私人云盘，流媒体托管，负载均衡，流量管控，隔空播放，甚至更多值得想象的功能&lt;/strong&gt;；并且你只需基本的电脑知识和简单的硬件就能在你的家中实现。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;你的家庭网络必须接入互联网运营商且能正常上网&lt;/li&gt;
+&lt;li&gt;你需要一台闲置的台式电脑（当然您也可以选择以极低的价格购买 x86 软路由，约 200 元人民币）&lt;/li&gt;
+&lt;li&gt;你需要一台无线硬路由（即普通的 WI-FI 路由器）/ AP&lt;/li&gt;
+&lt;li&gt;确保光猫工作在桥接模式下（日常生活中联网无需拨号上网即桥接模式）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;目录&#34;&gt;目录&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%8A%9F%E8%83%BD%E5%B1%95%E7%A4%BA&#34;&gt;有限的功能展示&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C&#34;&gt;准备工作&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#%E4%BB%8E%E4%BA%86%E8%A7%A3%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%BC%80%E5%A7%8B&#34;&gt;网络拓扑&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%BD%AF%E8%B7%AF%E7%94%B1%E7%9A%84%E7%A1%AC%E4%BB%B6%E5%87%86%E5%A4%87&#34;&gt;硬件条件&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85&#34;&gt;系统安装&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2&#34;&gt;图像界面设置&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E6%9B%B4%E5%A4%9A%E6%9C%8D%E5%8A%A1&#34;&gt;更多服务&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#%E9%9A%94%E7%A9%BA%E6%92%AD%E6%94%BE&#34;&gt;隔空播放&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%B9%BF%E5%91%8A%E8%BF%87%E6%BB%A4&#34;&gt;广告过滤&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#dlna%E6%B5%81%E5%AA%92%E4%BD%93%E6%9C%8D%E5%8A%A1&#34;&gt;DLNA流媒体服务&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%BF%9E%E6%8E%A5%E4%BA%92%E8%81%94%E7%BD%91&#34;&gt;连接互联网&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;功能展示&#34;&gt;功能展示&lt;/h3&gt;
+&lt;h4 id=&#34;airplay2-隔空播放&#34;&gt;Airplay2 (隔空播放)&lt;/h4&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://wushuo.me/img/1610370521699.webp&#34; alt=&#34;Airplay2&#34;  /&gt;
+&lt;/p&gt;
+&lt;h4 id=&#34;后台监控&#34;&gt;后台监控&lt;/h4&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://wushuo.me/img/1610370776164.webp&#34; alt=&#34;monitor&#34;  /&gt;
+&lt;/p&gt;
+&lt;h4 id=&#34;流媒体播放-dlna-和-私人网盘&#34;&gt;流媒体播放 (DLNA) 和 私人网盘&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Aplayer in iPad&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://wushuo.me/img/1610518394674.webp&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;h4 id=&#34;更快的速度和更稳定的视频播放&#34;&gt;更快的速度和更稳定的视频播放&lt;/h4&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://wushuo.me/img/1610378026837.webp&#34; alt=&#34;VideoPlay&#34;  /&gt;
+&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hackintosh on intel G41 with 775/771 CPU</title>
+      <link>https://wushuo.me/posts/hackintosh/</link>
+      <pubDate>Sun, 23 Aug 2020 19:03:45 +0800</pubDate>
+      <guid>https://wushuo.me/posts/hackintosh/</guid>
+      <description>&lt;p&gt;A Hackintosh is a computer that runs an Apple Macintosh operating system on computer hardware not authorized for the purpose by Apple. This passage is to introduce using intel G41 series motherboard hackintosh on a low budget.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;-showing&#34;&gt;# &lt;strong&gt;Showing&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://wushuo.me/img/1609988673599.webp&#34; alt=&#34;Glance&#34;  /&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;-system-configuration&#34;&gt;# &lt;strong&gt;System Configuration&lt;/strong&gt;&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Parts&lt;/th&gt;
+          &lt;th&gt;Type&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Model in Clover Config&lt;/td&gt;
+          &lt;td&gt;iMac14, 2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;CPU&lt;/td&gt;
+          &lt;td&gt;Intel Xeon L5420 2.5Ghz with 4 Cores 4 Threads&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Motherboard&lt;/td&gt;
+          &lt;td&gt;AUSU P5G41T-M LX V2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Graphics&lt;/td&gt;
+          &lt;td&gt;Pegatron GeForce 310 512 MB HDMI/DVI&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Disk&lt;/td&gt;
+          &lt;td&gt;Teclast SSD 128GB SATA&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Memory&lt;/td&gt;
+          &lt;td&gt;1333MHz DDR3 2x2G&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Display&lt;/td&gt;
+          &lt;td&gt;Philips 32PFL3040 1360x768 HDMI&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Audio&lt;/td&gt;
+          &lt;td&gt;SANSUI with Green Rear Line-out&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;-performance&#34;&gt;# &lt;strong&gt;Performance&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://geekbench.com&#34;&gt;Geekbench 5&lt;/a&gt;: Single-Core Score 380 / Multi-Core Score 1283&lt;/li&gt;
+&lt;li&gt;Browser website and Code fluently with 2 x 6MB L2 Cache&lt;/li&gt;
+&lt;li&gt;Can not be used as video-editing or render&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-build&#34;&gt;# &lt;strong&gt;Build&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; wakeup success&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; resolution success HDMI/DVI both  can be line-out&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; audio line-out success in Green Rear and Headphones&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; ethernet conect  stably&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; iCloud and Appstore replaced SMBIOS&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Power-on without USB Sticker&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; wireless and bluetooh&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; USB 3.0 port which can be installed through PCIE x1&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; microphone&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Airdrop and Handoff&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; iMessage, Facetime and iTunes can not login&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-about-boot&#34;&gt;# &lt;strong&gt;About Boot&lt;/strong&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Attention&lt;/strong&gt;: if you can have a mac in any way you should install MacOS on your PC through &lt;strong&gt;&lt;a href=&#34;https://unibeast.com&#34;&gt;Unibeast&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
