@@ -54,7 +54,7 @@ Aplayer in iPad
 更快的速度和更稳定的视频播放
 
 ">
-<meta name="author" content="">
+<meta name="author" content="Shuo">
 <link rel="canonical" href="https://wushuo.me/posts/about_openwrt/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://wushuo.me/assets/favicon.png">
@@ -150,11 +150,14 @@ Aplayer in iPad
 
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wushuo.me/posts/about_openwrt/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://wushuo.me/posts/about_openwrt/" />
+<meta property="og:image" content="https://wushuo.me/img/cover-image.jpg" />
+<meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-01-11T19:44:48+08:00" />
 <meta property="article:modified_time" content="2021-01-11T19:44:48+08:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://wushuo.me/img/cover-image.jpg" />
 <meta name="twitter:title" content="我的家庭组网：软路由从联网到智能家居"/>
 <meta name="twitter:description" content="OpenWrt 是适合于嵌入式设备的一个 Linux 发行版。
 对于开发者来说，OpenWrt是一个框架，开发者不必麻烦地构建整个固件就能得到想要的应用程序；对于用户来说，这意味着完全定制的能力，与以往不同的方式使用设备，OPKG 包含超过3500个软件。 默认使用 LuCI 作为 website 交互界面。
@@ -238,8 +241,12 @@ Aplayer in iPad
   "articleBody": "OpenWrt 是适合于嵌入式设备的一个 Linux 发行版。 对于开发者来说，OpenWrt是一个框架，开发者不必麻烦地构建整个固件就能得到想要的应用程序；对于用户来说，这意味着完全定制的能力，与以往不同的方式使用设备，OPKG 包含超过3500个软件。 默认使用 LuCI 作为 website 交互界面。\n这是一篇 Step by Step 的关于 x86 架构组建 Openwrt 家庭软路由的教程。你将可以了解到 Openwrt 在现代家庭网络中大放异彩：私人云盘，流媒体托管，负载均衡，流量管控，隔空播放，甚至更多值得想象的功能；并且你只需基本的电脑知识和简单的硬件就能在你的家中实现。\n注意：\n你的家庭网络必须接入互联网运营商且能正常上网 你需要一台闲置的台式电脑（当然您也可以选择以极低的价格购买 x86 软路由，约 200 元人民币） 你需要一台无线硬路由（即普通的 WI-FI 路由器）/ AP 确保光猫工作在桥接模式下（日常生活中联网无需拨号上网即桥接模式） 目录 有限的功能展示 准备工作 网络拓扑 硬件条件 系统安装 图像界面设置 更多服务 隔空播放 广告过滤 DLNA流媒体服务 连接互联网 功能展示 Airplay2 (隔空播放) 后台监控 流媒体播放 (DLNA) 和 私人网盘 Aplayer in iPad 更快的速度和更稳定的视频播放 准备工作 从了解网络拓扑开始 软路由的工作模式主要分为：主路由和旁路由，本文主要介绍软路由作为主路由的工作模式。 接线方式:\n光纤 \u003e 光猫 (调制解调器) \u003e 软路由WAN口 软路由LAN口 \u003e 家用WI-FI路由 (以下两种任选一种) 软路由LAN口 \u003e 家用WI-FI路由WAN口 (此时家用Wi-Fi路由启用 DHCP) 软路由LAN口 \u003e 家用Wi-Fi路由LAN口 (此时家用Wi-Fi路由不启用 DHCP，同时需要将家用Wi-Fi路由的网段设置在软路由LAN口网段下) 软路由的硬件准备 确保充当软路由的 x86 电脑可以正常工作 x86 电脑的以太网接口有两个以上 (LAN口和WAN口)，台式电脑可以通过购买 PCI 或者 PCI-E 网卡拓展为双网口 可以正常使用的无线硬路由 (即家用Wi-Fi路由器) 系统安装 准备安装 PE启动盘 (请使用U盘制作PE启动盘，注意：制作PE启动盘会格式化U盘) 用以启动 PE 安装 Openwrt Openwrt 第三方镜像 (推荐功能齐全的第三方编译镜像) 写盘工具 (推荐DiskImage) 开始安装 注意：请先确保按照网络拓扑中的接线连接设备 如不确定哪一个是WAN口，可以进行至图像界面时，成功进入网页管理页面即为成功，否则将 WAN 口网线和 LAN 口网线调转\n在 PE 模式下使用写盘工具向 x86 PC 硬盘写入 Openwrt 镜像\n设置密码 重启电脑, 进入命令行，输入passwd设定 Openwrt 的密码 (同时也是 LuCI 可视化界面的密码) 注意：设定密码形如123456时 Linux 是不会显示 ******，输入完成直接回车即可；再次确认输入再回车即可。\n设定 LAN 口的网段:vim /etc/config/network，找到config interface 'lan'，并将其中的option ipaddr '192.68.1.1'改为option ipaddr '192.68.5.1'(或者将其改为你喜欢的网段) 注意：文本编辑器Vim按i (insert) 向光标前方插入并进入编辑模式，对IP进行编辑后，按Esc推出编辑模式，最后按:wq (write and quit) 保存。详细信息请自行 Googlehow to use vim\n图形界面 确保你的设备接入到了家用Wi-Fi路由器的网络中，在浏览器中输入192.168.5.1，输入先前设置的密码 开始联网 在 网络 - 接口 - WAN - 将传输协议改为 PPPoE 用户名和密码为宽带拨号用户名和密码 保存后测试即可上网 更多服务 如果第三方编译的镜像提供了更多的服务\n隔空播放 可以打开 Airplay2 功能，并将音响通过USB声卡连接到 Openwrt，可以实现类似 Apple HomePad 的音乐隔空播放功能\n广告过滤 打开广告过滤，即可从路由器层面过滤掉广告\nDLNA流媒体服务 挂载磁盘分区后，确保有足够的空间即可打开DLNA服务\n连接互联网 有了Openwrt，连接互联网再也不是问题，更快的访问速度和更高的性能，妈妈再也不用担心看4K卡住了\n",
   "wordCount" : "186",
   "inLanguage": "en",
-  "datePublished": "2021-01-11T19:44:48+08:00",
+  "image": "https://wushuo.me/img/cover-image.jpg","datePublished": "2021-01-11T19:44:48+08:00",
   "dateModified": "2021-01-11T19:44:48+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Shuo"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://wushuo.me/posts/about_openwrt/"
@@ -307,7 +314,7 @@ Aplayer in iPad
     <h1 class="post-title entry-hint-parent">
       我的家庭组网：软路由从联网到智能家居
     </h1>
-    <div class="post-meta"><span title='2021-01-11 19:44:48 +0800 CST'>January 11, 2021</span>
+    <div class="post-meta"><span title='2021-01-11 19:44:48 +0800 CST'>January 11, 2021</span>&nbsp;·&nbsp;Shuo
 
 </div>
   </header> 
@@ -423,6 +430,19 @@ Aplayer in iPad
   <footer class="post-footer">
     <ul class="post-tags">
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://wushuo.me/posts/vector-analysis-beginning/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>矢量分析初步</span>
+  </a>
+  <a class="next" href="https://wushuo.me/posts/hackintosh/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Hackintosh on intel G41 with 775/771 CPU</span>
+  </a>
+</nav>
+
   </footer>
 </article>
     </main>

@@ -4,6 +4,11 @@
     <title>Posts on Shuo</title>
     <link>https://wushuo.me/posts/</link>
     <description>Recent content in Posts on Shuo</description>
+    <image>
+      <title>Shuo</title>
+      <url>https://wushuo.me/img/cover-image.jpg</url>
+      <link>https://wushuo.me/img/cover-image.jpg</link>
+    </image>
     <generator>Hugo -- 0.136.5</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 24 Aug 2024 21:20:07 +0800</lastBuildDate>

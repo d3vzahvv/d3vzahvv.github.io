@@ -4,6 +4,11 @@
     <title>Tags on Shuo</title>
     <link>https://wushuo.me/tags/</link>
     <description>Recent content in Tags on Shuo</description>
+    <image>
+      <title>Shuo</title>
+      <url>https://wushuo.me/img/cover-image.jpg</url>
+      <link>https://wushuo.me/img/cover-image.jpg</link>
+    </image>
     <generator>Hugo -- 0.136.5</generator>
     <language>en-us</language>
     <atom:link href="https://wushuo.me/tags/index.xml" rel="self" type="application/rss+xml" />
