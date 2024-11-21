@@ -103,8 +103,8 @@
   "keywords": [
     
   ],
-  "articleBody": "介绍了微积分的一些解题方法\nLeibniz Rule 莱布尼兹法则适用于求两个函数乘积的 n 阶导数\n$$ [u(x)v(x)]^{(n)} = \\sum^n_{k=0} \\dbinom{n}{k} u^{(n-k)}(x)v^{(k)}(x) $$\n例：\\(n\\) 为正整数，求 \\(f(x)=x^2e^{-x}\\) 的 \\(n\\) 阶导数\n解：\n$$ \\begin{aligned} \u0026 [u(x)v(x)]^{(n)} \\\\ = \u0026 \\dbinom{n}{0} x^2 (e^{-x})^{(n)} + \\dbinom{n}{1} 2x (e^{-x})^{(n-1)} \\\\ \u0026 + \\dbinom{n}{2} 2 (e^{-x})^{(n-2)} \\end{aligned} $$\n对数处理分数次方或 \\(x^x\\) 取对数可以将 \\(n\\) 次方提到对数前便于计算\n$$ \\ln{x^m} = m\\ln{x} $$\n例 1：\\(R=2x^{\\frac{1}{3}}y^{\\frac{1}{2}}\\)，有 \\(x+y=a\\) ，求取 \\(R_{max}\\) 时 \\(x\\) 的值\n解：\n$$ \\begin{aligned} R \u0026 = 2x^{\\frac{1}{3}} (a-x)^{\\frac{1}{2}} \\\\ \\ln{R} \u0026 = \\ln{[2x^{\\frac{1}{3}} (a-x)^{\\frac{1}{2}}]} \\\\ \u0026 = \\frac{1}{3}\\ln{2x} + \\frac{1}{2}\\ln{(a-x)} \\end{aligned} $$\n对两侧求导数\n$$ \\frac{\\rm{d}(\\ln{R})}{\\rm{d}x}=\\frac{1}{R} = \\frac{1}{3x} - \\frac{1}{2a-2x} $$\n令 $$\\frac{\\rm{d}(\\ln{R})}{\\rm{d}x}=0$$ 有 $$x=\\frac{2}{5}a$$ 且为极大值点\n",
-  "wordCount" : "95",
+  "articleBody": "介绍了微积分的一些解题方法\nLeibniz Rule 莱布尼兹法则适用于求两个函数乘积的 n 阶导数\n$$ \\begin{aligned} \u0026[u(x)v(x)]^{(n)} \\\\ = \u0026 \\sum^n_{k=0} \\dbinom{n}{k} u^{(n-k)}(x)v^{(k)}(x) \\end{aligned} $$\n例：\\(n\\) 为正整数，求 \\(f(x)=x^2e^{-x}\\) 的 \\(n\\) 阶导数\n解：\n$$ \\begin{aligned} \u0026 [u(x)v(x)]^{(n)} \\\\ = \u0026 \\dbinom{n}{0} x^2 (e^{-x})^{(n)} + \\dbinom{n}{1} 2x (e^{-x})^{(n-1)} \\\\ + \u0026 \\dbinom{n}{2} 2 (e^{-x})^{(n-2)} \\end{aligned} $$\n对数处理分数次方或 \\(x^x\\) 取对数可以将 \\(n\\) 次方提到对数前便于计算\n$$ \\ln{x^m} = m\\ln{x} $$\n例 1：\\(R=2x^{\\frac{1}{3}}y^{\\frac{1}{2}}\\)，有 \\(x+y=a\\) ，求取 \\(R_{max}\\) 时 \\(x\\) 的值\n解：\n$$ \\begin{aligned} R \u0026 = 2x^{\\frac{1}{3}} (a-x)^{\\frac{1}{2}} \\\\ \\ln{R} \u0026 = \\ln{[2x^{\\frac{1}{3}} (a-x)^{\\frac{1}{2}}]} \\\\ \u0026 = \\frac{1}{3}\\ln{2x} + \\frac{1}{2}\\ln{(a-x)} \\end{aligned} $$\n对两侧求导数\n$$ \\frac{\\rm{d}(\\ln{R})}{\\rm{d}x}=\\frac{1}{R} = \\frac{1}{3x} - \\frac{1}{2a-2x} $$\n令 $$\\frac{\\rm{d}(\\ln{R})}{\\rm{d}x}=0$$ 有 $$x=\\frac{2}{5}a$$ 且为极大值点\n",
+  "wordCount" : "99",
   "inLanguage": "en",
   "image": "https://wushuo.me/img/profile-image.jpg","datePublished": "2024-11-21T09:13:40+08:00",
   "dateModified": "2024-11-21T09:13:40+08:00",
@@ -187,13 +187,16 @@
 <h3 id="leibniz-rule">Leibniz Rule<a hidden class="anchor" aria-hidden="true" href="#leibniz-rule">#</a></h3>
 <p>莱布尼兹法则适用于求两个函数乘积的 n 阶导数</p>
 <p>$$
-[u(x)v(x)]^{(n)} = \sum^n_{k=0} \dbinom{n}{k} u^{(n-k)}(x)v^{(k)}(x)
+\begin{aligned}
+&amp;[u(x)v(x)]^{(n)} \\
+= &amp; \sum^n_{k=0} \dbinom{n}{k} u^{(n-k)}(x)v^{(k)}(x)
+\end{aligned}
 $$</p>
 <p>例：\(n\) 为正整数，求 \(f(x)=x^2e^{-x}\) 的 \(n\) 阶导数</p>
 <p>解：</p>
 <p>$$
 \begin{aligned}
-&amp; [u(x)v(x)]^{(n)} \\ = &amp; \dbinom{n}{0} x^2 (e^{-x})^{(n)} + \dbinom{n}{1} 2x (e^{-x})^{(n-1)} \\ &amp; + \dbinom{n}{2} 2 (e^{-x})^{(n-2)}
+&amp; [u(x)v(x)]^{(n)} \\ = &amp; \dbinom{n}{0} x^2 (e^{-x})^{(n)} + \dbinom{n}{1} 2x (e^{-x})^{(n-1)} \\ + &amp; \dbinom{n}{2} 2 (e^{-x})^{(n-2)}
 \end{aligned}
 $$</p>
 <h3 id="对数处理分数次方或-xx">对数处理分数次方或 \(x^x\)<a hidden class="anchor" aria-hidden="true" href="#对数处理分数次方或-xx">#</a></h3>
