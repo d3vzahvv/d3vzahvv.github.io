@@ -103,8 +103,8 @@
   "keywords": [
     
   ],
-  "articleBody": "介绍了微积分的一些解题方法\nLeibniz Rule 莱布尼兹法则适用于求两个函数乘积的 n 阶导数\n$$ \\begin{aligned} \u0026[u(x)v(x)]^{(n)} \\\\ = \u0026 \\sum^n_{k=0} \\dbinom{n}{k} u^{(n-k)}(x)v^{(k)}(x) \\end{aligned} $$\n例：\\(n\\) 为正整数，求 \\(f(x)=x^2e^{-x}\\) 的 \\(n\\) 阶导数\n解：\n$$ \\begin{aligned} \u0026 [u(x)v(x)]^{(n)} \\\\ = \u0026 \\dbinom{n}{0} x^2 (e^{-x})^{(n)} + \\dbinom{n}{1} 2x (e^{-x})^{(n-1)} \\\\ + \u0026 \\dbinom{n}{2} 2 (e^{-x})^{(n-2)} \\end{aligned} $$\n对数处理分数次方或 \\(x^x\\) 取对数可以将 \\(n\\) 次方提到对数前便于计算\n$$ \\ln{x^m} = m\\ln{x} $$\n例 1：\\(R=2x^{\\frac{1}{3}}y^{\\frac{1}{2}}\\)，有 \\(x+y=a\\) ，求取 \\(R_{max}\\) 时 \\(x\\) 的值\n解：\n$$ \\begin{aligned} R \u0026 = 2x^{\\frac{1}{3}} (a-x)^{\\frac{1}{2}} \\\\ \\ln{R} \u0026 = \\ln{[2x^{\\frac{1}{3}} (a-x)^{\\frac{1}{2}}]} \\\\ \u0026 = \\frac{1}{3}\\ln{2x} + \\frac{1}{2}\\ln{(a-x)} \\end{aligned} $$\n对两侧求导数\n$$ \\frac{\\rm{d}(\\ln{R})}{\\rm{d}x}=\\frac{1}{R} = \\frac{1}{3x} - \\frac{1}{2a-2x} $$\n令 $$\\frac{\\rm{d}(\\ln{R})}{\\rm{d}x}=0$$ 有 $$x=\\frac{2}{5}a$$ 且为极大值点\n",
-  "wordCount" : "99",
+  "articleBody": "介绍了微积分的一些解题方法\nLeibniz Rule 莱布尼兹法则适用于求两个函数乘积的 n 阶导数\n$$ \\begin{aligned} \u0026[u(x)v(x)]^{(n)} \\\\ = \u0026 \\sum^n_{k=0} \\dbinom{n}{k} u^{(n-k)}(x)v^{(k)}(x) \\end{aligned} $$\n例：\\(n\\) 为正整数，求 \\(f(x)=x^2e^{-x}\\) 的 \\(n\\) 阶导数\n解：\n$$ \\begin{aligned} \u0026 [u(x)v(x)]^{(n)} \\\\ = \u0026 + \\dbinom{n}{0} x^2 (e^{-x})^{(n)} \\\\ \u0026 + \\dbinom{n}{1} 2x (e^{-x})^{(n-1)} \\\\ \u0026 + \\dbinom{n}{2} 2 (e^{-x})^{(n-2)} \\end{aligned} $$\n使用对数处理“分数次方”或 “\\(x^x\\)” 取对数可以将 \\(n\\) 次方提到对数前便于计算\n$$ \\ln{x^n} = n\\ln{x} $$\n例 1：\\(R=2x^{\\frac{1}{3}}y^{\\frac{1}{2}}\\)，有 \\(x+y=a\\) ，求取 \\(R_{max}\\) 时 \\(x\\) 的值\n解：\n$$ \\begin{aligned} R \u0026 = 2x^{\\frac{1}{3}} (a-x)^{\\frac{1}{2}} \\\\ \\ln{R} \u0026 = \\ln{[2x^{\\frac{1}{3}} (a-x)^{\\frac{1}{2}}]} \\\\ \u0026 = \\frac{1}{3}\\ln{2x} + \\frac{1}{2}\\ln{(a-x)} \\end{aligned} $$\n对两侧求导数\n$$ \\frac{\\rm{d}(\\ln{R})}{\\rm{d}x}=\\frac{1}{R} = \\frac{1}{3x} - \\frac{1}{2a-2x} $$\n令 $$\\frac{\\rm{d}(\\ln{R})}{\\rm{d}x}=0$$ 有 $$x=\\frac{2}{5}a$$ 且为极大值点\n例 2： 当 \\(n \\to \\infty \\) 时，\\((1+\\frac{1}{n})^n - e\\) 与 \\(\\frac{a}{n}\\) 是等价无穷小，求 \\(a\\)\n$$ \\begin{aligned} \u0026 \\lim_{n \\to \\infty}[{(1+\\frac{1}{n})^n - e}] \\\\ = \u0026 \\lim_{n \\to \\infty}[{e^{n\\ln{(1+\\frac{1}{n})}} - e}] \\\\ = \u0026 e\\lim_{n \\to \\infty}[{e^{n\\ln{(1+\\frac{1}{n})-1}} - 1}] \\\\ = \u0026 e\\lim_{n \\to \\infty}[n\\ln{(1+\\frac{1}{n})-1}] \\\\ = \u0026 e\\lim_{n \\to \\infty}\\{n[\\ln{(1+\\frac{1}{n})-\\frac{1}{n}]}\\} \\\\ = \u0026 e\\lim_{n \\to \\infty}\\{n[\\frac{1}{n}-(\\frac{1}{n})^{2}/2!-\\frac{1}{n}]\\} \\\\ \\sim \u0026 -\\frac{e}{2} \\cdot \\frac{1}{n} \\quad (n \\to \\infty) \\end{aligned} $$\n所以\n$$ a = - \\frac{e}{2} $$\n两个重要极限和推论公式 两个重要极限公式\n$$ \\lim_{x \\to 0}{\\frac{\\sin{x}}{x}} = 1 $$\n$$ \\lim_{x \\to \\infty}{(1 + \\frac{1}{x})^x} = e $$\n推论公式\n$$ \\lim_{x \\to \\infty}{(1 + \\frac{a}{x})^{bx+c}} = e^{ab} $$\n对于形如以下极限有\n$$ \\begin{aligned} \u0026 \\lim_{x \\to \\infty}(\\frac{x + a}{x - a})^x \\\\ = \u0026 \\lim_{x \\to \\infty}\\frac{(1 + \\frac{a}{x})^x}{(1 - \\frac{a}{x})^x} \\\\ = \u0026 \\frac{e^a}{e^{-a}} \\\\ = \u0026 e^{2a} \\end{aligned} $$\n",
+  "wordCount" : "236",
   "inLanguage": "en",
   "image": "https://wushuo.me/img/profile-image.jpg","datePublished": "2024-11-21T09:13:40+08:00",
   "dateModified": "2024-11-21T09:13:40+08:00",
@@ -196,13 +196,16 @@ $$</p>
 <p>解：</p>
 <p>$$
 \begin{aligned}
-&amp; [u(x)v(x)]^{(n)} \\ = &amp; \dbinom{n}{0} x^2 (e^{-x})^{(n)} + \dbinom{n}{1} 2x (e^{-x})^{(n-1)} \\ + &amp; \dbinom{n}{2} 2 (e^{-x})^{(n-2)}
+&amp; [u(x)v(x)]^{(n)} \\
+= &amp; + \dbinom{n}{0} x^2 (e^{-x})^{(n)} \\
+&amp; + \dbinom{n}{1} 2x (e^{-x})^{(n-1)} \\
+&amp; + \dbinom{n}{2} 2 (e^{-x})^{(n-2)}
 \end{aligned}
 $$</p>
-<h3 id="对数处理分数次方或-xx">对数处理分数次方或 \(x^x\)<a hidden class="anchor" aria-hidden="true" href="#对数处理分数次方或-xx">#</a></h3>
+<h3 id="使用对数处理分数次方或-xx">使用对数处理“分数次方”或 “\(x^x\)”<a hidden class="anchor" aria-hidden="true" href="#使用对数处理分数次方或-xx">#</a></h3>
 <p>取对数可以将 \(n\) 次方提到对数前便于计算</p>
 <p>$$
-\ln{x^m} = m\ln{x}
+\ln{x^n} = n\ln{x}
 $$</p>
 <p>例 1：\(R=2x^{\frac{1}{3}}y^{\frac{1}{2}}\)，有 \(x+y=a\) ，求取 \(R_{max}\) 时 \(x\) 的值</p>
 <p>解：</p>
@@ -222,6 +225,43 @@ $$\frac{\rm{d}(\ln{R})}{\rm{d}x}=0$$
 有
 $$x=\frac{2}{5}a$$
 且为极大值点</p>
+<p>例 2： 当 \(n \to \infty \) 时，\((1+\frac{1}{n})^n - e\) 与 \(\frac{a}{n}\) 是等价无穷小，求 \(a\)</p>
+<p>$$
+\begin{aligned}
+&amp; \lim_{n \to \infty}[{(1+\frac{1}{n})^n - e}] \\
+= &amp; \lim_{n \to \infty}[{e^{n\ln{(1+\frac{1}{n})}} - e}] \\
+= &amp; e\lim_{n \to \infty}[{e^{n\ln{(1+\frac{1}{n})-1}} - 1}] \\
+= &amp; e\lim_{n \to \infty}[n\ln{(1+\frac{1}{n})-1}] \\
+= &amp; e\lim_{n \to \infty}\{n[\ln{(1+\frac{1}{n})-\frac{1}{n}]}\} \\
+= &amp; e\lim_{n \to \infty}\{n[\frac{1}{n}-(\frac{1}{n})^{2}/2!-\frac{1}{n}]\} \\
+\sim &amp; -\frac{e}{2} \cdot \frac{1}{n} \quad (n \to \infty)
+\end{aligned}
+$$</p>
+<p>所以</p>
+<p>$$
+a = - \frac{e}{2}
+$$</p>
+<h3 id="两个重要极限和推论公式">两个重要极限和推论公式<a hidden class="anchor" aria-hidden="true" href="#两个重要极限和推论公式">#</a></h3>
+<p>两个重要极限公式</p>
+<p>$$
+\lim_{x \to 0}{\frac{\sin{x}}{x}} = 1
+$$</p>
+<p>$$
+\lim_{x \to \infty}{(1 + \frac{1}{x})^x} = e
+$$</p>
+<p>推论公式</p>
+<p>$$
+\lim_{x \to \infty}{(1 + \frac{a}{x})^{bx+c}} = e^{ab}
+$$</p>
+<p>对于形如以下极限有</p>
+<p>$$
+\begin{aligned}
+&amp; \lim_{x \to \infty}(\frac{x + a}{x - a})^x \\
+= &amp; \lim_{x \to \infty}\frac{(1 + \frac{a}{x})^x}{(1 - \frac{a}{x})^x} \\
+= &amp; \frac{e^a}{e^{-a}} \\
+= &amp; e^{2a}
+\end{aligned}
+$$</p>
 
   </div>
 
