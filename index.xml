@@ -15,9 +15,9 @@
     <atom:link href="https://wushuo.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Calculus Kai</title>
-      <link>https://wushuo.me/posts/calculus_kai/</link>
+      <link>https://wushuo.me/posts/calculus-kai/</link>
       <pubDate>Thu, 21 Nov 2024 09:13:40 +0800</pubDate>
-      <guid>https://wushuo.me/posts/calculus_kai/</guid>
+      <guid>https://wushuo.me/posts/calculus-kai/</guid>
       <description>&lt;p&gt;介绍了微积分的一些解题方法&lt;/p&gt;</description>
     </item>
     <item>
@@ -36,9 +36,9 @@
     </item>
     <item>
       <title>我的家庭组网：软路由从联网到智能家居</title>
-      <link>https://wushuo.me/posts/about_openwrt/</link>
+      <link>https://wushuo.me/posts/about-openwrt/</link>
       <pubDate>Mon, 11 Jan 2021 19:44:48 +0800</pubDate>
-      <guid>https://wushuo.me/posts/about_openwrt/</guid>
+      <guid>https://wushuo.me/posts/about-openwrt/</guid>
       <description>&lt;p&gt;OpenWrt 是适合于嵌入式设备的一个 Linux 发行版。
 对于开发者来说，OpenWrt是一个框架，开发者不必麻烦地构建整个固件就能得到想要的应用程序；对于用户来说，&lt;strong&gt;这意味着完全定制的能力&lt;/strong&gt;，与以往不同的方式使用设备，OPKG 包含超过3500个软件。 默认使用 LuCI 作为 website 交互界面。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
