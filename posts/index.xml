@@ -11,15 +11,8 @@
     </image>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Feb 2025 18:13:46 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2025 10:15:25 +0800</lastBuildDate>
     <atom:link href="https://wushuo.me/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>抽象文案编集</title>
-      <link>https://wushuo.me/posts/emo-tweets/</link>
-      <pubDate>Tue, 25 Feb 2025 18:13:46 +0800</pubDate>
-      <guid>https://wushuo.me/posts/emo-tweets/</guid>
-      <description>&lt;p&gt;本文为博主在各个平台上的文案收录集合，各文案经过挑选且均为博主原创&lt;/p&gt;</description>
-    </item>
     <item>
       <title>出愿、考学和落榜</title>
       <link>https://wushuo.me/posts/kyoto-u-exams/</link>
@@ -47,59 +40,6 @@
       <pubDate>Wed, 26 May 2021 22:24:30 +0800</pubDate>
       <guid>https://wushuo.me/posts/vector-analysis-beginning/</guid>
       <description>&lt;p&gt;矢量分析初步主要介绍 &amp;ldquo;梯度, 散度, 旋度&amp;rdquo; 的概念及其之间的关系；梯度、散度和旋度是矢量分析中的基本运算符，主要用于描述标量场和矢量场中的变化情况，广泛应用于物理学和工程学中的多个领域&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>我的家庭组网：软路由从联网到智能家居</title>
-      <link>https://wushuo.me/posts/about-openwrt/</link>
-      <pubDate>Mon, 11 Jan 2021 19:44:48 +0800</pubDate>
-      <guid>https://wushuo.me/posts/about-openwrt/</guid>
-      <description>&lt;p&gt;OpenWrt 是适合于嵌入式设备的一个 Linux 发行版。
-对于开发者来说，OpenWrt是一个框架，开发者不必麻烦地构建整个固件就能得到想要的应用程序；对于用户来说，&lt;strong&gt;这意味着完全定制的能力&lt;/strong&gt;，与以往不同的方式使用设备，OPKG 包含超过3500个软件。 默认使用 LuCI 作为 website 交互界面。&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;这是一篇 &lt;strong&gt;Step by Step&lt;/strong&gt; 的关于 x86 架构组建 &lt;a href=&#34;https://github.com/openwrt/openwrt&#34;&gt;Openwrt&lt;/a&gt; 家庭&lt;strong&gt;软路由&lt;/strong&gt;的&lt;strong&gt;教程&lt;/strong&gt;。你将可以了解到 Openwrt 在现代家庭网络中大放异彩：&lt;strong&gt;私人云盘，流媒体托管，负载均衡，流量管控，隔空播放，甚至更多值得想象的功能&lt;/strong&gt;；并且你只需基本的电脑知识和简单的硬件就能在你的家中实现。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;你的家庭网络必须接入互联网运营商且能正常上网&lt;/li&gt;
-&lt;li&gt;你需要一台闲置的台式电脑（当然您也可以选择以极低的价格购买 x86 软路由，约 200 元人民币）&lt;/li&gt;
-&lt;li&gt;你需要一台无线硬路由（即普通的 WI-FI 路由器）/ AP&lt;/li&gt;
-&lt;li&gt;确保光猫工作在桥接模式下（日常生活中联网无需拨号上网即桥接模式）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;目录&#34;&gt;目录&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#%E5%8A%9F%E8%83%BD%E5%B1%95%E7%A4%BA&#34;&gt;有限的功能展示&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C&#34;&gt;准备工作&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#%E4%BB%8E%E4%BA%86%E8%A7%A3%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E5%BC%80%E5%A7%8B&#34;&gt;网络拓扑&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#%E8%BD%AF%E8%B7%AF%E7%94%B1%E7%9A%84%E7%A1%AC%E4%BB%B6%E5%87%86%E5%A4%87&#34;&gt;硬件条件&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85&#34;&gt;系统安装&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2&#34;&gt;图像界面设置&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#%E6%9B%B4%E5%A4%9A%E6%9C%8D%E5%8A%A1&#34;&gt;更多服务&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#%E9%9A%94%E7%A9%BA%E6%92%AD%E6%94%BE&#34;&gt;隔空播放&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#%E5%B9%BF%E5%91%8A%E8%BF%87%E6%BB%A4&#34;&gt;广告过滤&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#dlna%E6%B5%81%E5%AA%92%E4%BD%93%E6%9C%8D%E5%8A%A1&#34;&gt;DLNA流媒体服务&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#%E8%BF%9E%E6%8E%A5%E4%BA%92%E8%81%94%E7%BD%91&#34;&gt;连接互联网&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;功能展示&#34;&gt;功能展示&lt;/h3&gt;
-&lt;h4 id=&#34;airplay2-隔空播放&#34;&gt;Airplay2 (隔空播放)&lt;/h4&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://wushuo.me/img/1610370521699.webp&#34; alt=&#34;Airplay2&#34;  /&gt;
-&lt;/p&gt;
-&lt;h4 id=&#34;后台监控&#34;&gt;后台监控&lt;/h4&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://wushuo.me/img/1610370776164.webp&#34; alt=&#34;monitor&#34;  /&gt;
-&lt;/p&gt;
-&lt;h4 id=&#34;流媒体播放-dlna-和-私人网盘&#34;&gt;流媒体播放 (DLNA) 和 私人网盘&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Aplayer in iPad&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://wushuo.me/img/1610518394674.webp&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
-&lt;h4 id=&#34;更快的速度和更稳定的视频播放&#34;&gt;更快的速度和更稳定的视频播放&lt;/h4&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://wushuo.me/img/1610378026837.webp&#34; alt=&#34;VideoPlay&#34;  /&gt;
-&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hackintosh on intel G41 with 775/771 CPU</title>
