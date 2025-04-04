@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -9,16 +9,16 @@
 <meta name="keywords" content="">
 <meta name="description" content="本文简单地介绍了常见媒体字幕的形式，以及字体子集化在跨平台媒体播放里的作用">
 <meta name="author" content="Shuo">
-<link rel="canonical" href="https://wushuo.me/posts/subtitle/">
+<link rel="canonical" href="http://localhost:1313/posts/subtitle/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://wushuo.me/assets/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://wushuo.me/assets/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://wushuo.me/assets/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://wushuo.me/assets/apple-touch-icon.png">
-<link rel="mask-icon" href="https://wushuo.me/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://wushuo.me/posts/subtitle/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/subtitle/">
 <noscript>
     <style>
         #theme-toggle,
@@ -58,11 +58,11 @@
 </noscript><meta property="og:title" content="字幕和字体子集化" />
 <meta property="og:description" content="本文简单地介绍了常见媒体字幕的形式，以及字体子集化在跨平台媒体播放里的作用" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wushuo.me/posts/subtitle/" /><meta property="og:image" content="https://wushuo.me/img/profile-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="http://localhost:1313/posts/subtitle/" /><meta property="og:image" content="http://localhost:1313/img/profile-image.jpg"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-08-24T21:20:07+08:00" />
 <meta property="article:modified_time" content="2024-08-24T21:20:07+08:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:image" content="https://wushuo.me/img/profile-image.jpg"/>
+<meta name="twitter:image" content="http://localhost:1313/img/profile-image.jpg"/>
 
 <meta name="twitter:title" content="字幕和字体子集化"/>
 <meta name="twitter:description" content="本文简单地介绍了常见媒体字幕的形式，以及字体子集化在跨平台媒体播放里的作用"/>
@@ -77,13 +77,13 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "https://wushuo.me/posts/"
+      "item": "http://localhost:1313/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "字幕和字体子集化",
-      "item": "https://wushuo.me/posts/subtitle/"
+      "item": "http://localhost:1313/posts/subtitle/"
     }
   ]
 }
@@ -101,7 +101,7 @@
   "articleBody": "本文简单地介绍了常见媒体字幕的形式，以及字体子集化在跨平台媒体播放里的作用\n字幕格式 字幕（Subtitle）作为辅助观影的工具，广泛存在于我们身边。下面介绍几种本地媒体中常见的字幕格式及其特点：\n它们分别是 .sub、.srt、.ass、.pgs 格式的字幕\nSUB 格式的字幕常用于 DVD 中，这里不过多介绍，只需要了解 SUB 格式的字幕显示的是实际的文本字幕，而并非图片字幕\nSRT 格式（Subripper）是最简单的文本字幕格式，扩展名为.srt，其组成为：一行字幕序号，一行时间代码，一行字幕数据 如： bash 45 00:02:52,184 --\u003e 00:02:53,617 慢慢来 这表示：第45个字幕，显示时间从该影片开始的第2分52.184秒到第2分53.617秒，内容为“慢慢来”$^1$ SRT 格式作为最简单的文本字幕，得到了广泛的应用，相比于 ASS 格式兼容性更佳，绝大多数媒体播放器都支持 SRT 格式\nASS 格式（Advanced SubStation Alpha）采用 SSA V4+ 脚本语言编写，可以实现更高级的字幕效果，比如自定义字体大小，样式；实现字幕渐入渐出；和卡拉 OK 一样的字幕颜色加载等等 ASS 字幕一般在头部定义需要使用到的字幕的字体样式，例如定义字幕样式 Default 并在后续时间轴中调用该格式 ASS 格式可以高度自定义，显示效果出众，成为了不少字幕组的选择；但并非所有播放器都能很好的支持；也会遇到缺失字体而导致字幕不协调的问题\nPGS 格式（Presentation Graphic Stream）字幕一般用于成熟的电影行业，是一种将图片字幕单独分离出来的格式。这种格式的好处在于不会对原片造成损失，分离的形式使不同语言的字幕可以切换，图片流形式又可以保证在不同播放器上的兼容性，无需依赖字体\n字幕加载形式 字幕文件有不同的存在形式：\n内嵌字幕又叫烧录字幕，国内流媒体视频网站中的字幕大多是内嵌字幕，它的原理是将字幕字体烧录到视频上，使字体成为视频的像素点。这种烧录是有损的，会使原视频被字幕遮挡的部分损失 当然，由于字幕和视频转化为了“新的包含字幕的视频”，新视频不存在兼容性问题，播放器在播放时无需调用字幕，只需要播放新视频即可\n内封字幕是指将上述介绍的字幕格式文件封装在视频文件中，字幕和视频只有一个文件（如 video.mkv ），字幕是独立于视频存在的。内封字幕视频的字幕文件可以被简单地提取出来，也可以对字幕修改后重新封装回原视频\n外挂字幕是指字幕文件独立于视频文件，在播放时由播放器挂载到视频上。如同一级目录下包含 video.mkv、subtitle.ass 格式的文件。外挂字幕便于修改，但需要播放器支持挂载字幕\n字幕字体子集化 字体文件通常包含了所有的字符字体，这使得字体文件较大，字体子集化可以将需要使用的字符的字体单独提取出来，以供调用\n这非常容易理解，我们不妨打个比方： 您需要前往后院拧紧栅栏上的螺丝，栅栏上有十字螺丝和梅花螺丝，于是你从工具箱拿了一把十字螺丝刀和梅花螺丝刀，并前往后院修理螺丝 在这个例子里，工具箱就是字体文件，而十字螺丝刀和梅花螺丝刀就是我们字体子集化后的文件，我们需要多少字符的字体，就子集化多少字符的字体，因为这样可以节省空间\n相信聪明的你已经理解了什么是字体子集化，我们在上文提及到\nASS 格式可以高度自定义，显示效果出众，成为了不少字幕组的选择 ASS 格式的字幕会遇到缺失字体而导致字幕不协调的问题\n缺失的字体在电脑端可以通过安装对应字体文件解决，但对于移动设备（例如封闭的 iOS）、电视设备，安装每一种对应的字体文件几乎不太现实\n于是为了以一种通用的方法解决观影过程中字体缺失造成的问题，我们将字体子集化引入到 .ass 文件中，使得任何可以支持 .ass 字幕的播放设备都可以正确地显示字幕效果而无需安装额外的字体文件；同时，对于透过串流在不同设备播放媒体时，每一个设备都可以正确的显示相同的字幕效果，可谓一劳永逸\nInfuse 中的效果如下图 可以发现字幕的颜色、字体都显示正确，没有出现回落到默认字体的情况\n字幕子集化工具有 MkvAutoSubset 和一些其他的 GUI 工具，都可以很方便的将字幕字体子集化\n注释：\n摘自维基百科 ",
   "wordCount" : "84",
   "inLanguage": "en",
-  "image": "https://wushuo.me/img/profile-image.jpg","datePublished": "2024-08-24T21:20:07+08:00",
+  "image": "http://localhost:1313/img/profile-image.jpg","datePublished": "2024-08-24T21:20:07+08:00",
   "dateModified": "2024-08-24T21:20:07+08:00",
   "author":{
     "@type": "Person",
@@ -109,14 +109,14 @@
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://wushuo.me/posts/subtitle/"
+    "@id": "http://localhost:1313/posts/subtitle/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Shuo",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://wushuo.me/assets/favicon.ico"
+      "url": "http://localhost:1313/assets/favicon.ico"
     }
   }
 }
@@ -138,7 +138,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://wushuo.me/" accesskey="h" title="Shuo (Alt + H)">Shuo</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Shuo (Alt + H)">Shuo</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -226,15 +226,15 @@ ASS 格式的字幕会遇到缺失字体而导致字幕不协调的问题</p>
     <ul class="post-tags">
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://wushuo.me/posts/calculus-kai/">
+  <a class="prev" href="http://localhost:1313/posts/calculus-kai/">
     <span class="title">« Prev</span>
     <br>
     <span>Calculus Kai</span>
   </a>
-  <a class="next" href="https://wushuo.me/posts/vector-analysis-beginning/">
+  <a class="next" href="http://localhost:1313/posts/genealogy/">
     <span class="title">Next »</span>
     <br>
-    <span>矢量分析初步</span>
+    <span>新年旧札</span>
   </a>
 </nav>
 
@@ -243,7 +243,7 @@ ASS 格式的字幕会遇到缺失字体而导致字幕不协调的问题</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://wushuo.me/">Shuo</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">Shuo</a></span> · 
 
     <span>
         Powered by

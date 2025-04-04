@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Shuo</title>
-    <link>https://wushuo.me/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Shuo</description>
     <image>
       <title>Shuo</title>
-      <url>https://wushuo.me/img/profile-image.jpg</url>
-      <link>https://wushuo.me/img/profile-image.jpg</link>
+      <url>http://localhost:1313/img/profile-image.jpg</url>
+      <link>http://localhost:1313/img/profile-image.jpg</link>
     </image>
     <generator>Hugo -- 0.140.1</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 22 Feb 2025 10:15:25 +0800</lastBuildDate>
-    <atom:link href="https://wushuo.me/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>出愿、考学和落榜</title>
-      <link>https://wushuo.me/posts/kyoto-u-exams/</link>
+      <link>http://localhost:1313/posts/kyoto-u-exams/</link>
       <pubDate>Sat, 22 Feb 2025 10:15:25 +0800</pubDate>
-      <guid>https://wushuo.me/posts/kyoto-u-exams/</guid>
+      <guid>http://localhost:1313/posts/kyoto-u-exams/</guid>
       <description>&lt;p&gt;于是我再也不会在夏天拎着整套西服，坐在心斋桥的麦当劳里写线性代数了&lt;/p&gt;</description>
     </item>
     <item>
       <title>Calculus Kai</title>
-      <link>https://wushuo.me/posts/calculus-kai/</link>
+      <link>http://localhost:1313/posts/calculus-kai/</link>
       <pubDate>Thu, 21 Nov 2024 09:13:40 +0800</pubDate>
-      <guid>https://wushuo.me/posts/calculus-kai/</guid>
+      <guid>http://localhost:1313/posts/calculus-kai/</guid>
       <description>&lt;p&gt;介绍了微积分的一些解题方法&lt;/p&gt;</description>
     </item>
     <item>
       <title>字幕和字体子集化</title>
-      <link>https://wushuo.me/posts/subtitle/</link>
+      <link>http://localhost:1313/posts/subtitle/</link>
       <pubDate>Sat, 24 Aug 2024 21:20:07 +0800</pubDate>
-      <guid>https://wushuo.me/posts/subtitle/</guid>
+      <guid>http://localhost:1313/posts/subtitle/</guid>
       <description>&lt;p&gt;本文简单地介绍了常见媒体字幕的形式，以及字体子集化在跨平台媒体播放里的作用&lt;/p&gt;</description>
     </item>
     <item>
-      <title>矢量分析初步</title>
-      <link>https://wushuo.me/posts/vector-analysis-beginning/</link>
-      <pubDate>Wed, 26 May 2021 22:24:30 +0800</pubDate>
-      <guid>https://wushuo.me/posts/vector-analysis-beginning/</guid>
-      <description>&lt;p&gt;矢量分析初步主要介绍 &amp;ldquo;梯度, 散度, 旋度&amp;rdquo; 的概念及其之间的关系；梯度、散度和旋度是矢量分析中的基本运算符，主要用于描述标量场和矢量场中的变化情况，广泛应用于物理学和工程学中的多个领域&lt;/p&gt;</description>
+      <title>新年旧札</title>
+      <link>http://localhost:1313/posts/genealogy/</link>
+      <pubDate>Wed, 01 Feb 2023 19:18:50 +0800</pubDate>
+      <guid>http://localhost:1313/posts/genealogy/</guid>
+      <description>&lt;p&gt;过年回我爷爷奶奶家所闻&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Hackintosh on intel G41 with 775/771 CPU</title>
-      <link>https://wushuo.me/posts/hackintosh/</link>
-      <pubDate>Sun, 23 Aug 2020 19:03:45 +0800</pubDate>
-      <guid>https://wushuo.me/posts/hackintosh/</guid>
-      <description>&lt;p&gt;A Hackintosh is a computer that runs an Apple Macintosh operating system on computer hardware not authorized for the purpose by Apple. This passage is to introduce using intel G41 series motherboard hackintosh on a low budget.&lt;/p&gt;</description>
+      <title>矢量分析初步</title>
+      <link>http://localhost:1313/posts/vector-analysis-beginning/</link>
+      <pubDate>Wed, 26 May 2021 22:24:30 +0800</pubDate>
+      <guid>http://localhost:1313/posts/vector-analysis-beginning/</guid>
+      <description>&lt;p&gt;矢量分析初步主要介绍 &amp;ldquo;梯度, 散度, 旋度&amp;rdquo; 的概念及其之间的关系；梯度、散度和旋度是矢量分析中的基本运算符，主要用于描述标量场和矢量场中的变化情况，广泛应用于物理学和工程学中的多个领域&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
