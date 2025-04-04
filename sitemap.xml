@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://wushuo.me/posts/</loc>
     <lastmod>2025-02-25T18:13:46+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://wushuo.me/</loc>
     <lastmod>2025-02-25T18:13:46+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/kyoto-u-exams/</loc>
+    <loc>https://wushuo.me/posts/kyoto-u-exams/</loc>
     <lastmod>2025-02-22T10:15:25+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/calculus-kai/</loc>
+    <loc>https://wushuo.me/posts/calculus-kai/</loc>
     <lastmod>2024-11-21T09:13:40+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/subtitle/</loc>
+    <loc>https://wushuo.me/posts/subtitle/</loc>
     <lastmod>2024-08-24T21:20:07+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/genealogy/</loc>
+    <loc>https://wushuo.me/posts/genealogy/</loc>
     <lastmod>2023-02-01T19:18:50+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/vector-analysis-beginning/</loc>
+    <loc>https://wushuo.me/posts/vector-analysis-beginning/</loc>
     <lastmod>2021-05-26T22:24:30+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://wushuo.me/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://wushuo.me/tags/</loc>
   </url>
 </urlset>
