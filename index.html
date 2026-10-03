@@ -1,317 +1,71 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto">
-
+<!doctype html>
+<html lang="zh-CN">
 <head>
-	<meta name="generator" content="Hugo 0.140.1"><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>Shuo</title>
-
-<meta name="description" content="浮光掠影">
-<meta name="author" content="Shuo">
-<link rel="canonical" href="https://wushuo.me/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://wushuo.me/assets/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://wushuo.me/assets/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://wushuo.me/assets/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://wushuo.me/assets/apple-touch-icon.png">
-<link rel="mask-icon" href="https://wushuo.me/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://wushuo.me/index.xml">
-<link rel="alternate" hreflang="en" href="https://wushuo.me/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript><meta property="og:title" content="Shuo" />
-<meta property="og:description" content="浮光掠影" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://wushuo.me/" /><meta property="og:image" content="https://wushuo.me/img/profile-image.jpg"/>
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:image" content="https://wushuo.me/img/profile-image.jpg"/>
-
-<meta name="twitter:title" content="Shuo"/>
-<meta name="twitter:description" content="浮光掠影"/>
-<meta name="twitter:site" content="@SuWhuo"/>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Shuo",
-  "url": "https://wushuo.me/",
-  "description": "浮光掠影",
-  "thumbnailUrl": "https://wushuo.me/assets/favicon.ico",
-  "sameAs": [
-      "https://x.com/SuWhuo", "https://www.instagram.com/d3vzahvv/", "https://mastodon.social/@SuWhuo", "https://steamcommunity.com/profiles/76561198970254039/"
-  ]
-}
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="长兴公交全线路速查，查看官方线路方向、运营时间、票价及沿途站点。">
+  <meta name="theme-color" content="#f4f5f8">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="长兴公交线路">
+  <meta property="og:title" content="长兴公交线路">
+  <meta property="og:description" content="长兴公交官方线路、运营方向、班次与沿途站点速查。">
+  <meta property="og:image" content="assets/cover.jpg">
+  <meta property="og:image:alt" content="长兴公交线路网站分享封面">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="长兴公交线路">
+  <meta name="twitter:description" content="长兴公交官方线路、运营方向、班次与沿途站点速查。">
+  <meta name="twitter:image" content="assets/cover.jpg">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <title>长兴公交线路</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/routes.js" defer></script>
+  <script src="assets/index.js" defer></script>
 </head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="长兴公交首页">
+      <span><b>长兴公交</b><small>Changxing Bus</small></span>
+    </a>
+    <nav aria-label="主导航"><a class="active" href="index.html">线路</a><a href="#guide">乘车指南</a></nav>
+  </header>
 
-<body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
+  <main class="page-shell">
+    <section class="window-card page-intro">
+      <div class="intro-content">
+        <p class="eyebrow">CHANGXING · ZHEJIANG</p>
+        <h1>公交线路</h1>
+        <p>长兴公交官方线路与双向站点速查</p>
+      </div>
+    </section>
 
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://wushuo.me/" accesskey="h" title="Shuo (Alt + H)">Shuo</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
+    <section class="window-card routes-section" aria-labelledby="routes-title">
+      <div class="section-content">
+        <div class="section-heading">
+          <div><p class="eyebrow">OFFICIAL ROUTES</p><h2 id="routes-title">全部官方线路</h2></div>
+          <span id="route-count" class="count-pill"></span>
         </div>
-        <ul id="menu">
-        </ul>
-    </nav>
-</header>
-<main class="main"> 
-<article class="first-entry home-info">
-    <header class="entry-header">
-        <h1>我的故事写不进作文</h1>
-    </header>
-    <div class="entry-content">
-        <ul>
-<li>“她的垃圾桶里长出一捧花，和我送她的一模一样”</li>
-</ul>
+        <div class="search-wrap">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+          <label class="sr-only" for="route-search">搜索线路或站点</label>
+          <input id="route-search" type="search" placeholder="搜索线路、起讫站或途经站点" autocomplete="off">
+        </div>
+        <div id="route-grid" class="route-grid" aria-live="polite"></div>
+        <p id="empty-state" class="empty-state" hidden>没有找到匹配的线路</p>
+      </div>
+    </section>
 
-    </div>
-    <footer class="entry-footer">
-        <div class="social-icons" >
-    <a href="https://x.com/SuWhuo" target="_blank" rel="noopener noreferrer me"
-        title="Twitter">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <path
-        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-    </path>
-</svg>
-    </a>
-    <a href="https://www.instagram.com/d3vzahvv/" target="_blank" rel="noopener noreferrer me"
-        title="Instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-    <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-</svg>
-    </a>
-    <a href="https://mastodon.social/@SuWhuo" target="_blank" rel="noopener noreferrer me"
-        title="Mastodon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <path
-        d="M21.58 13.913c-.29 1.469-2.592 3.121-5.238 3.396-1.379.184-2.737.368-4.185.276-2.368-.092-4.237-.551-4.237-.551 0 .184.014.459.043.643.308 2.294 2.317 2.478 4.22 2.57 1.922 0 3.633-.46 3.633-.46l.079 1.653s-1.344.734-3.738.918c-1.32.091-2.96-.092-4.869-.551-4.14-1.102-4.853-5.507-4.961-10.005-.034-1.285-.013-2.57-.013-3.58 0-4.589 3-5.966 3-5.966 1.513-.734 4.11-1.01 6.808-1.01h.067c2.699 0 5.296.276 6.81 1.01 0 0 3 1.377 3 5.967 0 0 .037 3.304-.419 5.69"
-        stroke="currentColor" />
-    <path
-        d="M17.832 8.633v5h-1.978V8.78c0-1.023-.43-1.542-1.29-1.542-.95 0-1.427.616-1.427 1.834v2.655H11.17V9.072c0-1.218-.476-1.834-1.427-1.834-.86 0-1.29.52-1.29 1.542v4.852H6.475V8.633c0-1.022.26-1.834.782-2.434.538-.6 1.243-.909 2.118-.909 1.012 0 1.779.39 2.286 1.169l.492.827.493-.827c.507-.78 1.274-1.169 2.286-1.169.875 0 1.58.308 2.118.909.522.6.782 1.412.782 2.434"
-        fill="currentColor" stroke="none" />
-</svg>
-    </a>
-    <a href="https://steamcommunity.com/profiles/76561198970254039/" target="_blank" rel="noopener noreferrer me"
-        title="Steam">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none">
-    <path
-        d="M-24.6 20.8c-1.4-.8-2.7-1.5-4.1-2.3-2.4-1.5-3.6-3.6-3.3-6.5.3-3 2.8-5.2 5.8-5.3h11c2.6 0 4.6 2.2 4.7 4.7 0 2.6-2 4.8-4.6 4.9h-2.8v.2c.2.2.5.3.7.5 1.2.7 2.4 1.3 3.6 2 2.5 1.5 3.7 4.5 2.9 7.2-.8 2.7-3.1 4.3-6.1 4.4h-10.6c-2.4 0-4.3-1.9-4.6-4.3-.3-2.3 1.2-4.5 3.5-5.1.6-.1 1.2-.1 1.7-.2h2.1c.1 0 .1-.1.1-.2zm4.3-3.8c-.1.3-.2.3-.2.4v3.9c0 1.1-.1 1.2-1.2 1.2h-5.1c-.4 0-.9 0-1.3.1-1.6.4-2.5 1.9-2.4 3.6.2 1.6 1.6 2.9 3.3 2.9h10.5c2.1 0 3.8-1.2 4.5-3.1.7-1.8.2-4.1-1.5-5.3-2.1-1.3-4.3-2.4-6.6-3.7zm-1.7 3.4v-4c0-1.4.1-1.5 1.4-1.5h5.3c1.5 0 2.7-1 3.1-2.4.6-2.2-1-4.2-3.4-4.3h-10.1c-2.4 0-4.3 1.3-4.9 3.4-.6 2.1.4 4.4 2.5 5.5 1.7 1 3.5 1.9 5.2 2.9.4.2.6.3.9.4z" />
-    <path
-        d="M53.3 6.9c-.2-1-1-1.7-1.9-2-1.7-.4-8.6-.4-8.6-.4s-6.9 0-8.6.5c-1 .3-1.7 1-1.9 2-.3 1.7-.5 3.5-.5 5.3 0 1.8.1 3.6.5 5.3.3.9 1 1.7 1.9 1.9 1.7.5 8.6.5 8.6.5s6.9 0 8.6-.5c1-.3 1.7-1 1.9-2 .3-1.7.5-3.5.5-5.3 0-1.8-.1-3.6-.5-5.3z" />
-    <path d="m40.6 15.5 5.7-3.3-5.7-3.3z" />
-    <path
-        d="M72.4-9.9c5.5 0 10 4 10 8.9 0 1.8-.8 3.8-2.1 5.4-.9 1-1.5 2.3-1.6 3.7 0-.1-.1-.1-.2-.2-.4-.4-1.1-.7-1.7-.7-.3 0-.5 0-.8.1-1.2.5-2.5.7-3.6.7-5.5 0-10-4-10-8.9s4.5-9 10-9m0-2c-6.6 0-12 4.9-12 10.9s5.4 11 12 11c1.4 0 2.8-.2 4.2-.7h.1c.1 0 .2 0 .3.1 1 1.3 2.5 2.3 4.2 2.7l.2-.1v-.3c-.7-.9-1-1.9-1-3s.4-2.1 1.2-2.9c1.5-1.8 2.6-4.2 2.6-6.7.1-6.1-5.3-11-11.8-11z" />
-    <path
-        d="M72.3-6.5c.1 0 .3.1.3.2l1.2 3.4 3.7.1c.1 0 .3.1.3.2s0 .3-.1.4l-3 2.2 1.1 3.5c0 .1 0 .3-.1.4h-.4l-3-2.1-3 2.1h-.4c-.1-.1-.2-.2-.1-.4L69.9 0l-3-2.2c-.1-.1-.2-.2-.1-.4 0-.1.2-.2.3-.2l3.7-.1L72-6.3c0-.1.2-.2.3-.2zM46.8-20.8c2 0 4 .6 5.6 1.6-.5-.1-1.1-.2-1.6-.2-3.2 0-5.8 2.5-6 5.6l-2.2 3.2c-.5.1-.9.2-1.4.4l-4.7-1.9c.8-5 5.2-8.7 10.3-8.7m9.9 7.2c.3 1 .5 2.1.5 3.3C57.2-4.5 52.5.2 46.7.2c-1.8 0-3.6-.5-5.1-1.3.5.2 1 .2 1.5.2 2.5 0 4.5-1.9 4.8-4.3L51-7.4c3.1-.2 5.6-2.8 5.6-6 .1-.1.1-.1.1-.2M38.3-4.2l.3.2c.1.2.2.5.3.7l-.6-.9m8.5-18.1c-6.3 0-11.5 4.9-12 11l6.4 2.7c.5-.4 1.2-.6 1.9-.6h.2l2.9-4.1v-.1c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5h-.1L46.5-6v.2c0 1.9-1.5 3.4-3.4 3.4-1.6 0-3-1.2-3.3-2.7L35.2-7c1.4 5 6 8.7 11.5 8.7 6.6 0 12-5.4 12-12s-5.3-12-11.9-12z" />
-    <path
-        d="M42.6-4.6 41.5-5c.2.4.5.7 1 .9 1 .4 2.1-.1 2.5-1 .2-.5.2-1 0-1.4-.2-.5-.6-.8-1-1-.5-.2-1-.2-1.4 0l1.1.5c.7.3 1 1.1.7 1.8-.3.6-1.1.9-1.8.6zm8.1-11.5c-1.5 0-2.7 1.2-2.7 2.7 0 1.5 1.2 2.7 2.7 2.7 1.5 0 2.7-1.2 2.7-2.7 0-1.5-1.2-2.7-2.7-2.7zm0 4.7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2c.1 1.1-.9 2-2 2zM12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22c-4.3 0-8-2.7-9.4-6.5L6.2 17c.3 1.3 1.5 2.4 2.9 2.4 1.6 0 2.9-1.3 2.9-2.9v-.1l3.5-2.5h.1c2.1 0 3.9-1.8 3.9-3.9 0-2.1-1.8-3.9-3.9-3.9-2.2 0-3.9 1.8-3.9 3.9v.1l-2.5 3.6H9c-.6 0-1.2.2-1.7.5L2 11.7C2.2 6.3 6.6 2 12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10zm-2.4-7.1-1.3-.5c.5-.2 1.1-.2 1.6 0s1 .7 1.2 1.2c.2.5.2 1.1 0 1.7-.5 1.1-1.8 1.7-2.9 1.2-.5-.2-.9-.6-1.1-1.1l1.3.5c.2 0 .4.1.6.1.6 0 1.2-.4 1.5-1 .4-.9 0-1.8-.9-2.1zM13 9.8c0-1.5 1.2-2.6 2.6-2.6 1.5 0 2.6 1.2 2.6 2.6 0 1.5-1.2 2.6-2.6 2.6-1.4 0-2.6-1.2-2.6-2.6z" />
-    <path d="M13.7 9.8c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2c-1.1-.1-2-.9-2-2z" />
-</svg>
-    </a>
-</div>
+    <section id="guide" class="guide-grid" aria-label="乘车指南">
+      <article><span>¥</span><div><h2>统一票价</h2><p>无人售票，全程 2 元一票制</p></div></article>
+      <article><span>◷</span><div><h2>运营提示</h2><p>冬令时部分线路末班时间会提前</p></div></article>
+      <article><span>⌁</span><div><h2>实时公交</h2><p>请使用“长兴智慧交通”查询实时到站</p></div></article>
+    </section>
+  </main>
 
-    </footer>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">CityUHK EE Courses
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>关于 CityUHK EE Dept. 的课程相关评价，这些课程主要集中在 EE Dept. 的 MSc / MPhil / PhD 研究生项目
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-01-04 11:21:43 +0800 CST'>January 4, 2026</span>&nbsp;·&nbsp;Shuo</footer>
-  <a class="entry-link" aria-label="post link to CityUHK EE Courses" href="https://wushuo.me/posts/cityuhk-eie-courses/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">出愿、考学和落榜
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>于是我再也不会在夏天拎着整套西服，坐在心斋桥的麦当劳里写线性代数了
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-02-22 10:15:25 +0800 CST'>February 22, 2025</span>&nbsp;·&nbsp;Shuo</footer>
-  <a class="entry-link" aria-label="post link to 出愿、考学和落榜" href="https://wushuo.me/posts/kyoto-u-exams/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Calculus Kai
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>介绍了微积分的一些解题方法
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-11-21 09:13:40 +0800 CST'>November 21, 2024</span>&nbsp;·&nbsp;Shuo</footer>
-  <a class="entry-link" aria-label="post link to Calculus Kai" href="https://wushuo.me/posts/calculus-kai/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">字幕和字体子集化
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>本文简单地介绍了常见媒体字幕的形式，以及字体子集化在跨平台媒体播放里的作用
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-08-24 21:20:07 +0800 CST'>August 24, 2024</span>&nbsp;·&nbsp;Shuo</footer>
-  <a class="entry-link" aria-label="post link to 字幕和字体子集化" href="https://wushuo.me/posts/subtitle/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">新年旧札
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>过年回我爷爷奶奶家所闻
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-02-01 19:18:50 +0800 CST'>February 1, 2023</span>&nbsp;·&nbsp;Shuo</footer>
-  <a class="entry-link" aria-label="post link to 新年旧札" href="https://wushuo.me/posts/genealogy/"></a>
-</article>
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="next" href="https://wushuo.me/page/2/">Next&nbsp;&nbsp;»
-    </a>
-  </nav>
-</footer>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2026 <a href="https://wushuo.me/">Shuo</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a>
-    </span>
-</footer>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
+  <footer><p>项目参考 <a href="https://toursline.cn/">通行线</a> 和 <a href="https://www.china-emu.cn/">China EMU</a></p><p>线路资料仅供参考，请以现场站牌及运营方公告为准</p><p>公交咨询：0572-6207776</p></footer>
 </body>
-
 </html>
